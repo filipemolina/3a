@@ -1,3 +1,269 @@
 /*
 Theme Name: 3A WorldWide
 */
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Fontes
+--------------------------------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'verlag-extra-light';
+    src: url('fonts/verlag-xlight-webfont.eot');
+    src: url('fonts/verlag-xlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verlag-xlight-webfont.woff2') format('woff2'),
+         url('fonts/verlag-xlight-webfont.woff') format('woff'),
+         url('fonts/verlag-xlight-webfont.ttf') format('truetype'),
+         url('fonts/verlag-xlight-webfont.svg#verlagextra_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verlag-extra-light-italic';
+    src: url('fonts/verlag-xlightitalic-webfont.eot');
+    src: url('fonts/verlag-xlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verlag-xlightitalic-webfont.woff2') format('woff2'),
+         url('fonts/verlag-xlightitalic-webfont.woff') format('woff'),
+         url('fonts/verlag-xlightitalic-webfont.ttf') format('truetype'),
+         url('fonts/verlag-xlightitalic-webfont.svg#verlagextra_light_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verlag-light-italic';
+    src: url('fonts/verlag-lightitalic-webfont.eot');
+    src: url('fonts/verlag-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verlag-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/verlag-lightitalic-webfont.woff') format('woff'),
+         url('fonts/verlag-lightitalic-webfont.ttf') format('truetype'),
+         url('fonts/verlag-lightitalic-webfont.svg#verlaglight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verlag-book-italic';
+    src: url('fonts/verlag-bookitalic-webfont.eot');
+    src: url('fonts/verlag-bookitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verlag-bookitalic-webfont.woff2') format('woff2'),
+         url('fonts/verlag-bookitalic-webfont.woff') format('woff'),
+         url('fonts/verlag-bookitalic-webfont.ttf') format('truetype'),
+         url('fonts/verlag-bookitalic-webfont.svg#verlagbook_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verlag-book';
+    src: url('fonts/verlag-book-webfont.eot');
+    src: url('fonts/verlag-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verlag-book-webfont.woff2') format('woff2'),
+         url('fonts/verlag-book-webfont.woff') format('woff'),
+         url('fonts/verlag-book-webfont.ttf') format('truetype'),
+         url('fonts/verlag-book-webfont.svg#verlagbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verlag-light';
+    src: url('fonts/verlag-light-webfont.eot');
+    src: url('fonts/verlag-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verlag-light-webfont.woff2') format('woff2'),
+         url('fonts/verlag-light-webfont.woff') format('woff'),
+         url('fonts/verlag-light-webfont.ttf') format('truetype'),
+         url('fonts/verlag-light-webfont.svg#verlaglight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verlag-bold-italic';
+    src: url('fonts/verlag-bolditalic-webfont.eot');
+    src: url('fonts/verlag-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verlag-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/verlag-bolditalic-webfont.woff') format('woff'),
+         url('fonts/verlag-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/verlag-bolditalic-webfont.svg#verlagbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verlag-bold';
+    src: url('fonts/verlag-bold-webfont.eot');
+    src: url('fonts/verlag-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verlag-bold-webfont.woff2') format('woff2'),
+         url('fonts/verlag-bold-webfont.woff') format('woff'),
+         url('fonts/verlag-bold-webfont.ttf') format('truetype'),
+         url('fonts/verlag-bold-webfont.svg#verlagbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verlag-black';
+    src: url('fonts/verlag-black-webfont.eot');
+    src: url('fonts/verlag-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verlag-black-webfont.woff2') format('woff2'),
+         url('fonts/verlag-black-webfont.woff') format('woff'),
+         url('fonts/verlag-black-webfont.ttf') format('truetype'),
+         url('fonts/verlag-black-webfont.svg#verlagblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verlag-black-italic';
+    src: url('fonts/verlag-blackitalic-webfont.eot');
+    src: url('fonts/verlag-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verlag-blackitalic-webfont.woff2') format('woff2'),
+         url('fonts/verlag-blackitalic-webfont.woff') format('woff'),
+         url('fonts/verlag-blackitalic-webfont.ttf') format('truetype'),
+         url('fonts/verlag-blackitalic-webfont.svg#verlagblack_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Genéricos
+--------------------------------------------------------------------------------------------------------------------*/
+
+.titulo
+{
+	margin-bottom: 25px;
+}
+
+.titulo h2 
+{
+	font-size: 65px;
+	text-transform: uppercase;
+	font-family: verlag-bold;
+}
+
+.titulo .borda-azul 
+{
+	background-color: #4579bd;
+	height: 4px;
+	width: 143px;
+	margin-top: 20px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Menu Superior
+--------------------------------------------------------------------------------------------------------------------*/
+
+.container-fluid.menu 
+{ 
+	background-color: #e6e7e8; 
+}
+
+ul#menu-principal 
+{ 
+	margin-bottom: 0; 
+}
+
+ul#menu-principal a 
+{ 
+	display: inline-block;
+	padding: 23px 20px 20px 20px;
+	margin-left: -4px;
+	
+	text-decoration: none;
+	color: #5d5b5c;
+	font-size: 9pt;
+	font-family: 'verlag-book';
+	text-transform: uppercase;
+
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	
+}
+
+ul#menu-principal a:hover
+{
+	text-decoration: none;
+	color: #000;
+
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+ul#menu-principal a.ativo
+{
+	background-color: #716f70;
+	color: #e6e7e8;
+}
+
+.menu .logo3a 
+{ 
+	float: left; 
+}
+
+.menu nav.principal 
+{ 
+	float: right 
+}
+
+.menu #menu-principal li 
+{ 
+	display: inline; 
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Quem Somos
+--------------------------------------------------------------------------------------------------------------------*/
+
+.container.quem-somos 
+{
+	margin-top: 60px;
+}
+
+.quem-somos p
+{
+	font-family: 'verlag-book';
+	font-size: 18px;
+	max-width: 935px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Parallax
+--------------------------------------------------------------------------------------------------------------------*/
+
+.parallax
+{
+	height: 300px;
+	margin: 50px 0;
+}
+
+#parallax-1
+{
+	background: url('img/parallax/cidade.jpg') center center no-repeat;
+}
+
+#parallax-2
+{
+	background: url('img/parallax/cidade.jpg') center center no-repeat;
+}
+
+#parallax-3
+{
+	background: url('img/parallax/cidade.jpg') center center no-repeat;
+}

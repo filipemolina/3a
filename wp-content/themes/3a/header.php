@@ -24,7 +24,28 @@
 	<?php wp_head(); ?>
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css" type="text/css" media="screen" />
 
 </head>
 
 <body <?php body_class(); ?>>
+
+	<!-- Menu Superior -->
+
+	<div class="container-fluid menu navbar-fixed-top">
+
+		<div class="container">
+
+			<!-- Logo -->
+			
+			<div class="logo3a">
+				<img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="">
+			</div>
+
+			<!-- Menu -->
+
+			<?php wp_nav_menu(['container_class' => 'principal', 'container' => 'nav']); ?>
+
+		</div>
+	
+	</div>
