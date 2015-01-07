@@ -1,34 +1,78 @@
 <?php get_header() ?>
 
+	<div class="container-fluid hero-unit">
+		<img src="<?php bloginfo('template_url'); ?>/img/hero-unit/frase.png" alt="" class="fadeInRight animated"/>
+	</div>
+
 	<div class="container quem-somos">
 		<div class="row">
+
+			<?php //Obter o conteúdo da página "Quem Somos" ?>
+
+			<?php $quem_somos = get_page_by_title('Quem Somos'); ?>
+	
+			<!-- Título com a barrinha azul -->
+
 			<div class="titulo">
-				<h2>Quem Somos</h2>
+				<h2><?php echo $quem_somos->post_title; ?></h2>
 				<div class="borda-azul"></div>
-			</div>
+			</div>	
 
-			<p>3AWorldwide is the one of the most respected media placement, digital, advertising and public relations agencies in the business. 
-			With zero debt, a 20-day invoice vendor pay out turnaround, and an A+ credit rating with the D&B, our commitment to quality service 
-			and honest business practice is second to none. A leader among advertising agencies in Miami, 3AWorldwide is also accredited by the 
-			Better Business Bureau. </p>
+			<?php //Formatar o conteudo de $quem_somos->post_content de acordo com os filtros em 'the_content' (adiciona tags Html, etc...) ?>
 
-			<p>Our accreditation and focus on client satisfaction have secured our place as a leading Public Relations firm in Miami and source 
-			of international media planning. Accordingly, 3AWorldwide holds current accreditations with agencies including D&B and the Better 
-			Business Bureau.</p>
+			<?php echo apply_filters( 'the_content', $quem_somos->post_content ); ?>
 
 		</div>
 	</div>
 
 	<!-- Parallax 1 -->
 
-	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-1"></div>
+	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-1">
+		<div class="strong">Liberdade é a nossa inspiração</div>
+		<div class="">para gerar resultados</div>
+	</div>
+
+	<div class="container-fluid equipe">
+
+		<div class="container">
+			
+			<?php //Obter todos os itens da categoria "Equipe" ?>
+
+			<?php 
+				
+				$args = array(
+					'post_type' => 'equipe',
+					'post_status' => 'publish'
+				); 
+
+				$query = new WP_Query($args); ?>
+
+			<?php //Loop ?>
+
+			<?php echo "<pre>"; ?>
+
+			<?php while($query->have_posts()) : $query->the_post();?>
+
+				<?php types_render_field('foto', array('output' => 'raw')); ?>
+
+			<?php endwhile; ?>
+
+		</div>
+		
+	</div>
 
 	<!-- Parallax 2 -->
 
-	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-2"></div>
+	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-2">
+		<div class="strong">Liberdade é a nossa inspiração</div>
+		<div class="">para gerar resultados</div>
+	</div>
 
 	<!-- Parallax 3 -->
 
-	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-3"></div>
+	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-3">
+		<div class="strong">Liberdade é a nossa inspiração</div>
+		<div class="">para gerar resultados</div>
+	</div>
 
 <?php get_footer() ?>

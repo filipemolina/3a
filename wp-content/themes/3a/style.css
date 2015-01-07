@@ -139,6 +139,10 @@ Theme Name: 3A WorldWide
 /*--------------------------------------------------------------------------------------------------------------------
 | Genéricos
 --------------------------------------------------------------------------------------------------------------------*/
+body
+{
+	overflow-x: hidden;
+}
 
 .titulo
 {
@@ -228,6 +232,21 @@ ul#menu-principal a.ativo
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
+| Hero Unit
+--------------------------------------------------------------------------------------------------------------------*/
+
+.hero-unit
+{
+	background: url('img/hero-unit/foto_rj.png') no-repeat center center;
+	background-size: cover;
+}
+
+.hero-unit img
+{
+	margin-left: 300px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
 | Quem Somos
 --------------------------------------------------------------------------------------------------------------------*/
 
@@ -251,19 +270,34 @@ ul#menu-principal a.ativo
 {
 	height: 300px;
 	margin: 50px 0;
+	padding: 100px 0;
+}
+
+.parallax div
+{
+	font-family: 'verlag-light';
+	font-size: 35px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.parallax div.strong
+{
+	font-family: 'verlag-bold';
 }
 
 #parallax-1
 {
-	background: url('img/parallax/cidade.jpg') center center no-repeat;
+	background: url('img/parallax/bg_pb.jpg') center center no-repeat;
 }
 
 #parallax-2
 {
-	background: url('img/parallax/cidade.jpg') center center no-repeat;
+	background: url('img/parallax/bg_azul.jpg') center center no-repeat;
 }
 
 #parallax-3
 {
-	background: url('img/parallax/cidade.jpg') center center no-repeat;
+	background: url('img/parallax/bg_pb.jpg') center center no-repeat;
 }
