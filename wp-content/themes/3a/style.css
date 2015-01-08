@@ -211,6 +211,7 @@ nav.menu
 { 
     background-color: #e6e7e8;
     border: 0;
+    z-index: 11000;
 }
 
 ul#menu-principal 
