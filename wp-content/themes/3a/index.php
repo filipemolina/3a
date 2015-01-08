@@ -64,7 +64,16 @@
 					
 					<div class="col-md-3 container-image">
 
-						<div class="overlay-hover"></div>
+						<div class="overlay-hover">
+
+							<div class="nome"> 
+								<div><?php echo the_title(); ?></div> 
+							</div>
+
+							<p class="cargo"><?php echo types_render_field('cargo', array('raw' => 'true')); ?></p>
+
+							<p class="bio"><?php echo the_content(); ?></p>
+						</div>
 
 						<img class="img-responsive zoom-image" src='<?php echo types_render_field('foto', array('raw' => 'true')); ?>'/>
 

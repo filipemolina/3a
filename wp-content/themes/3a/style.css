@@ -343,7 +343,7 @@ ul#menu-principal a.ativo
 
 .container-image .overlay-hover{
     
-    display: none;
+    /*display: block;*/
     position: absolute;
     opacity: 0;
     
@@ -357,6 +357,8 @@ ul#menu-principal a.ativo
     width: 100%;
     height: 100%;
     background: #000000;
+
+    opacity: 0.8;
 
 }
 
@@ -373,19 +375,48 @@ ul#menu-principal a.ativo
 { 
     transform: scale(1.2); 
 }
-.blocos-premios img{
+
+.container-image .nome
+{
+	display: table;
+	width: 100%;
+}
+
+.container-image .nome div
+{
+	font-family: verlag-black;
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: center;
+	display: table-cell;
+
+	border-bottom: 2px solid #868585;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Prêmios
+--------------------------------------------------------------------------------------------------------------------*/
+
+.blocos-premios img
+{
     background-color: #f4f4f4;
 }
-.blocos-premios h3{
+
+.blocos-premios h3
+{
      font-family: 'verlag-bold';
      font-size: 18px;
      color: #231f20;
 }
-.blocos-premios p{
+
+.blocos-premios p
+{
     font-family: 'verlag-book';
     font-size: 15px;
     color:#7c7c7d;
 }
+
 /*--------------------------------------------------------------------------------------------------------------------
 | Parallax
 --------------------------------------------------------------------------------------------------------------------*/
