@@ -37,20 +37,30 @@
 
 	<!-- Menu Superior -->
 
-	<div class="container-fluid menu navbar-fixed-top">
+	<nav class="menu navbar navbar-default navbar-fixed-top">
 
 		<div class="container">
 
-			<!-- Logo -->
-			
-			<div class="logo3a">
-				<img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="">
-			</div>
+			<!-- A Logo e o Toggle ficam agrupados para melhorar a experiência Mobile -->
+
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
+				    <span class="sr-only">Navegação</span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="#"><img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
+		    </div>
 
 			<!-- Menu -->
 
-			<?php wp_nav_menu(['container_class' => 'principal', 'container' => 'nav']); ?>
+		    <div class="collapse navbar-collapse" id="menu-collapse">
+
+		    	<?php wp_nav_menu(array('menu_class' => 'nav navbar-nav navbar-right menu', 'container_class' => '', 'container' => '')); ?>
+
+		    </div>
 
 		</div>
 	
-	</div>
+	</nav>

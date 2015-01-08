@@ -207,9 +207,10 @@ div.overlay.inativo
 | Menu Superior
 --------------------------------------------------------------------------------------------------------------------*/
 
-.container-fluid.menu 
+nav.menu 
 { 
-	background-color: #e6e7e8; 
+	background-color: #e6e7e8;
+	border: 0;
 }
 
 ul#menu-principal 
@@ -219,9 +220,10 @@ ul#menu-principal
 
 ul#menu-principal a 
 { 
-	display: inline-block;
 	padding: 23px 20px 20px 20px;
 	margin-left: -4px;
+
+	line-height: normal;
 	
 	text-decoration: none;
 	color: #5d5b5c;
@@ -241,6 +243,7 @@ ul#menu-principal a:hover
 {
 	text-decoration: none;
 	color: #000;
+	background-color: transparent;
 
 	-webkit-transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in;
@@ -270,6 +273,22 @@ ul#menu-principal a.ativo
 	display: inline; 
 }
 
+.menu .navbar-brand
+{
+	padding: 0;
+	max-height: 100%;
+	height: auto;
+}
+
+.menu .navbar-brand img
+{
+	max-height: 100%
+}
+
+.menu .navbar-toggle
+{
+	margin-top: 13px;
+}
 /*--------------------------------------------------------------------------------------------------------------------
 | Hero Unit
 --------------------------------------------------------------------------------------------------------------------*/
@@ -303,10 +322,20 @@ ul#menu-principal a.ativo
 .equipe .col-md-3{
     padding: 0;
 }
-.container-image{overflow:hidden;}
-.zoom-image { transition: all .5s ease-in-out; }
-.zoom-image:hover { transform: scale(1.2); }
 
+.container-image
+{
+	overflow:hidden;
+}
+
+.zoom-image 
+{ 
+	transition: all .4s ease-in-out; 
+}
+
+.zoom-image:hover 
+{ 
+	transform: scale(1.2); 
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
