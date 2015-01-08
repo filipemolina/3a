@@ -335,17 +335,15 @@ ul#menu-principal a.ativo
 }
 .container-image:hover .overlay-hover
 {
-    
     opacity: 0.8;
     display: block;
-    
-    
 }
 
 .container-image .overlay-hover{
     
-    /*display: block;*/
+    display: none;
     position: absolute;
+    padding: 110px 0 0 0;
     opacity: 0;
     
     -webkit-transition: all 1s ease-in;
@@ -359,8 +357,25 @@ ul#menu-principal a.ativo
     height: 100%;
     background: #000000;
 
-    opacity: 0.8;
+}
 
+.overlay-hover p.cargo 
+{
+	font-family: verlag-book;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	margin-top: 5px;
+}
+
+div.bio p 
+{
+	font-family: verlag-light;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	padding: 0 25px;
 }
 
 .zoom-image 
@@ -381,18 +396,18 @@ ul#menu-principal a.ativo
 {
 	display: table;
 	width: 100%;
+	text-align: center;
 }
 
-.container-image .nome div
+.container-image .nome span
 {
 	font-family: verlag-black;
 	color: #fff;
 	font-size: 22px;
 	text-transform: uppercase;
 	text-align: center;
-	display: table-cell;
-
 	border-bottom: 2px solid #868585;
+	padding: 0 10px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
