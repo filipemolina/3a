@@ -297,11 +297,16 @@ ul#menu-principal a.ativo
 {
 	background: url('img/hero-unit/foto_rj.png') no-repeat center center;
 	background-size: cover;
+	max-width: 100%;
+	position: relative;
+	height: 834px;
 }
 
 .hero-unit img
 {
-	margin-left: 300px;
+	left: 50%;
+	position: absolute;
+	margin-left: -375px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------

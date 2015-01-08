@@ -28,8 +28,8 @@
 	<!-- Parallax 1 -->
 
 	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-1">
-		<div class="strong">Liberdade é a nossa inspiração</div>
-		<div class="">para gerar resultados</div>
+		<div class="strong wow zommIn">Liberdade é a nossa inspiração</div>
+		<div class="wow zoomIn">para gerar resultados</div>
 	</div>
 
 	<div class="container-fluid equipe">
@@ -83,15 +83,15 @@
 	<!-- Parallax 2 -->
 
 	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-2">
-		<div class="strong">Liberdade é a nossa inspiração</div>
-		<div class="">para gerar resultados</div>
+		<div class="strong wow zoomIn">Liberdade é a nossa inspiração</div>
+		<div class="wow zoomIn">para gerar resultados</div>
 	</div>
 
 	<!-- Parallax 3 -->
 
 	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-3">
-		<div class="strong">Liberdade é a nossa inspiração</div>
-		<div class="">para gerar resultados</div>
+		<div class="strong wow zoomIn">Liberdade é a nossa inspiração</div>
+		<div class="wow zoomIn">para gerar resultados</div>
 	</div>
 
 <?php get_footer() ?>
