@@ -45,18 +45,27 @@
 					'post_status' => 'publish'
 				); 
 
-				$query = new WP_Query($args); ?>
+				$query = new WP_Query($args);
+				$i = 0; ?>
+
 
 			<?php //Loop ?>
 
-			<?php echo "<pre>"; ?>
-
+		
 			<?php while($query->have_posts()) : $query->the_post();?>
+				
+				<?php if ($i % 4 == 0): ?>
+					<div class="row">
+				<?php endif;?>
 
-				<?php types_render_field('foto', array('output' => 'raw')); ?>
+					<div class="col-md-3"><img class="img-responsive" src='<?php echo types_render_field('foto', array('raw' => 'true')); ?>'/></div>
 
+				<?php if (($i + 1) % 4 == 0 || $query->post_count == $i+1):  ?>
+					</div>
+				<?php endif; ?>
+
+			<?php $i++; ?>
 			<?php endwhile; ?>
-
 		</div>
 		
 	</div>
