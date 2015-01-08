@@ -32,7 +32,7 @@ jQuery(window).load(function(){
 
 	//Adicionar os efeitos à todos os parágrafos
 
-	$("p").addClass("wow fadeInRight");
+	$(".quem-somos p").addClass("wow fadeInRight");
 
 	wow.init();
 
