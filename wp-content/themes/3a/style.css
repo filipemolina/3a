@@ -141,66 +141,66 @@ Theme Name: 3A WorldWide
 --------------------------------------------------------------------------------------------------------------------*/
 body
 {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .hidden
 {
-	opacity: 0;
+    opacity: 0;
 }
 
 .visible
 {
-	opacity: 1;
+    opacity: 1;
 }
 
 div.overlay
 {
-	opacity:    1; 
-	background: #000; 
-	width:      100%;
-	height:     100%; 
-	z-index:    10000;
-	top:        0; 
-	left:       0; 
-	position:   fixed;
+    opacity:    1; 
+    background: #000; 
+    width:      100%;
+    height:     100%; 
+    z-index:    10000;
+    top:        0; 
+    left:       0; 
+    position:   fixed;
 
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 div.overlay.inativo
 {
-	opacity: 0; 
+    opacity: 0; 
 
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .titulo
 {
-	margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .titulo h2 
 {
-	font-size: 65px;
-	text-transform: uppercase;
-	font-family: verlag-bold;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: verlag-bold;
 }
 
 .titulo .borda-azul 
 {
-	background-color: #4579bd;
-	height: 4px;
-	width: 143px;
-	margin-top: 20px;
+    background-color: #4579bd;
+    height: 4px;
+    width: 143px;
+    margin-top: 20px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -209,85 +209,85 @@ div.overlay.inativo
 
 nav.menu 
 { 
-	background-color: #e6e7e8;
-	border: 0;
+    background-color: #e6e7e8;
+    border: 0;
 }
 
 ul#menu-principal 
 { 
-	margin-bottom: 0; 
+    margin-bottom: 0; 
 }
 
 ul#menu-principal a 
 { 
-	padding: 23px 20px 20px 20px;
-	margin-left: -4px;
+    padding: 23px 20px 20px 20px;
+    margin-left: -4px;
 
-	line-height: normal;
-	
-	text-decoration: none;
-	color: #5d5b5c;
-	font-size: 9pt;
-	font-family: 'verlag-book';
-	text-transform: uppercase;
+    line-height: normal;
+    
+    text-decoration: none;
+    color: #5d5b5c;
+    font-size: 9pt;
+    font-family: 'verlag-book';
+    text-transform: uppercase;
 
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
-	
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    
 }
 
 ul#menu-principal a:hover
 {
-	text-decoration: none;
-	color: #000;
-	background-color: transparent;
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
 
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 ul#menu-principal a.ativo
 {
-	background-color: #716f70;
-	color: #e6e7e8;
+    background-color: #716f70;
+    color: #e6e7e8;
 }
 
 .menu .logo3a 
 { 
-	float: left; 
+    float: left; 
 }
 
 .menu nav.principal 
 { 
-	float: right 
+    float: right 
 }
 
 .menu #menu-principal li 
 { 
-	display: inline; 
+    display: inline; 
 }
 
 .menu .navbar-brand
 {
-	padding: 0;
-	max-height: 100%;
-	height: auto;
+    padding: 0;
+    max-height: 100%;
+    height: auto;
 }
 
 .menu .navbar-brand img
 {
-	max-height: 100%
+    max-height: 100%
 }
 
 .menu .navbar-toggle
 {
-	margin-top: 13px;
+    margin-top: 13px;
 }
 /*--------------------------------------------------------------------------------------------------------------------
 | Hero Unit
@@ -315,14 +315,14 @@ ul#menu-principal a.ativo
 
 .container.quem-somos 
 {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 .quem-somos p
 {
-	font-family: 'verlag-book';
-	font-size: 18px;
-	max-width: 935px;
+    font-family: 'verlag-book';
+    font-size: 18px;
+    max-width: 935px;
 }
 .equipe .col-md-3{
     padding: 0;
@@ -330,55 +330,98 @@ ul#menu-principal a.ativo
 
 .container-image
 {
-	overflow:hidden;
+    overflow:hidden;
+}
+.container-image:hover .overlay-hover
+{
+    
+    opacity: 0.8;
+    display: block;
+    
+    
+}
+
+.container-image .overlay-hover{
+    
+    display: none;
+    position: absolute;
+    opacity: 0;
+    
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+
 }
 
 .zoom-image 
 { 
-	transition: all .4s ease-in-out; 
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
 }
 
-.zoom-image:hover 
+.container-image:hover .zoom-image 
 { 
-	transform: scale(1.2); 
+    transform: scale(1.2); 
 }
-
+.blocos-premios img{
+    background-color: #f4f4f4;
+}
+.blocos-premios h3{
+     font-family: 'verlag-bold';
+     font-size: 18px;
+     color: #231f20;
+}
+.blocos-premios p{
+    font-family: 'verlag-book';
+    font-size: 15px;
+    color:#7c7c7d;
+}
 /*--------------------------------------------------------------------------------------------------------------------
 | Parallax
 --------------------------------------------------------------------------------------------------------------------*/
 
 .parallax
 {
-	height: 300px;
-	margin: 50px 0;
-	padding: 100px 0;
+    height: 300px;
+    margin: 50px 0;
+    padding: 100px 0;
 }
 
 .parallax div
 {
-	font-family: 'verlag-light';
-	font-size: 35px;
-	text-align: center;
-	color: #fff;
-	text-transform: uppercase;
+    font-family: 'verlag-light';
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .parallax div.strong
 {
-	font-family: 'verlag-bold';
+    font-family: 'verlag-bold';
 }
 
 #parallax-1
 {
-	background: url('img/parallax/bg_pb.jpg') center center no-repeat;
+    background: url('img/parallax/bg_pb.jpg') center center no-repeat;
 }
 
 #parallax-2
 {
-	background: url('img/parallax/bg_azul.jpg') center center no-repeat;
+    background: url('img/parallax/bg_azul.jpg') center center no-repeat;
 }
 
 #parallax-3
 {
-	background: url('img/parallax/bg_pb.jpg') center center no-repeat;
+    background: url('img/parallax/bg_pb.jpg') center center no-repeat;
 }
