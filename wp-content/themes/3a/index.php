@@ -62,7 +62,7 @@
 
 					<!-- Mostrar a Div com a foto -->
 
-					<div class="col-md-3"><img class="img-responsive" src='<?php echo types_render_field('foto', array('raw' => 'true')); ?>'/></div>
+					<div class="col-md-3 container-image"><img class="img-responsive zoom-image" src='<?php echo types_render_field('foto', array('raw' => 'true')); ?>'/></div>
 
 
 				<?php if (($i + 1) % 4 == 0 || $query->post_count == $i+1):  ?>

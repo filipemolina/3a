@@ -303,6 +303,11 @@ ul#menu-principal a.ativo
 .equipe .col-md-3{
     padding: 0;
 }
+.container-image{overflow:hidden;}
+.zoom-image { transition: all .5s ease-in-out; }
+.zoom-image:hover { transform: scale(1.2); }
+
+}
 
 /*--------------------------------------------------------------------------------------------------------------------
 | Parallax
