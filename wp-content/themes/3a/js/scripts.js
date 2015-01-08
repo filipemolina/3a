@@ -1,10 +1,40 @@
-jQuery(document).ready(function($){
+jQuery(window).load(function(){
+
+	/*----------------------------------------
+	| Utilizar a forma mais comum do jQuery
+	----------------------------------------*/
+
+	$ = jQuery;
+
+	/*---------------------------------
+	| Retirar o Overlay
+	---------------------------------*/
+
+	$("div.overlay").addClass('inativo');
+	
+	window.setTimeout(function(){ 
+		$("div.overlay").remove(); 
+	}, 500);
 
 	/*---------------------------------
 	| Plugin Stellar.js de Parallax
 	---------------------------------*/
 
 	$.stellar();
+
+	/*------------------------------------------------------------------------------
+	| Plugin para mostrar elementos apenas quando entrarem na tela
+	------------------------------------------------------------------------------*/
+
+	var wow = new WOW({
+			offset : 100
+	});
+
+	//Adicionar os efeitos à todos os parágrafos
+
+	$("p").addClass("wow fadeInRight");
+
+	wow.init();
 
 	/*---------------------------------
 	| Menu Superior

@@ -13,7 +13,7 @@
 	
 			<!-- Título com a barrinha azul -->
 
-			<div class="titulo">
+			<div class="titulo wow fadeInLeft">
 				<h2><?php echo $quem_somos->post_title; ?></h2>
 				<div class="borda-azul"></div>
 			</div>	
@@ -49,11 +49,9 @@
 
 			<?php //Loop ?>
 
-			<?php echo "<pre>"; ?>
-
 			<?php while($query->have_posts()) : $query->the_post();?>
 
-				<?php types_render_field('foto', array('output' => 'raw')); ?>
+				<?php echo types_render_field('cargo', array('raw' => 'true')); ?>
 
 			<?php endwhile; ?>
 

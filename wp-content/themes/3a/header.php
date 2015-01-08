@@ -31,6 +31,10 @@
 
 <body <?php body_class(); ?>>
 
+	<!-- Overlay de Carregamento da Página -->
+
+	<div class="overlay"></div>
+
 	<!-- Menu Superior -->
 
 	<div class="container-fluid menu navbar-fixed-top">
