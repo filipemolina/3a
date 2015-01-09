@@ -49,7 +49,7 @@
 
 				$query = new WP_Query($args);
 				$i = 0; 
-				$velocidade = 0.1; ?>
+				$velocidade = 0.1; //Diferença de tempo entre a abertura de cada foto nesta seção?>
 
 			<!-- Iniciar o Loop Equipe -->
 			
