@@ -186,6 +186,7 @@ div.overlay.inativo
 .titulo
 {
     margin-bottom: 25px;
+    margin-top: 100px;
 }
 
 .titulo h2 
@@ -379,16 +380,22 @@ div.bio p
 
 .zoom-image 
 { 
-    -webkit-transition: all 0.4s ease-in;
-    -moz-transition: all 0.4s ease-in;
-    -ms-transition: all 0.4s ease-in;
-    -o-transition: all 0.4s ease-in;
-    transition: all 0.4s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 .container-image:hover .zoom-image 
 { 
-    transform: scale(1.2); 
+    transform: scale(1.2);
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .container-image .nome
@@ -433,12 +440,20 @@ div.bio p
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
+| Estrutura
+--------------------------------------------------------------------------------------------------------------------*/
+
+.container-fluid.estrutura
+{
+	background-color: #e8e8e8;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
 | Parallax
 --------------------------------------------------------------------------------------------------------------------*/
 
 .parallax
 {
-    height: 300px;
     margin: 50px 0;
     padding: 100px 0;
 }
@@ -470,4 +485,90 @@ div.bio p
 #parallax-3
 {
     background: url('img/parallax/bg_pb.jpg') center center no-repeat;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Media Queries
+--------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 1200px) {
+	
+	.hero-unit img
+	{
+		margin-left: -518px;
+	}
+
+}
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        padding-right: 15px;
+		padding-left: 15px;
+		overflow-x: hidden !important;
+		overflow-y: scroll !important
+		-webkit-overflow-scrolling: touch;
+		border-top: 1px solid transparent;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin: 7.5px -15px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+  		visibility: visible;
+	}
+	.navbar-collapse.in 
+	{
+		overflow-x: hidden !important;
+		overflow-y: scroll !important
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form 
+	{
+		border-color: #e7e7e7;
+	}
+	.container>.navbar-collapse, .container-fluid>.navbar-collapse 
+	{
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse 
+	{
+		max-height: 340px;
+	}
+	.nav 
+	{
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+	}
+	.nav>li 
+	{
+		position: relative;
+	}
 }
