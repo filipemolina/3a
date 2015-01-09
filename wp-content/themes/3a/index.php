@@ -15,17 +15,21 @@
 		<div class="wow zoomIn">para gerar resultados</div>
 	</div>
 
-	<!-- Sessão Equipe -->
+	<!-- Seção Equipe -->
 
 	<?php get_template_part('sections/equipe'); ?>
 
-	<!-- Sessão Premios -->
+	<!-- Seção Premios -->
 
 	<?php get_template_part('sections/premios'); ?>
 
-	<!-- Sessão Estrutura -->
+	<!-- Seção Estrutura -->
 
 	<?php get_template_part('sections/estrutura'); ?>
+
+	<!-- Seção Serviços -->
+
+	<?php get_template_part('sections/servicos'); ?>
 
 
 	<!-- Parallax 2 -->

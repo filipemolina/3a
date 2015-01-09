@@ -450,6 +450,50 @@ div.bio p
 	background-color: #e8e8e8;
 }
 
+.servicos .titulo h2
+{
+	color: #fff;
+}
+
+.servicos .titulo .borda-azul
+{
+	background-color: #231f20;
+}
+
+.servicos p
+{
+	color: white;
+	font-family: 'verlag-book';
+	font-size: 18px;
+}
+
+.servicos .item 
+{
+	background-color: #4e80c0;
+	text-align: center;
+	padding: 83px;
+	cursor: pointer;
+}
+
+.servicos .abas
+{
+	margin-top: 100px;
+}
+
+.servicos .conteudo
+{
+	min-height: 120px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Serviços
+--------------------------------------------------------------------------------------------------------------------*/
+
+.container-fluid.servicos
+{
+	background-color: #4579bd;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------
 | Parallax
 --------------------------------------------------------------------------------------------------------------------*/
