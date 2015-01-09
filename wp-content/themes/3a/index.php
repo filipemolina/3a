@@ -64,7 +64,7 @@
 
 					<!-- Mostrar a Div com a foto -->
 					
-					<div class="col-md-3 container-image">
+					<div class="col-md-3 container-image wow flipInY">
 
 						<div class="overlay-hover">
 
