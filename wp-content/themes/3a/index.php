@@ -37,7 +37,7 @@
 
 	<!-- Parallax 3 -->
 
-	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-3">
+	<div class="parallax" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="150" id="parallax-3">
 		<div class="strong wow zoomIn">Liberdade é a nossa inspiração</div>
 		<div class="wow zoomIn">para gerar resultados</div>
 	</div>
