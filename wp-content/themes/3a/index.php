@@ -28,7 +28,7 @@
 	<!-- Parallax 1 -->
 
 	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-1">
-		<div class="wow zommIn strong ">Liberdade é a nossa inspiração</div>
+		<div class="strong wow zoomIn">Liberdade é a nossa inspiração</div>
 		<div class="wow zoomIn">para gerar resultados</div>
 	</div>
 
@@ -48,7 +48,8 @@
 				); 
 
 				$query = new WP_Query($args);
-				$i = 0; ?>
+				$i = 0; 
+				$velocidade = 0.1; ?>
 
 			<!-- Iniciar o Loop Equipe -->
 			
@@ -64,7 +65,7 @@
 
 					<!-- Mostrar a Div com a foto -->
 					
-					<div class="col-md-3 container-image wow flipInY">
+					<div class="col-md-3 container-image wow flipInY" data-wow-delay="<?php echo ($i+1) * $velocidade ?>s">
 
 						<div class="overlay-hover">
 
