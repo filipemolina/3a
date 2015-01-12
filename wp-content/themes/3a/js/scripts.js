@@ -73,6 +73,8 @@ jQuery(window).load(function(){
 
 		$(".servicos .item").removeClass("ativo");
 
+		$("div.espacamento").css('height', 0);
+
 		$(this).addClass("ativo");
 
 		//Mostrar apenas o texto do serviço clicado
