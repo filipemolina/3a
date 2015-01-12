@@ -39,6 +39,8 @@
 		<div class="wow zoomIn">para gerar resultados</div>
 	</div>
 
+	<?php get_template_part('sections/portfolio'); ?>
+
 	<!-- Parallax 3 -->
 
 	<div class="parallax" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="150" id="parallax-3">
