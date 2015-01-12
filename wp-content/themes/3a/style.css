@@ -326,6 +326,9 @@ ul#menu-principal a.ativo
     font-size: 18px;
     max-width: 935px;
 }
+.equipe{
+    background: #e6e7e8;
+}
 .equipe .col-md-3{
     padding: 0;
 }
