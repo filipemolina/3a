@@ -453,6 +453,10 @@ div.bio p
 	background-color: #e8e8e8;
 }
 
+/*--------------------------------------------------------------------------------------------------------------------
+| Serviços
+--------------------------------------------------------------------------------------------------------------------*/
+
 .servicos .titulo h2
 {
 	color: #fff;
@@ -468,14 +472,85 @@ div.bio p
 	color: white;
 	font-family: 'verlag-book';
 	font-size: 18px;
+	float: left;
 }
+
+/*************************** Ícones ***************************/
 
 .servicos .item 
 {
 	background-color: #4e80c0;
 	text-align: center;
-	padding: 83px;
+	padding: 83px 25px;
 	cursor: pointer;
+	height: 219px;
+}
+
+/* Ícones em posição normal */
+
+.servicos .item.midia .icone
+{
+	background-image: url('img/servicos/ico_midia_full.png');
+	height: 50px;
+	width: 54px;
+	margin-left: 85px;
+}
+
+.servicos .item.relacoes .icone
+{
+	background-image: url('img/servicos/ico_relacoes_full.png');
+	height: 50px;
+	width: 46px;
+	margin: 0 auto;
+}
+
+.servicos .item.digital .icone
+{
+	background-image: url('img/servicos/ico_digital_full.png');
+	height: 50px;
+	width: 62px;
+	margin: 0 auto;
+}
+
+.servicos .item.criacao .icone
+{
+	background-image: url('img/servicos/ico_criacao_full.png');
+	height: 50px;
+	width: 41px;
+	margin: 0 auto;
+	background-position-x: -43px;
+}
+
+/* Ícones Clicados */
+
+.servicos .item.ativo.midia .icone    { background-position-x: -56px; }
+.servicos .item.ativo.relacoes .icone { background-position-x: -48px; }
+.servicos .item.ativo.digital .icone  { background-position-x: -63px; }
+.servicos .item.ativo.criacao .icone  { background-position-x: -1px; }
+
+.servicos .item.ativo .caption
+{
+	color: #4579bd;
+}
+
+.servicos .item.relacoes
+{
+	background-image: url('');
+}
+
+.servicos .item.digital
+{
+	background-image: url('');
+}
+
+.servicos .item.criacao
+{
+	background-image: url('');
+}
+
+.servicos .item.ativo
+{
+	background-color: #fff;
 }
 
 .servicos .abas
@@ -483,18 +558,94 @@ div.bio p
 	margin-top: 100px;
 }
 
-.servicos .conteudo
+.servicos .abas .caption
 {
-	min-height: 120px;
+	font-family: 'verlag-black';
+	font-size: 20px;
+	color: white;
+	margin-top: 5px;
 }
-
-/*--------------------------------------------------------------------------------------------------------------------
-| Serviços
---------------------------------------------------------------------------------------------------------------------*/
 
 .container-fluid.servicos
 {
 	background-color: #4579bd;
+}
+
+/*************************** Conteúdo ***************************/
+
+.servicos.conteudo
+{
+	background-color: #fff;
+	overflow: hidden;
+	height: 0;
+
+	-webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.servicos.conteudo img.seta
+{
+
+}
+
+.servicos.conteudo div.lista-servicos
+{
+	float: right;
+}
+
+.servicos.conteudo div.lista-servicos ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
+.servicos.conteudo ul li
+{
+	font-family: 'verlag-bold';
+	font-size: 14px;
+	padding-left: 1em; 
+    text-indent: -.7em;
+    text-transform: uppercase;
+}
+
+.servicos.conteudo ul li:before {
+    content: "• ";
+    color: #4579bd;
+    margin-right: 10px;
+}
+
+.servicos .texto
+{
+	display: none;
+}
+
+.servicos .texto.ativo
+{
+	display: block;
+}
+
+.servicos.conteudo img
+{
+	margin: 0 0 20px 0;
+}
+
+.servicos.conteudo.aberto
+{
+	padding: 40px 0 0 0;
+}
+
+.servicos .texto p
+{
+	color: #231f20;
+	max-width: 800px;
+	text-align: justify;
+
+	font-family: "verlag-book";
+	font-size: 18px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
