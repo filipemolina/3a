@@ -42,7 +42,7 @@ jQuery(window).load(function(){
 
 	//Adicionar os efeitos à todos os parágrafos
 
-	$(".quem-somos p, .servicos p").addClass("wow fadeInRight");
+	$(".quem-somos p, .servicos p.principal").addClass("wow fadeInRight");
 
 	wow.init();
 
@@ -63,7 +63,37 @@ jQuery(window).load(function(){
 
 	});
 
-	
+	/*--------------------------------------------------------------------------------
+	| Abas de Serviços
+	--------------------------------------------------------------------------------*/
 
+	$(".servicos .item").click(function(){
+
+		//Adicionar a classe "Ativo" ao item clicacado
+
+		$(".servicos .item").removeClass("ativo");
+
+		$(this).addClass("ativo");
+
+		//Mostrar apenas o texto do serviço clicado
+
+		$(".servicos .texto").removeClass("ativo");
+
+		$(".servicos .texto." + $(this).data('texto')).addClass("ativo");
+
+		//Animar a altura da div
+
+		console.log("clicou");
+
+		$("div.conteudo.servicos").stop().animate( { height : "300px" }, 0, "linear", function(){
+
+			//Adicionar a classe "aberto" à div
+
+			$("div.conteudo.servicos").addClass("aberto")
+
+
+		});
+
+	});
 
 });
