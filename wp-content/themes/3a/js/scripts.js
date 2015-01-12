@@ -26,13 +26,11 @@ jQuery(window).load(function(){
         nextText : "",
         start : function()
         {
+        	//Plugin Stellar.js de parallax
+
         	$.stellar();
         }
     });
-
-	/*---------------------------------
-	| Plugin Stellar.js de Parallax
-	---------------------------------*/
 
 	/*------------------------------------------------------------------------------
 	| Plugin para mostrar elementos apenas quando entrarem na tela
@@ -44,13 +42,13 @@ jQuery(window).load(function(){
 
 	//Adicionar os efeitos à todos os parágrafos
 
-	$(".quem-somos p").addClass("wow fadeInRight");
+	$(".quem-somos p, .servicos p").addClass("wow fadeInRight");
 
 	wow.init();
 
-	/*---------------------------------
+	/*--------------------------------------------------------------------------------
 	| Menu Superior
-	---------------------------------*/
+	--------------------------------------------------------------------------------*/
 
 	//Evitar que os links do Menu principal recarreguem a página
 	//e alternar entre os links com a classe "ativo"
