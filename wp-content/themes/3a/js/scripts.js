@@ -1,3 +1,13 @@
+
+
+//Função que reinicia os parallaxes quando o conteúdo é movido ou redirecionado
+
+function parallaxRestart()
+{
+	$(window).data('plugin_stellar').destroy();
+	$(window).data('plugin_stellar').init();
+}
+
 jQuery(window).load(function(){
 
 	/*----------------------------------------
@@ -42,7 +52,7 @@ jQuery(window).load(function(){
 
 	//Adicionar os efeitos à todos os parágrafos
 
-	$(".quem-somos p, .servicos p.principal").addClass("wow fadeInRight");
+	$(".quem-somos p, .servicos .principal p").addClass("wow fadeInRight");
 
 	wow.init();
 
@@ -91,8 +101,9 @@ jQuery(window).load(function(){
 
 			//Adicionar a classe "aberto" à div
 
-			$("div.conteudo.servicos").addClass("aberto")
+			$("div.conteudo.servicos").addClass("aberto");
 
+			parallaxRestart();
 
 		});
 

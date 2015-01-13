@@ -1,18 +1,25 @@
+<?php
+
+	//Obter os dados da página "Serviços"
+
+	$servicos = get_page_by_title("Serviços");
+
+?>
+
 <div class="container-fluid servicos">
 	
 	<div class="container">
 		
-		<div class="row">
+		<div class="row principal">
 			
 			<!-- Título com a barrinha azul -->
 
 			<div class="titulo wow fadeInLeft">
-				<h2>Serviços</h2>
+				<h2><?php echo $servicos->post_title; ?></h2>
 				<div class="borda-azul"></div>
 			</div>
 
-			<p class="principal">3A Worldwide fornece ideias, informações e planejamento para as marcas em todo o mundo, principalmente na América do Norte,
-			América Latina e no Caribe. Com base no sul da Flórida, empregando profissionais de mídia especializados em todas as plataformas.</p>
+			<?php echo apply_filters("the_content", $servicos->post_content); ?>
 
 		</div>
 
@@ -73,23 +80,29 @@
 				); 
 
 				$query = new WP_Query($args);
-				$i = 0; 
+				$i = 0;
+
+				//Obter a categoria
+
+				$midia = get_category_by_slug('midia');
 
 			?>
+
+			<!-- Imagem da seta -->
 
 			<div class="seta">
 				<img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt="">
 			</div>
 
-			<p>Através da nossa rede mundial de contatos de mídia, temos a capacidade única de obter o máximo de valor do seu orçamento de planejamento de mídia, 
-			fazendo com que nossos clientes atinjam diretamente seu público-alvo. Nossas estratégias se adaptam às necessidades de cada cliente. A partir do 
-			departamento de planejamento de mídia, desenvolvemos planos usando a mídia mais adequada para atingir sua meta. Analizamos o mercado e selecionamos, 
-			entre todas as possibilidades (tv, rádio, imprensa, revistas, internet e outros), a melhor opção para você. Na 3A Worldwide estamos sempre atualizados 
-			para que possamos implementar as estratégias de acordo com a situação de mídia atual.</p>
+			<!-- Descrição da categoria -->
+
+			<p class="fadeIn animated"><?php echo $midia->description; ?></p>
+
+			<!-- Lista de serviços dessa categoria -->
 	
 			<div class="lista-servicos">
 
-				<ul>
+				<ul class="fadeIn animated">
 						
 					<?php while($query->have_posts()) : $query->the_post(); ?>
 
@@ -116,22 +129,29 @@
 				); 
 
 				$query = new WP_Query($args);
-				$i = 0; 
+				$i = 0;
+
+				//Obter a categoria
+
+				$relacoes = get_category_by_slug("relacoes-publicas");
 
 			?>
+
+			<!-- Imagem da seta -->
 
 			<div class="seta">
 				<img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt="">
 			</div>
 
-			<p>Oferecemos uma lista de serviços de relações públicas e eventos que atravessam fronteiras tanto para líderes de mercado quanto para clientes diretos. 
-			Somos especializados em diversas áreas, com profissionais trazendo uma experiência valiosa para cada uma de nossas especialidades. Como uma das 
-			principais empresas de relações públicas da América Latina, estamos prontos com um conjunto de habilidades para trazer especialização ao seu projeto, 
-			seja ele gestão de crises ou gestão de eventos.</p>
+			<!-- Descrição da categoria -->
+
+			<p class="fadeIn animated"><?php echo $relacoes->description; ?></p>
+
+			<!-- Lista de serviços desta categoria -->
 
 			<div class="lista-servicos">
 
-				<ul>
+				<ul class="fadeIn animated">
 
 					<?php while($query->have_posts()) : $query->the_post(); ?>
 
@@ -158,23 +178,29 @@
 				); 
 
 				$query = new WP_Query($args);
-				$i = 0; 
+				$i = 0;
+
+				//Obter a categoria
+
+				$digital = get_category_by_slug("digital");
 
 			?>
+
+			<!-- Imagem da seta -->
 
 			<div class="seta">
 				<img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt="">
 			</div>
 
-			<p>Reconhecemos que a mídia digital é uma parte crucial da estratégia de marketing, em particular no que diz respeito a novas marcas. Somos uma equipe 
-			apaixonada, criativa e experiente, disposta a alcançar o maior número de visitar nos websites dos nossos clientes. Por essa razão escutamos 
-			cuidadosamente os nossos clientes, os entendemos. Criamos, desenvolvemos e implementamos uma estratégia digital e medimos os resultados. Não podemos 
-			esquecer que a Internet é mais do que tecnologia. É um tipo de comunicação, interação e organização social que nos informa e abre novos caminhos e 
-			possibilidades.</p>
+			<!-- Descrição da categoria -->
+
+			<p class="fadeIn animated"><?php echo $digital->description; ?></p>
+
+			<!-- Lista de serviços desta categoria -->
 
 			<div class="lista-servicos">
 				
-				<ul>
+				<ul class="fadeIn animated">
 				
 					<?php while($query->have_posts()) : $query->the_post(); ?>
 
@@ -203,19 +229,27 @@
 				$query = new WP_Query($args);
 				$i = 0; 
 
+				//Obter a categoria
+
+				$criacao = get_category_by_slug("criacao");
+
 			?>
+
+			<!-- Imagem da seta -->
 
 			<div class="seta">
 				<img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt="">
 			</div>
 
-			<p>Do departamento criativo da 3A Worldwide, gerenciamos a comunicação gráfica e audiovisual através do desenvolvimento de um estudo cuidadoso e 
-			detalhado de cada cliente para obter sempre os melhores resultados. A imagem é um aspecto essencial da identidade de uma marca. Se for implementada 
-			corretamente, ela ajuda no desempenho da empresa e consegue uma maior aceitação dos seus produtos.</p>
+			<!-- Descrição da categoria -->
+
+			<p class="fadeIn animated"><?php echo $criacao->description; ?></p>
+
+			<!-- Lista de serviços desta categoria -->
 
 			<div class="lista-servicos">
 				
-				<ul>
+				<ul class="fadeIn animated">
 					
 					<?php while($query->have_posts()) : $query->the_post(); ?>
 
