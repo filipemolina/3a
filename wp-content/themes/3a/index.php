@@ -48,4 +48,6 @@
 		<div class="wow zoomIn">para gerar resultados</div>
 	</div>
 
+	<?php get_template_part('sections/3ainternacional'); ?>
+
 <?php get_footer() ?>
