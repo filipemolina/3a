@@ -1,7 +1,15 @@
 <!-- Portfolio -->
 
 	<div class="container-fluid portfolio">
+			
+			<!-- Título com a barrinha azul -->
 
+			<div class="container">
+				<div class="titulo wow fadeInLeft">
+					<h2>Portfólio</h2>
+					<div class="borda-azul"></div>
+				</div>
+			</div>
 
 			<?php //Obter todos os itens da categoria "Equipe" ?>
 
