@@ -56,6 +56,10 @@
 
 	<?php get_template_part('sections/mapa'); ?>
 
+	<!-- Contato -->
+
+	<?php get_template_part('sections/contato'); ?>
+	
 	<!-- Formulário de Contato -->
 
 	<?php get_template_part('sections/form-contato'); ?>
