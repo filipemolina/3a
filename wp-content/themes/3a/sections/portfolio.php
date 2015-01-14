@@ -31,10 +31,10 @@
 					<!-- Mostrar a Div com a foto -->
 					
 					<div class="col-md-3 container-image img-portfolio" data-wow-delay="<?php echo ($i+1) * $velocidade ?>s">
-					
-						<div class="overlay-hover">
-						<img class="img-responsive" src='<?php echo types_render_field('logo-do-cliente', array('raw' => 'true')); ?>'/>
-						</div>
+
+						
+						<div class="overlay-hover"></div>
+						<div class="logo-clientes"><img class="img-responsive" src='<?php echo types_render_field('logo-do-cliente', array('raw' => 'true')); ?>'/></div>
 
 						<img class="img-responsive zoom-image" src='<?php echo types_render_field('bg-portfolio', array('raw' => 'true')); ?>'/>
 
