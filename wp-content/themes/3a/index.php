@@ -60,4 +60,8 @@
 
 	<?php get_template_part('sections/form-contato'); ?>
 
+	<!-- Redes Sociais -->
+
+	<?php get_template_part('sections/redes-sociais'); ?>
+
 <?php get_footer() ?>

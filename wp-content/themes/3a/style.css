@@ -961,6 +961,31 @@ div.titulo
    margin-top: 11px;
 }
 
+/*--------------------------------------------------------------------------------------------------------------------
+| Redes Sociais
+--------------------------------------------------------------------------------------------------------------------*/
+
+.container-fluid.redes-sociais
+{
+	background: #4579bd;
+	padding: 49px 0;
+}
+
+.redes-sociais .icone
+{
+	text-align: center
+}
+
+.redes-sociais .icone a 
+{
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 76px;
+	display: block;
+	height: 76px;
+	padding-top: 10px;
+	margin: 0 auto;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------
 | Media Queries
