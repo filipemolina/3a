@@ -137,7 +137,7 @@ Theme Name: 3A WorldWide
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| Genéricos
+| GenÃ©ricos
 --------------------------------------------------------------------------------------------------------------------*/
 body
 {
@@ -318,18 +318,18 @@ ul#menu-principal a[href*="servicos"].ativo
 
 .hero-unit
 {
-	background: url('img/hero-unit/foto_rj.png') no-repeat center center;
-	background-size: cover;
-	max-width: 100%;
-	position: relative;
-	height: 834px;
+    background: url('img/hero-unit/foto_rj.png') no-repeat center center;
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    height: 834px;
 }
 
 .hero-unit img
 {
-	left: 50%;
-	position: absolute;
-	margin-left: -375px;
+    left: 50%;
+    position: absolute;
+    margin-left: -375px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -385,26 +385,26 @@ ul#menu-principal a[href*="servicos"].ativo
 
 .overlay-hover p.cargo 
 {
-	font-family: verlag-book;
-	font-size: 15px;
-	font-weight: bold;
-	color: #fff;
-	text-align: center;
-	margin-top: 5px;
+    font-family: verlag-book;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
 }
 
 div.bio p 
 {
-	font-family: verlag-light;
-	font-size: 14px;
-	color: #fff;
-	text-align: center;
-	padding: 0 25px;
+    font-family: verlag-light;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 0 25px;
 }
 
 .zoom-image 
 { 
-	-webkit-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     -ms-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
@@ -424,26 +424,26 @@ div.bio p
 
 .container-image .nome
 {
-	display: table;
-	width: 100%;
-	text-align: center;
+    display: table;
+    width: 100%;
+    text-align: center;
 }
 
 .container-image .nome span
 {
-	font-family: verlag-black;
-	color: #fff;
-	font-size: 22px;
-	text-transform: uppercase;
-	text-align: center;
-	border-bottom: 2px solid #868585;
-	padding: 0 10px;
+    font-family: verlag-black;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #868585;
+    padding: 0 10px;
 }
 
 /* -------------- END Hover imagens da equipe ------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------
-| Prêmios
+| PrÃªmios
 --------------------------------------------------------------------------------------------------------------------*/
 
 .blocos-premios img
@@ -471,78 +471,78 @@ div.bio p
 
 .container-fluid.estrutura
 {
-	background-color: #e8e8e8;
+    background-color: #e8e8e8;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| Serviços
+| ServiÃ§os
 --------------------------------------------------------------------------------------------------------------------*/
 
 .servicos .titulo h2
 {
-	color: #fff;
+    color: #fff;
 }
 
 .servicos .titulo .borda-azul
 {
-	background-color: #231f20;
+    background-color: #231f20;
 }
 
 .servicos p
 {
-	color: white;
-	font-family: 'verlag-book';
-	font-size: 18px;
-	float: left;
+    color: white;
+    font-family: 'verlag-book';
+    font-size: 18px;
+    float: left;
 }
 
-/*************************** Ícones ***************************/
+/*************************** Ãcones ***************************/
 
 .servicos .item 
 {
-	background-color: #4e80c0;
-	text-align: center;
-	padding: 83px 25px;
-	cursor: pointer;
-	height: 219px;
+    background-color: #4e80c0;
+    text-align: center;
+    padding: 83px 25px;
+    cursor: pointer;
+    height: 219px;
 }
 
-/* Ícones em posição normal */
+/* Ãcones em posiÃ§Ã£o normal */
 
 .servicos .item.midia .icone
 {
-	background-image: url('img/servicos/ico_midia_full.png');
-	height: 50px;
-	width: 54px;
-	margin-left: 85px;
+    background-image: url('img/servicos/ico_midia_full.png');
+    height: 50px;
+    width: 54px;
+    margin-left: 85px;
 }
 
 .servicos .item.relacoes .icone
 {
-	background-image: url('img/servicos/ico_relacoes_full.png');
-	height: 50px;
-	width: 46px;
-	margin: 0 auto;
+    background-image: url('img/servicos/ico_relacoes_full.png');
+    height: 50px;
+    width: 46px;
+    margin: 0 auto;
 }
 
 .servicos .item.digital .icone
 {
-	background-image: url('img/servicos/ico_digital_full.png');
-	height: 50px;
-	width: 62px;
-	margin: 0 auto;
+    background-image: url('img/servicos/ico_digital_full.png');
+    height: 50px;
+    width: 62px;
+    margin: 0 auto;
 }
 
 .servicos .item.criacao .icone
 {
-	background-image: url('img/servicos/ico_criacao_full.png');
-	height: 50px;
-	width: 41px;
-	margin: 0 auto;
-	background-position-x: -43px;
+    background-image: url('img/servicos/ico_criacao_full.png');
+    height: 50px;
+    width: 41px;
+    margin: 0 auto;
+    background-position-x: -43px;
 }
 
-/* Ícones Clicados */
+/* Ãcones Clicados */
 
 .servicos .item.ativo.midia .icone    { background-position-x: -56px; }
 .servicos .item.ativo.relacoes .icone { background-position-x: -48px; }
@@ -551,56 +551,56 @@ div.bio p
 
 .servicos .item.ativo .caption
 {
-	color: #4579bd;
+    color: #4579bd;
 }
 
 .servicos .item.relacoes
 {
-	background-image: url('');
+    background-image: url('');
 }
 
 .servicos .item.digital
 {
-	background-image: url('');
+    background-image: url('');
 }
 
 .servicos .item.criacao
 {
-	background-image: url('');
+    background-image: url('');
 }
 
 .servicos .item.ativo
 {
-	background-color: #fff;
+    background-color: #fff;
 }
 
 .servicos .abas
 {
-	margin-top: 100px;
+    margin-top: 100px;
 }
 
 .servicos .abas .caption
 {
-	font-family: 'verlag-black';
-	font-size: 20px;
-	color: white;
-	margin-top: 5px;
+    font-family: 'verlag-black';
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
 }
 
 .container-fluid.servicos
 {
-	background-color: #4579bd;
+    background-color: #4579bd;
 }
 
-/*************************** Conteúdo ***************************/
+/*************************** ConteÃºdo ***************************/
 
 .servicos.conteudo
 {
-	background-color: #fff;
-	overflow: hidden;
-	height: 0;
+    background-color: #fff;
+    overflow: hidden;
+    height: 0;
 
-	-webkit-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -ms-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
@@ -614,64 +614,64 @@ div.bio p
 
 .servicos.conteudo div.lista-servicos
 {
-	float: right;
+    float: right;
 }
 
 .servicos.conteudo div.lista-servicos ul
 {
-	list-style: none;
-	padding: 0;
-	margin: 0
+    list-style: none;
+    padding: 0;
+    margin: 0
 }
 
 .servicos.conteudo ul li
 {
-	font-family: 'verlag-bold';
-	font-size: 14px;
-	padding-left: 1em; 
+    font-family: 'verlag-bold';
+    font-size: 14px;
+    padding-left: 1em; 
     text-indent: -.7em;
     text-transform: uppercase;
 }
 
 .servicos.conteudo ul li:before {
-    content: "• ";
+    content: "â€¢ ";
     color: #4579bd;
     margin-right: 10px;
 }
 
 .servicos .texto
 {
-	display: none;
+    display: none;
 }
 
 .servicos .texto.ativo
 {
-	display: block;
+    display: block;
 }
 
 .servicos.conteudo img
 {
-	margin: 0 0 20px 0;
+    margin: 0 0 20px 0;
 }
 
 .servicos.conteudo.aberto
 {
-	padding: 40px 0 0 0;
+    padding: 40px 0 0 0;
 }
 
 .servicos .texto p
 {
-	color: #231f20;
-	max-width: 800px;
-	text-align: justify;
+    color: #231f20;
+    max-width: 800px;
+    text-align: justify;
 
-	font-family: "verlag-book";
-	font-size: 18px;
+    font-family: "verlag-book";
+    font-size: 18px;
 }
 
 div.espacamento
 {
-	height: 120px;
+    height: 120px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -743,22 +743,20 @@ div.espacamento
 | 3A Internacional
 --------------------------------------------------------------------------------------------------------------------*/
 
-.conteudo-paises 
+.conteudo-paises
 { 
-	margin-top: 100px; 
+	margin-top: 100px;
 }
 
 .overlay-pais 
 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-
-	opacity: 0;
-
-	-webkit-transition: all 0.4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -767,37 +765,38 @@ div.espacamento
 
 .overlay-pais:hover
 {
-	opacity: 1;
+    opacity: 1;
 }
 
 .overlay-pais.eua 
 {
-	background-color: #873494; 
+    background-color: #873494; 
 }
 
 .overlay-pais.mexico 
 {
-	background-color: #009d4e; 
+    background-color: #009d4e; 
 }
 
 .overlay-pais.espanha 
 { 
-	background-color: #d23138;
+    background-color: #d23138;
 }
 
 .overlay-pais .pais 
 {
-	font-family: 'verlag-black';
-	color: #fff;
-	font-size: 35px;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 100px;
-	text-transform: uppercase;
+    font-family: 'verlag-black';
+    color: #fff;
+    font-size: 35px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    text-transform: uppercase;
 }
 
 a.visitar 
 {
+<<<<<<< HEAD
 	margin: 21px auto 0 auto;
 	float: none;
 	display: block;
@@ -815,18 +814,82 @@ a.visitar
 div.titulo
 {
 	margin-bottom: 80px;
+=======
+    margin: 21px auto 0 auto;
+    float: none;
+    display: block;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 5px 25px;
+    width: 143px;
+    text-decoration: none;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Mapa 
+--------------------------------------------------------------------------------------------------------------------*/
+.container-fluid.mapa{
+    background: #e6e7e8;
+    margin-top: 110px;
+    padding: 70px 0px;
+}
+.container-fluid.mapa .container .row img{
+    margin: 0 auto;
+}
+.lista-3a{
+    width: 100%;
+    height: 200px;
+    margin-top: 70px;
+}
+.lista-3a h3{
+    font-family: 'verlag-bold';
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.lista-3a img{
+    margin-bottom: 50px;
+}
+.lista-3a ul{
+    float: left;
+    margin-left: 40px;
+    font-family: 'verlag-book';
+    font-size: 13px;
+    list-style: none;
+}
+.lista-3a li{
+    text-transform: uppercase;
+}
+.lista-3a li:before{
+    content: "• ";
+>>>>>>> c3bba045dfe3cce3c04cafd330ca669db6dd7a45
+}
+
+.lista-3a li.america-do-sul:before{
+    color: #4579bd;
+}
+.lista-3a li.america-central:before{
+    color: #009d4e;
+}
+.lista-3a li.america-do-norte:before{
+    color: #873494;
+}
+.lista-3a li.europa:before{
+    color: #d23138;
+}
+
 
 /*--------------------------------------------------------------------------------------------------------------------
 | Media Queries
 --------------------------------------------------------------------------------------------------------------------*/
 
 @media (min-width: 1200px) {
-	
-	.hero-unit img
-	{
-		margin-left: -518px;
-	}
+    
+    .hero-unit img
+    {
+        margin-left: -518px;
+    }
 
 }
 
@@ -843,26 +906,26 @@ div.titulo
     .navbar-collapse {
         border-top: 1px solid transparent;
         padding-right: 15px;
-		padding-left: 15px;
-		overflow-x: hidden !important;
-		overflow-y: scroll !important
-		-webkit-overflow-scrolling: touch;
-		border-top: 1px solid transparent;
-		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        padding-left: 15px;
+        overflow-x: hidden !important;
+        overflow-y: scroll !important
+        -webkit-overflow-scrolling: touch;
+        border-top: 1px solid transparent;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
     .navbar-fixed-top {
-		top: 0;
-		border-width: 0 0 1px;
-	}
+        top: 0;
+        border-width: 0 0 1px;
+    }
     .navbar-collapse.collapse {
         display: none!important;
     }
     .navbar-nav {
         float: none!important;
-		margin: 7.5px -15px;
-	}
-	.navbar-nav>li {
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
         float: none;
     }
     .navbar-nav>li>a {
@@ -870,35 +933,35 @@ div.titulo
         padding-bottom: 10px;
     }
     .collapse.in{
-  		display:block !important;
-  		visibility: visible;
-	}
-	.navbar-collapse.in 
-	{
-		overflow-x: hidden !important;
-		overflow-y: scroll !important
-	}
-	.navbar-default .navbar-collapse, .navbar-default .navbar-form 
-	{
-		border-color: #e7e7e7;
-	}
-	.container>.navbar-collapse, .container-fluid>.navbar-collapse 
-	{
-		margin-right: -15px;
-		margin-left: -15px;
-	}
-	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse 
-	{
-		max-height: 340px;
-	}
-	.nav 
-	{
-		padding-left: 0;
-		margin-bottom: 0;
-		list-style: none;
-	}
-	.nav>li 
-	{
-		position: relative;
-	}
+        display:block !important;
+        visibility: visible;
+    }
+    .navbar-collapse.in 
+    {
+        overflow-x: hidden !important;
+        overflow-y: scroll !important
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form 
+    {
+        border-color: #e7e7e7;
+    }
+    .container>.navbar-collapse, .container-fluid>.navbar-collapse 
+    {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse 
+    {
+        max-height: 340px;
+    }
+    .nav 
+    {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    .nav>li 
+    {
+        position: relative;
+    }
 }

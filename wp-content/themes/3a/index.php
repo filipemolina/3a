@@ -52,4 +52,8 @@
 
 	<?php get_template_part('sections/3ainternacional'); ?>
 
+	<!-- 3A Internacional MAPA -->
+
+	<?php get_template_part('sections/mapa'); ?>
+
 <?php get_footer() ?>
