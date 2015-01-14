@@ -19,10 +19,10 @@
 
 		<div class="row conteudo-paises">
 
-			<div class="col-md-4 pais-wrap">
+			<div class="col-sm-4 pais-wrap">
 
 				<div class="item">
-					<img src="<?php echo bloginfo('template_url') ?>/img/3aInternacional/eua.png" alt="">
+					<img class="img-responsive" src="<?php echo bloginfo('template_url') ?>/img/3aInternacional/eua.png" alt="">
 				</div>
 
 				<div class="overlay-pais eua">
@@ -31,7 +31,7 @@
 						EUA
 					</div>
 
-					<a class="visitar" href="#">
+					<a class="visitar" href="http://www.3aworldwide.com/" target="_blank">
 						VISITAR SITE
 					</a>
 
@@ -39,10 +39,10 @@
 
 			</div>
 
-			<div class="col-md-4 pais-wrap">
+			<div class="col-sm-4 pais-wrap">
 
 				<div class="item">
-					<img src="<?php echo bloginfo('template_url') ?>/img/3aInternacional/mexico.png" alt="">
+					<img class="img-responsive" src="<?php echo bloginfo('template_url') ?>/img/3aInternacional/mexico.png" alt="">
 				</div>
 
 				<div class="overlay-pais mexico">
@@ -51,7 +51,7 @@
 						MÉXICO
 					</div>
 
-					<a class="visitar" href="#">
+					<a class="visitar" href="javascript:void(0)">
 						VISITAR SITE
 					</a>
 
@@ -59,10 +59,10 @@
 
 			</div>
 
-			<div class="col-md-4 pais-wrap">
+			<div class="col-sm-4 pais-wrap">
 
 				<div class="item">
-					<img src="<?php echo bloginfo('template_url') ?>/img/3aInternacional/espanha.png" alt="">
+					<img class="img-responsive" src="<?php echo bloginfo('template_url') ?>/img/3aInternacional/espanha.png" alt="">
 				</div>
 
 				<div class="overlay-pais espanha">
@@ -71,7 +71,7 @@
 						ESPANHA
 					</div>
 
-					<a class="visitar" href="#">
+					<a class="visitar" href="javascript:void(0)">
 						VISITAR SITE
 					</a>
 

@@ -11,7 +11,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title><?php wp_title("|", true, 'right'); bloginfo('name'); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -51,7 +51,7 @@
 				    <span class="icon-bar"></span>
 				    <span class="icon-bar"></span>
 			    </button>
-			    <a class="navbar-brand" href="#"><img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
+			    <a class="navbar-brand" href="javascript:void(0)"><img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
 		    </div>
 
 			<!-- Menu -->

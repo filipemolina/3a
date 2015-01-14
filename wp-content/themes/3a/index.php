@@ -11,8 +11,8 @@
 	<!-- Parallax 1 -->
 
 	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-1">
-		<div class="strong wow zoomIn">Liberdade é a nossa inspiração</div>
-		<div class="wow zoomIn">para gerar resultados</div>
+		<div class="strong wow zoomIn">Nós comunicamos marcas</div>
+		<div class="wow zoomIn">além de fronteiras</div>
 	</div>
 
 	<!-- Seção Equipe -->
@@ -44,8 +44,8 @@
 	<!-- Parallax 3 -->
 
 	<div class="parallax" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="150" id="parallax-3">
-		<div class="strong wow zoomIn">Liberdade é a nossa inspiração</div>
-		<div class="wow zoomIn">para gerar resultados</div>
+		<div class="strong wow zoomIn">Queremos encantar os mercados</div>
+		<div class="wow zoomIn">com criatividade funcional</div>
 	</div>
 
 	<!-- 3A Internacional -->
@@ -55,5 +55,9 @@
 	<!-- 3A Internacional MAPA -->
 
 	<?php get_template_part('sections/mapa'); ?>
+
+	<!-- Formulário de Contato -->
+
+	<?php get_template_part('sections/form-contato'); ?>
 
 <?php get_footer() ?>
