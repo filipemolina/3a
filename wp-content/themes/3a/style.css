@@ -270,20 +270,20 @@ ul#menu-principal a[href*="premios"].ativo,
 ul#menu-principal a[href*="portfolio"].ativo,
 ul#menu-principal a[href*="3ainternacional"].ativo
 {
-	background-color: #fff;
-	color: #231f20;
+    background-color: #fff;
+    color: #231f20;
 }
 
 ul#menu-principal a[href*="servicos"].ativo
 {
-	background-color: #4579bd;
-	color: #fff;
+    background-color: #4579bd;
+    color: #fff;
 }
 
 ul#menu-principal a[href*="estrutura"].ativo
 {
-	background-color: #f4f4f4;
-	color: #231f20;
+    background-color: #f4f4f4;
+    color: #231f20;
 }
 
 .menu .logo3a 
@@ -751,7 +751,7 @@ div.espacamento
 
 .conteudo-paises
 { 
-	margin-top: 100px;
+    margin-top: 100px;
 }
 
 .overlay-pais 
@@ -802,23 +802,23 @@ div.espacamento
 
 a.visitar 
 {
-	margin: 21px auto 0 auto;
-	float: none;
-	display: block;
-	background: transparent;
-	border: 2px solid #fff;
-	color: #fff;
-	padding: 8px 25px;
-	width: 143px;
-	text-decoration: none;
-	font-family: 'verlag-black';
-	font-size: 12px;
-	text-align: center;
+    margin: 21px auto 0 auto;
+    float: none;
+    display: block;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 25px;
+    width: 143px;
+    text-decoration: none;
+    font-family: 'verlag-black';
+    font-size: 12px;
+    text-align: center;
 }
 
 div.titulo
 {
-	margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -985,6 +985,39 @@ div.titulo
 	height: 76px;
 	padding-top: 10px;
 	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Contato
+--------------------------------------------------------------------------------------------------------------------*/
+
+.container-fluid.contato
+{
+    padding: 80px;
+}
+.bloco{
+    float: left;
+}
+.bloco img{
+    margin-bottom: 10px;
+}
+.bloco p{
+    font-family: 'verlag-book';
+    font-size: 16px;
+    padding: 4px 0 0 10px;
+    margin: 0;
+    color: #7c7c7d;
+
+}
+.bloco a{
+    font-family: 'verlag-black';
+    font-size: 12px;
+    color: #231f20;
+    border: 1px solid;
+    padding: 5px 10px;
+    float: left;
+    margin: 10px 0 0 10px;
+    display: block;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
