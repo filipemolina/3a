@@ -1,5 +1,3 @@
-
-
 //Função que reinicia os parallaxes quando o conteúdo é movido ou redirecionado
 
 function parallaxRestart()
@@ -7,6 +5,8 @@ function parallaxRestart()
 	$(window).data('plugin_stellar').destroy();
 	$(window).data('plugin_stellar').init();
 }
+
+/////////////////// Função executada quando todas as imagens da página são carregadas
 
 jQuery(window).load(function(){
 
@@ -52,7 +52,7 @@ jQuery(window).load(function(){
 
 	//Adicionar os efeitos à todos os parágrafos
 
-	$(".quem-somos p, .servicos .principal p").addClass("wow fadeInRight");
+	$(".quem-somos p, .principal p").addClass("wow fadeInRight");
 
 	wow.init();
 
@@ -67,9 +67,36 @@ jQuery(window).load(function(){
 		
 		e.preventDefault();
 
+		//Adicionar a classe ativo
+
 		$("ul#menu-principal").find("a").removeClass("ativo");
 
 		$(this).addClass("ativo");
+
+		//Tratar a propriedade href do link clicado para obter a classe do elemento
+		//para o qual se deve scrollar
+
+		var classe_elemento = $(this).attr("href").replace("http://", "");
+
+		console.log(classe_elemento);
+
+		// //Scrollar até o elemento clicado
+
+		$('html, body').animate({
+	        scrollTop: $("."+classe_elemento).offset().top - 60
+	    }, 1000);
+
+	});
+
+	//Link 3AW do topo
+
+	$("a.navbar-brand").click(function(){
+
+		$("ul#menu-principal").find("a").removeClass("ativo");
+
+		$('html, body').animate({
+	        scrollTop: 0
+	    }, 1000);
 
 	});
 

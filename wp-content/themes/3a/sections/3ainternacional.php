@@ -1,4 +1,4 @@
-<div class="container-fluid internacional">
+<div class="container-fluid 3ainternacional">
 	
 	<div class="container">
 		
@@ -13,7 +13,7 @@
 				<div class="borda-azul"></div>
 			</div>
 
-			<p class="principal"><?php echo apply_filters("the_content", $pagina->post_content); ?></p>
+			<div class="principal"><?php echo apply_filters("the_content", $pagina->post_content); ?></div>
 
 		</div>
 

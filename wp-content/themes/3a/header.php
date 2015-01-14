@@ -30,7 +30,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body data-spy="scroll" data-target=".navbar-example" <?php body_class(); ?>>
 
 	<!-- Overlay de Carregamento da Página -->
 
@@ -58,7 +58,7 @@
 
 		    <div class="collapse navbar-collapse" id="menu-collapse">
 
-		    	<?php wp_nav_menu(array('menu_class' => 'nav navbar-nav navbar-right menu', 'container_class' => '', 'container' => '')); ?>
+		    	<?php wp_nav_menu(array('menu_class' => 'nav navbar-nav navbar-right menu nav-tabs', 'container_class' => '', 'container' => '')); ?>
 
 		    </div>
 

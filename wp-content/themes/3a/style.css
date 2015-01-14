@@ -160,7 +160,7 @@ div.overlay
     background: #000; 
     width:      100%;
     height:     100%; 
-    z-index:    10000;
+    z-index:    12000;
     top:        0; 
     left:       0; 
     position:   fixed;
@@ -224,6 +224,7 @@ ul#menu-principal a
 { 
     padding: 23px 20px 20px 20px;
     margin-left: -4px;
+    border: 0 !important;
 
     line-height: normal;
     
@@ -233,11 +234,15 @@ ul#menu-principal a
     font-family: 'verlag-book';
     text-transform: uppercase;
 
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    border-radius         : 0 !important;
+    -moz-border-radius    : 0 !important;
+    -webkit-border-radius : 0 !important;
+
+    -webkit-transition : all 1s ease-in;
+    -moz-transition    : all 1s ease-in;
+    -ms-transition     : all 1s ease-in;
+    -o-transition      : all 1s ease-in;
+    transition         : all 1s ease-in;
     
 }
 
@@ -247,17 +252,32 @@ ul#menu-principal a:hover
     color: #000;
     background-color: transparent;
 
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
 }
 
 ul#menu-principal a.ativo
 {
     background-color: #716f70;
     color: #e6e7e8;
+}
+
+ul#menu-principal a[href*="quem-somos"].ativo,
+ul#menu-principal a[href*="premios"].ativo,
+ul#menu-principal a[href*="portfolio"].ativo,
+ul#menu-principal a[href*="3ainternacional"].ativo
+{
+	background-color: #fff;
+	color: #231f20;
+}
+
+ul#menu-principal a[href*="servicos"].ativo
+{
+	background-color: #4579bd;
+	color: #fff;
 }
 
 .menu .logo3a 
@@ -272,7 +292,8 @@ ul#menu-principal a.ativo
 
 .menu #menu-principal li 
 { 
-    display: inline; 
+    display: inline;
+    overflow: hidden;
 }
 
 .menu .navbar-brand
@@ -722,7 +743,10 @@ div.espacamento
 | 3A Internacional
 --------------------------------------------------------------------------------------------------------------------*/
 
-.conteudo-paises { margin-top: 100px; }
+.conteudo-paises 
+{ 
+	margin-top: 100px; 
+}
 
 .overlay-pais 
 {
@@ -780,9 +804,17 @@ a.visitar
 	background: transparent;
 	border: 2px solid #fff;
 	color: #fff;
-	padding: 5px 25px;
+	padding: 8px 25px;
 	width: 143px;
 	text-decoration: none;
+	font-family: 'verlag-black';
+	font-size: 12px;
+	text-align: center;
+}
+
+div.titulo
+{
+	margin-bottom: 80px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
