@@ -6,28 +6,36 @@
 
 		<div class="row">
 			
-			<div class="icone col-md-3">
+			<div class="icone facebook col-md-3">
 				<a href="">
 					<img src="<?php echo bloginfo('template_url'); ?>/img/redes-sociais/ico_facebook.png" alt="">
+					<div class="borda"></div>
 				</a>
+				
 			</div>
 
-			<div class="icone col-md-3">
+			<div class="icone twitter col-md-3">
 				<a href="">
-					<img  src="<?php echo bloginfo('template_url'); ?>/img/redes-sociais/ico_twitter.png" alt="">
+					<img src="<?php echo bloginfo('template_url'); ?>/img/redes-sociais/ico_twitter.png" alt="">
+					<div class="borda"></div>
 				</a>
+				
 			</div>
 
-			<div class="icone col-md-3">
+			<div class="icone youtube col-md-3">
 				<a href="">
 					<img src="<?php echo bloginfo('template_url'); ?>/img/redes-sociais/ico_youtube.png" alt="">
+					<div class="borda"></div>
 				</a>
+				
 			</div>
 
-			<div class="icone col-md-3">
+			<div class="icone linkedin col-md-3">
 				<a href="">
 					<img src="<?php echo bloginfo('template_url'); ?>/img/redes-sociais/ico_linkedin.png" alt="">
+					<div class="borda"></div>
 				</a>
+				
 			</div>
 
 		</div>
