@@ -239,11 +239,11 @@ ul#menu-principal a
     -moz-border-radius    : 0 !important;
     -webkit-border-radius : 0 !important;
 
-    -webkit-transition : all 1s ease-in;
-    -moz-transition    : all 1s ease-in;
-    -ms-transition     : all 1s ease-in;
-    -o-transition      : all 1s ease-in;
-    transition         : all 1s ease-in;
+    -webkit-transition : all 0.2s ease-in;
+    -moz-transition    : all 0.2s ease-in;
+    -ms-transition     : all 0.2s ease-in;
+    -o-transition      : all 0.2s ease-in;
+    transition         : all 0.2s ease-in;
     
 }
 
@@ -253,11 +253,11 @@ ul#menu-principal a:hover
     color: #000;
     background-color: transparent;
 
-    -webkit-transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -ms-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    transition: all 1s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 ul#menu-principal a.ativo
@@ -1051,13 +1051,7 @@ div.titulo
 
 .redes-sociais .icone a:hover 
 {
-    border: 2px solid #fff;
-    border-radius: 50%;
-    width: 86px;
-    display: block;
-    height: 86px;
-    padding-top: 15px;
-    margin: 0 auto;
+   
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -1082,7 +1076,8 @@ div.titulo
     color: #7c7c7d;
 
 }
-.bloco a{
+.bloco a
+{  
     font-family: 'verlag-black';
     font-size: 12px;
     color: #231f20;
@@ -1091,16 +1086,36 @@ div.titulo
     float: left;
     margin: 10px 0 0 10px;
     display: block;
-}
-.mapa-rio-de-janeiro{
-    height: 0;
+    text-decoration: none;
+
     transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+}
+
+.bloco a.ativo
+{
+	background: #231f20;
+	color: #fff;
+
+	transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+}
+
+.container-fluid.mapa-contato
+{
+	padding: 0;
+}
+
+.mapa-rio-de-janeiro{
+    
 }
 .mapa-sao-paulo{
-    display: none;
+    
 }
-.mapa-goiania{
-    display: none;
+.mapa-goias{
+    
 }
 /*--------------------------------------------------------------------------------------------------------------------
 | Media Queries

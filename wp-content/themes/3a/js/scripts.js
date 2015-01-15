@@ -56,9 +56,19 @@ jQuery(window).load(function(){
 
 	wow.init();
 
+	/*------------------------------------------------------------------------------
+	| Mapas
+	------------------------------------------------------------------------------*/
+
+	//Esconder os mapas quando a página for carregada
+
+	$(".container-fluid.mapa-contato").hide();
+
 	/*--------------------------------------------------------------------------------
 	| Menu Superior
 	--------------------------------------------------------------------------------*/
+
+	var animando = false;
 
 	//Evitar que os links do Menu principal recarreguem a página
 	//e alternar entre os links com a classe "ativo"
@@ -78,13 +88,19 @@ jQuery(window).load(function(){
 
 		var classe_elemento = $(this).attr("href").replace("http://", "");
 
-		console.log(classe_elemento);
-
 		// //Scrollar até o elemento clicado
 
+		animando = true;
+
 		$('html, body').animate({
+	    
 	        scrollTop: $("."+classe_elemento).offset().top - 60
-	    }, 1000);
+	    
+	    }, 1000, "swing", function(){
+
+	    	animando = false;
+
+	    });
 
 	});
 
@@ -99,6 +115,80 @@ jQuery(window).load(function(){
 	    }, 1000);
 
 	});
+
+	/*--------------------------------------------------------------------------------
+	| Ativar os links do menu superior pela posição da página
+	--------------------------------------------------------------------------------*/
+
+	var scrollou = false,
+	    quem_somos = $(".container.quem-somos").offset().top - 70,
+	    premios = $(".container-fluid.premios").offset().top - 70,
+	    estrutura = $(".container-fluid.estrutura").offset().top - 70,
+	    servicos = $(".container-fluid.servicos").offset().top - 70,
+	    portfolio = $(".container-fluid.portfolio").offset().top - 70,
+	    internacional = $(".container-fluid.3ainternacional").offset().top - 70,
+	    contato = $(".container-fluid.contato").offset().top - 70,
+	    body = $("body");
+
+	$(window).scroll(function(){
+		scrollou = true;
+	});
+
+	setInterval(function(){
+
+		if(scrollou && !animando)
+		{
+			scrollou = false;
+
+			if(document.body.scrollTop > 0)
+			{
+				$("ul#menu-principal a").removeClass('ativo');
+			}
+
+			if(document.body.scrollTop > quem_somos)
+			{
+				$("ul#menu-principal a").removeClass('ativo');
+				$("ul#menu-principal a[href*='quem-somos']").addClass("ativo");
+			}
+
+			if(document.body.scrollTop > premios)
+			{
+				$("ul#menu-principal a").removeClass('ativo');
+				$("ul#menu-principal a[href*='premios']").addClass("ativo");
+			}
+
+			if(document.body.scrollTop > estrutura)
+			{
+				$("ul#menu-principal a").removeClass('ativo');
+				$("ul#menu-principal a[href*='estrutura']").addClass("ativo");
+			}
+
+			if(document.body.scrollTop > servicos)
+			{
+				$("ul#menu-principal a").removeClass('ativo');
+				$("ul#menu-principal a[href*='servicos']").addClass("ativo");
+			}
+
+			if(document.body.scrollTop > portfolio)
+			{
+				$("ul#menu-principal a").removeClass('ativo');
+				$("ul#menu-principal a[href*='portfolio']").addClass("ativo");
+			}
+
+			if(document.body.scrollTop > internacional)
+			{
+				$("ul#menu-principal a").removeClass('ativo');
+				$("ul#menu-principal a[href*='3ainternacional']").addClass("ativo");
+			}
+
+			if(document.body.scrollTop > contato)
+			{
+				$("ul#menu-principal a").removeClass('ativo');
+				$("ul#menu-principal a[href*='contato']").addClass("ativo");
+			}
+		}
+
+	}, 250);
 
 	/*--------------------------------------------------------------------------------
 	| Abas de Serviços
@@ -137,23 +227,40 @@ jQuery(window).load(function(){
 	});
 
 	/*--------------------------------------------------------------------------------
-	| mapas google
+	| Google Maps
 	--------------------------------------------------------------------------------*/
 
-	$("div.rio-de-janeiro a").click(function(){
+	$("div.contato .bloco a").click(function(){
 
+		//Obter o valor do atributo "data-mapa" do link
 
-		$(".mapa-rio-de-janeiro").css('height', "405px");
+		var mapa = $(this).data('mapa');
 
-	});
-	$("div.sao-paulo a").click(function(){
+		//Retirar a classe "ativo" de todos os links
 
-		$(".mapa-sao-paulo").slideDown();
+		$(".bloco a").removeClass("ativo");
 
-	});
-	$("div.goiania").click(function(){
+		//Adicionar a classe "ativo" apenas ao link clicado
 
-		$(".mapa-goiania").slideDown();
+		$(this).addClass("ativo");
+
+		//Levantar a div do mapa
+
+		$(".container-fluid.mapa-contato").slideUp(400, function(){
+
+			//Esconder todos os mapas
+
+			$(".google-map").hide();
+
+			//Mostrar apenas o mapa selecionado
+
+			$("." + mapa).show();
+
+			//Abaixar o mapa
+
+			$(".container-fluid.mapa-contato").slideDown();
+
+		});
 
 	});
 

@@ -56,7 +56,7 @@
 
 			<!-- Menu -->
 
-		    <div class="collapse navbar-collapse" id="menu-collapse">
+		    <div class="collapse navbar-collapse scrollspy" id="menu-collapse">
 
 		    	<?php wp_nav_menu(array('menu_class' => 'nav navbar-nav navbar-right menu nav-tabs', 'container_class' => '', 'container' => '')); ?>
 
