@@ -136,4 +136,26 @@ jQuery(window).load(function(){
 
 	});
 
+	/*--------------------------------------------------------------------------------
+	| mapas google
+	--------------------------------------------------------------------------------*/
+
+	$("div.rio-de-janeiro a").click(function(){
+
+
+		$(".mapa-rio-de-janeiro").css('height', "405px");
+
+	});
+	$("div.sao-paulo a").click(function(){
+
+		$(".mapa-sao-paulo").slideDown();
+
+	});
+	$("div.goiania").click(function(){
+
+		$(".mapa-goiania").slideDown();
+
+	});
+
 });
+
