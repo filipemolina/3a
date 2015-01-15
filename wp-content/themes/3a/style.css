@@ -218,6 +218,7 @@ nav.menu
 ul#menu-principal 
 { 
     margin-bottom: 0; 
+    border: 0;
 }
 
 ul#menu-principal a 
@@ -268,7 +269,8 @@ ul#menu-principal a.ativo
 ul#menu-principal a[href*="quem-somos"].ativo,
 ul#menu-principal a[href*="premios"].ativo,
 ul#menu-principal a[href*="portfolio"].ativo,
-ul#menu-principal a[href*="3ainternacional"].ativo
+ul#menu-principal a[href*="3ainternacional"].ativo,
+ul#menu-principal a[href*="contato"].ativo
 {
     background-color: #fff;
     color: #231f20;
@@ -969,6 +971,7 @@ div.titulo
 {
 	background: #4579bd;
 	padding: 49px 0;
+	margin-top: 80px;
 }
 
 .redes-sociais .icone
