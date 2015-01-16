@@ -96,7 +96,9 @@
 
 			<!-- Descrição da categoria -->
 
-			<p class="fadeIn animated"><?php echo $midia->description; ?></p>
+			<div class="col-md-8">
+				<p class="fadeIn animated"><?php echo $midia->description; ?></p>
+			</div>
 
 			<!-- Lista de serviços dessa categoria -->
 	

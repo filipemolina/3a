@@ -8,6 +8,26 @@ function parallaxRestart()
 
 /////////////////// Função executada quando todas as imagens da página são carregadas
 
+jQuery(function(){
+
+	$ = jQuery;
+
+	var largura = $(window).width();
+
+	if(largura < 982)
+	{
+		$("*").removeClass("fadeInRightBig");
+		$("*").removeClass("fadeInLeft");
+		$("*").removeClass("fadeInRight");
+		$("*").removeClass("zoomIn");
+		$("*").removeClass("flipInY");
+		$("*").removeClass("flipInX");
+		$("*").removeClass("fadeIn");
+		$("*").removeClass("wow");
+	}
+
+});
+
 jQuery(window).load(function(){
 
 	/*----------------------------------------
@@ -46,15 +66,22 @@ jQuery(window).load(function(){
 	| Plugin para mostrar elementos apenas quando entrarem na tela
 	------------------------------------------------------------------------------*/
 
-	var wow = new WOW({
-			offset : 100
-	});
+	//Executar as animações apenas na versão desktop
 
-	//Adicionar os efeitos à todos os parágrafos
+	var largura = $(window).width();
 
-	$(".quem-somos p, .principal p").addClass("wow fadeInRight");
+	if(largura > 981)
+	{
+		var wow = new WOW({
+				offset : 100
+		});
 
-	wow.init();
+		//Adicionar os efeitos à todos os parágrafos
+
+		$(".quem-somos p, .principal p").addClass("wow fadeInRight");
+
+		wow.init();
+	}
 
 	/*------------------------------------------------------------------------------
 	| Mapas

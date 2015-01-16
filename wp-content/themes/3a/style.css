@@ -141,7 +141,8 @@ Theme Name: 3A WorldWide
 --------------------------------------------------------------------------------------------------------------------*/
 body
 {
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .hidden
@@ -328,9 +329,10 @@ ul#menu-principal a[href*="estrutura"].ativo
 {
     background: url('img/hero-unit/foto_rj.png') no-repeat center center;
     background-size: cover;
-    max-width: 100%;
+    width: 100%;
     position: relative;
     height: 834px;
+    overflow: hidden;
 }
 
 .hero-unit img
@@ -412,6 +414,8 @@ div.bio p
 
 .zoom-image 
 { 
+	width: 100%;
+
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     -ms-transition: all 0.3s ease-in;
@@ -747,6 +751,11 @@ div.espacamento
     height: 100%;
 }
 
+.img-portfolio img
+{
+	margin: 0 auto;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------
 | 3A Internacional
 --------------------------------------------------------------------------------------------------------------------*/
@@ -800,6 +809,11 @@ div.espacamento
     text-align: center;
     margin-top: 20%;
     text-transform: uppercase;
+}
+
+.pais-wrap img
+{
+	margin: 0 auto;
 }
 
 a.visitar 
@@ -1121,11 +1135,69 @@ div.titulo
 | Media Queries
 --------------------------------------------------------------------------------------------------------------------*/
 
-@media (min-width: 1200px) {
-    
-    .hero-unit img
+@media (max-width: 785px){
+
+    .container.quem-somos
     {
-        margin-left: -518px;
+        padding-left: 30px;
+    }
+    
+    .blocos-premios
+    {
+        text-align: center;
+    }
+
+    .blocos-premios img
+    {
+        margin: 0 auto;
+    }
+
+    .servicos .item.midia .icone
+    {
+    	margin-left: 223px;
+    }
+
+    .zoom-img
+    {
+    	width: 100%;
+    }
+
+    div.conteudo.aberto
+    {
+        height: auto !important;
+    }
+
+    .servicos .midia div.lista-servicos
+    {
+        float: none !important;
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .servicos .relacoes div.lista-servicos
+    {
+        float: none !important;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .servicos .digital div.lista-servicos
+    {
+        float: none !important;
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .servicos .criacao div.lista-servicos
+    {
+        float: none !important;
+        margin: 0 auto;
+        width: 170px;
+    }
+
+    .titulo h2
+    {
+		font-size: 33px;
     }
 
 }
@@ -1201,4 +1273,13 @@ div.titulo
     {
         position: relative;
     }
+}
+
+@media (min-width: 1200px) {
+    
+    .hero-unit img
+    {
+        margin-left: -518px;
+    }
+
 }
