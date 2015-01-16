@@ -42,3 +42,6 @@
 
 	</div>
 </div>
+	<div class="container-fluid footer">
+		<p>©Copyright 2015 by 3A worldwide Todos os direitos reservados</p>
+	</div>

@@ -137,7 +137,7 @@ Theme Name: 3A WorldWide
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| GenÃ©ricos
+| GenÃƒÂ©ricos
 --------------------------------------------------------------------------------------------------------------------*/
 body
 {
@@ -455,7 +455,7 @@ div.bio p
 /* -------------- END Hover imagens da equipe ------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------
-| PrÃªmios
+| PrÃƒÂªmios
 --------------------------------------------------------------------------------------------------------------------*/
 
 .blocos-premios img
@@ -487,7 +487,7 @@ div.bio p
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| ServiÃ§os
+| ServiÃƒÂ§os
 --------------------------------------------------------------------------------------------------------------------*/
 
 .servicos .titulo h2
@@ -508,7 +508,7 @@ div.bio p
     float: left;
 }
 
-/*************************** Ãcones ***************************/
+/*************************** ÃƒÂcones ***************************/
 
 .servicos .item 
 {
@@ -519,7 +519,7 @@ div.bio p
     height: 219px;
 }
 
-/* Ãcones em posiÃ§Ã£o normal */
+/* ÃƒÂcones em posiÃƒÂ§ÃƒÂ£o normal */
 
 .servicos .item.midia .icone
 {
@@ -554,7 +554,7 @@ div.bio p
     background-position: -43px 0;
 }
 
-/* Ãcones Clicados */
+/* ÃƒÂcones Clicados */
 
 .servicos .item.ativo.midia .icone    { background-position: -56px 0; }
 .servicos .item.ativo.relacoes .icone { background-position: -48px 0; }
@@ -604,7 +604,7 @@ div.bio p
     background-color: #4579bd;
 }
 
-/*************************** ConteÃºdo ***************************/
+/*************************** ConteÃƒÂºdo ***************************/
 
 .servicos.conteudo
 {
@@ -646,7 +646,7 @@ div.bio p
 }
 
 .servicos.conteudo ul li:before {
-    content: "• ";
+    content: "â€¢ ";
     color: #4579bd;
     margin-right: 10px;
 }
@@ -692,7 +692,7 @@ div.espacamento
 
 .parallax
 {
-    margin: 50px 0;
+    margin: 50px 0 0 0;
     padding: 100px 0;
     background-attachment: fixed;
 }
@@ -832,9 +832,9 @@ a.visitar
     text-align: center;
 }
 
-div.titulo
-{
-    margin-bottom: 80px;
+.principal p{
+    font-family: 'verlag-book';
+    font-size: 20px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -872,7 +872,7 @@ div.titulo
     text-transform: uppercase;
 }
 .lista-3a li:before{
-    content: "• ";
+    content: "â€¢ ";
 }
 
 .lista-3a li.america-do-sul:before{
@@ -887,15 +887,20 @@ div.titulo
 .lista-3a li.europa:before{
     color: #d23138;
 }
+.container-fluid.mapa .row h3{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'verlag-bold';
+}
 
 /*--------------------------------------------------------------------------------------------------------------------
-| Formulário de Contato
+| FormulÃ¡rio de Contato
 --------------------------------------------------------------------------------------------------------------------*/
 
 .container-fluid.form-contato
 {
-	background-color: #fafafa;
-	padding-top: 80px;
+    background-color: #fafafa;
+    padding-top: 80px;
 }
 
 .form-contato input[type=text], 
@@ -917,36 +922,36 @@ div.titulo
 
 .form-contato input[type=submit]
 {
-	margin: 0 auto;
-	display: block;
-	background: transparent;
-	border: 2px solid #010202;
-	color: #010202;
-	font-family: 'verlag-black';
-	font-size: 12px;
-	text-transform: uppercase;
-	padding: 10px 50px;
-	outline: none;
+    margin: 0 auto;
+    display: block;
+    background: transparent;
+    border: 2px solid #010202;
+    color: #010202;
+    font-family: 'verlag-black';
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    outline: none;
 }
 
 .container.trabalhe-conosco
 {
-	margin-top: 100px;
+    margin-top: 100px;
 }
 
 .trabalhe-conosco p.negrito
 {
-	font-family: 'verlag-bold';
-	font-size: 20px;
-	text-transform: uppercase;
-	text-align: center;
+    font-family: 'verlag-bold';
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .trabalhe-conosco p.email
 {
-	font-family: 'verlag-book';
-	font-size: 16px;
-	text-align: center;
+    font-family: 'verlag-book';
+    font-size: 16px;
+    text-align: center;
 }
 
 ::-webkit-input-placeholder 
@@ -983,27 +988,27 @@ div.titulo
 
 .container-fluid.redes-sociais
 {
-	background: #4579bd;
-	padding: 49px 0;
-	margin-top: 80px;
+    background: #4579bd;
+    padding: 49px 0;
+    margin-top: 80px;
 }
 
 .redes-sociais .icone
 {
-	text-align: center
+    text-align: center
 }
 
 .redes-sociais .icone a 
 {
-	border-radius: 50%;
-	width: 100px;
-	display: block;
-	height: 100px;
-	padding-top: 10px;
-	margin: 0 auto;
-	background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 100px;
+    display: block;
+    height: 100px;
+    padding-top: 10px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
 
-	transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
 }
@@ -1021,7 +1026,7 @@ div.titulo
 
 .icone a:hover .borda 
 {
-	border: 2px solid #fff;
+    border: 2px solid #fff;
     height: 100px;
     width: 100px;
 
@@ -1032,9 +1037,9 @@ div.titulo
 
 .icone a:hover
 {
-	background: transparent;
+    background: transparent;
 
-	transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
 }
@@ -1067,6 +1072,14 @@ div.titulo
 {
    
 }
+.container-fluid.footer{
+    text-align: center;
+    height: 60px;
+    padding: 20px;
+    font-size: 12px;
+    font-family: arial;
+    color: #a0a0a0;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------
 | Contato
@@ -1092,15 +1105,18 @@ div.titulo
 }
 .bloco a
 {  
+    margin: 0 auto;
+    display: block;
+    background: transparent;
+    border: 2px solid #010202;
+    color: #010202;
     font-family: 'verlag-black';
     font-size: 12px;
-    color: #231f20;
-    border: 1px solid;
-    padding: 5px 10px;
-    float: left;
-    margin: 10px 0 0 10px;
-    display: block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    outline: none;
     text-decoration: none;
+    float: left;
 
     transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
@@ -1109,17 +1125,17 @@ div.titulo
 
 .bloco a.ativo
 {
-	background: #231f20;
-	color: #fff;
+    background: #231f20;
+    color: #fff;
 
-	transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
 }
 
 .container-fluid.mapa-contato
 {
-	padding: 0;
+    padding: 0;
 }
 
 .mapa-rio-de-janeiro{

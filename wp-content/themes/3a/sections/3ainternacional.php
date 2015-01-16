@@ -13,7 +13,7 @@
 				<div class="borda-azul"></div>
 			</div>
 
-			<div class="principal"><?php echo apply_filters("the_content", $pagina->post_content); ?></div>
+			<div class="principal"><p><?php echo apply_filters("the_content", $pagina->post_content); ?></p></div>
 
 		</div>
 
