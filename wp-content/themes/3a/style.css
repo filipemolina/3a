@@ -646,7 +646,7 @@ div.bio p
 }
 
 .servicos.conteudo ul li:before {
-    content: "â€¢ ";
+    content: " • ";
     color: #4579bd;
     margin-right: 10px;
 }
@@ -872,7 +872,7 @@ a.visitar
     text-transform: uppercase;
 }
 .lista-3a li:before{
-    content: "â€¢ ";
+    content: " • ";
 }
 
 .lista-3a li.america-do-sul:before{
