@@ -137,7 +137,7 @@ Theme Name: 3A WorldWide
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| GenÃƒÂ©ricos
+| GenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ricos
 --------------------------------------------------------------------------------------------------------------------*/
 body
 {
@@ -359,6 +359,7 @@ ul#menu-principal a[href*="estrutura"].ativo
 }
 .equipe{
     background: #e6e7e8;
+    margin-top: 125px;
 }
 .equipe .col-md-3{
     padding: 0;
@@ -395,12 +396,12 @@ ul#menu-principal a[href*="estrutura"].ativo
 
 .overlay-hover p.cargo 
 {
-    font-family: verlag-book;
-    font-size: 15px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    margin-top: 5px;
+font-family: verlag-book;
+font-size: 15px;
+font-weight: bold;
+color: #fff;
+margin-top: 5px;
+margin-left: 26px;
 }
 
 div.bio p 
@@ -408,13 +409,12 @@ div.bio p
     font-family: verlag-light;
     font-size: 14px;
     color: #fff;
-    text-align: center;
     padding: 0 25px;
 }
 
 .zoom-image 
 { 
-	width: 100%;
+    width: 100%;
 
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
@@ -438,7 +438,7 @@ div.bio p
 {
     display: table;
     width: 100%;
-    text-align: center;
+    margin-left: 25px;
 }
 
 .container-image .nome span
@@ -447,17 +447,17 @@ div.bio p
     color: #fff;
     font-size: 22px;
     text-transform: uppercase;
-    text-align: center;
     border-bottom: 2px solid #868585;
-    padding: 0 10px;
 }
 
 /* -------------- END Hover imagens da equipe ------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------
-| PrÃƒÂªmios
+| PrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âªmios
 --------------------------------------------------------------------------------------------------------------------*/
-
+.blocos-premios{
+    margin-top: 40px;
+}
 .blocos-premios img
 {
     background-color: #f4f4f4;
@@ -487,7 +487,7 @@ div.bio p
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| ServiÃƒÂ§os
+| ServiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§os
 --------------------------------------------------------------------------------------------------------------------*/
 
 .servicos .titulo h2
@@ -508,7 +508,7 @@ div.bio p
     float: left;
 }
 
-/*************************** ÃƒÂcones ***************************/
+/*************************** ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âcones ***************************/
 
 .servicos .item 
 {
@@ -519,7 +519,7 @@ div.bio p
     height: 219px;
 }
 
-/* ÃƒÂcones em posiÃƒÂ§ÃƒÂ£o normal */
+/* ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âcones em posiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o normal */
 
 .servicos .item.midia .icone
 {
@@ -554,7 +554,7 @@ div.bio p
     background-position: -43px 0;
 }
 
-/* ÃƒÂcones Clicados */
+/* ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âcones Clicados */
 
 .servicos .item.ativo.midia .icone    { background-position: -56px 0; }
 .servicos .item.ativo.relacoes .icone { background-position: -48px 0; }
@@ -604,7 +604,7 @@ div.bio p
     background-color: #4579bd;
 }
 
-/*************************** ConteÃƒÂºdo ***************************/
+/*************************** ConteÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºdo ***************************/
 
 .servicos.conteudo
 {
@@ -646,7 +646,7 @@ div.bio p
 }
 
 .servicos.conteudo ul li:before {
-    content: "â€¢ ";
+    content: "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ ";
     color: #4579bd;
     margin-right: 10px;
 }
@@ -753,7 +753,7 @@ div.espacamento
 
 .img-portfolio img
 {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -813,7 +813,7 @@ div.espacamento
 
 .pais-wrap img
 {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 a.visitar 
@@ -872,7 +872,7 @@ a.visitar
     text-transform: uppercase;
 }
 .lista-3a li:before{
-    content: "â€¢ ";
+    content: " • ";
 }
 
 .lista-3a li.america-do-sul:before{
@@ -894,7 +894,7 @@ a.visitar
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| FormulÃ¡rio de Contato
+| FormulÃƒÆ’Ã‚Â¡rio de Contato
 --------------------------------------------------------------------------------------------------------------------*/
 
 .container-fluid.form-contato
@@ -1170,12 +1170,12 @@ a.visitar
 
     .servicos .item.midia .icone
     {
-    	margin-left: 223px;
+        margin-left: 223px;
     }
 
     .zoom-img
     {
-    	width: 100%;
+        width: 100%;
     }
 
     div.conteudo.aberto
@@ -1213,7 +1213,7 @@ a.visitar
 
     .titulo h2
     {
-		font-size: 33px;
+        font-size: 33px;
     }
 
 }
@@ -1299,3 +1299,8 @@ a.visitar
     }
 
 }
+
+/* EXTRA */
+.container-fluid.premios {
+    margin-bottom: 70px;
+}S
