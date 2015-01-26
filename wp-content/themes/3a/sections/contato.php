@@ -11,8 +11,8 @@
 			<p>CEP: 20090-010</p>
 			<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 21 2271 1700</p>
 
-			<a data-mapa="mapa-rio-de-janeiro" href="javascript:void(0)">COMO CHEGAR</a>
-
+			<a class="btn-mapa" data-mapa="mapa-rio-de-janeiro" id="element1" onClick="" href="javascript:void(0)">COMO CHEGAR</a>
+			
 		</div>
 
 		<div class="bloco sao-paulo col-md-4">
@@ -24,8 +24,8 @@
 			<p>CEP: 05422-002</p>
 			<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 11 4327 0574</p>
 
-			<a data-mapa="mapa-sao-paulo" href="javascript:void(0)">COMO CHEGAR</a>
-
+			<a class="btn-mapa" data-mapa="mapa-sao-paulo" id="element2" onClick="" href="javascript:void(0)">COMO CHEGAR</a>
+			
 		</div>
 
 		<div class="bloco goiania col-md-4">
@@ -37,8 +37,8 @@
 			<p>CEP: 74810-100</p>
 			<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 62 3624 9340</p>
 
-			<a data-mapa="mapa-goias" href="javascript:void(0)">COMO CHEGAR</a>
-
+			<a class="btn-mapa" data-mapa="mapa-goias" id="element3" onClick="" href="javascript:void(0)">COMO CHEGAR</a>
+			
 		</div>
 
 	</div>
