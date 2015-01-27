@@ -259,6 +259,14 @@ jQuery(window).load(function(){
 
 	$("div.contato .bloco a").click(function(){
 
+		if($(this).hasClass('ativo'))
+		{
+			$(".container-fluid.mapa-contato").slideUp(400);
+			$(this).html("COMO CHEGAR");
+			$(this).removeClass("ativo");
+			return false;
+		}
+
 		//Obter o valor do atributo "data-mapa" do link
 
 		var mapa = $(this).data('mapa');
@@ -266,17 +274,19 @@ jQuery(window).load(function(){
 		//Retirar a classe "ativo" de todos os links
 
 		$(".bloco a").removeClass("ativo");
+		$(".bloco a").html("COMO CHEGAR");
 
 		//Adicionar a classe "ativo" apenas ao link clicado
 
 		$(this).addClass("ativo");
+		$(this).html("FECHAR");
 
 		//Levantar a div do mapa
 
 		$(".container-fluid.mapa-contato").slideUp(400, function(){
 
 			//Esconder todos os mapas
-
+         
 			$(".google-map").hide();
 
 			//Mostrar apenas o mapa selecionado
@@ -292,4 +302,5 @@ jQuery(window).load(function(){
 	});
 
 });
+
 
