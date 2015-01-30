@@ -2,43 +2,47 @@
 
 	<div class="container">
 
-		<div class="bloco rio-de-janeiro col-md-4">
-
-			<img src="<?php echo bloginfo('template_url') ?>/img/contato/rio.png" alt="">
-
-			<p>Rua São Bento,09 13°, 14° e Cobertura</p>
-			<p>Centro - Rio de Janeiro - RJ</p>
-			<p>CEP: 20090-010</p>
-			<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 21 2271 1700</p>
-
-			<a class="btn-mapa" data-mapa="mapa-rio-de-janeiro" id="element1" onClick="" href="javascript:void(0)">COMO CHEGAR</a>
+		<div class="row">
 			
-		</div>
+			<div class="bloco rio-de-janeiro col-md-4">
 
-		<div class="bloco sao-paulo col-md-4">
+				<img src="<?php echo bloginfo('template_url') ?>/img/contato/rio.png" alt="">
 
-			<img src="<?php echo bloginfo('template_url') ?>/img/contato/sao_paulo.png" alt="">
+				<p>Rua São Bento,09 13°, 14° e Cobertura</p>
+				<p>Centro - Rio de Janeiro - RJ</p>
+				<p>CEP: 20090-010</p>
+				<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 21 2271 1700</p>
 
-			<p>Rua dos Pinheiros, 1060 5° Andar</p>
-			<p>Pinheiros - São Paulo - SP</p>
-			<p>CEP: 05422-002</p>
-			<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 11 4327 0574</p>
+				<a class="btn-mapa" data-mapa="mapa-rio-de-janeiro" id="element1" onClick="" href="javascript:void(0)">COMO CHEGAR</a>
+				
+			</div>
 
-			<a class="btn-mapa" data-mapa="mapa-sao-paulo" id="element2" onClick="" href="javascript:void(0)">COMO CHEGAR</a>
-			
-		</div>
+			<div class="bloco sao-paulo col-md-4">
 
-		<div class="bloco goiania col-md-4">
+				<img src="<?php echo bloginfo('template_url') ?>/img/contato/sao_paulo.png" alt="">
 
-			<img src="<?php echo bloginfo('template_url') ?>/img/contato/goiania.png" alt="">
+				<p>Rua dos Pinheiros, 1060 5° Andar</p>
+				<p>Pinheiros - São Paulo - SP</p>
+				<p>CEP: 05422-002</p>
+				<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 11 4327 0574</p>
 
-			<p>Av. Dep. Jamel Cecílio, 22 Quadra B,lote 04E sl B85</p>
-			<p>Jardim Goiás - Goiás - GO</p>
-			<p>CEP: 74810-100</p>
-			<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 62 3624 9340</p>
+				<a class="btn-mapa" data-mapa="mapa-sao-paulo" id="element2" onClick="" href="javascript:void(0)">COMO CHEGAR</a>
+				
+			</div>
 
-			<a class="btn-mapa" data-mapa="mapa-goias" id="element3" onClick="" href="javascript:void(0)">COMO CHEGAR</a>
-			
+			<div class="bloco goiania col-md-4">
+
+				<img src="<?php echo bloginfo('template_url') ?>/img/contato/goiania.png" alt="">
+
+				<p>Av. Dep. Jamel Cecílio, 22 Quadra B,lote 04E sl B85</p>
+				<p>Jardim Goiás - Goiás - GO</p>
+				<p>CEP: 74810-100</p>
+				<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 62 3624 9340</p>
+
+				<a class="btn-mapa" data-mapa="mapa-goias" id="element3" onClick="" href="javascript:void(0)">COMO CHEGAR</a>
+				
+			</div>
+
 		</div>
 
 	</div>
