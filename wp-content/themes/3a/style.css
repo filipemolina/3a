@@ -788,6 +788,70 @@ div.espacamento
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
+| PORTFOLIO ABERTO
+--------------------------------------------------------------------------------------------------------------------*/
+.header-portfolio
+{
+    background: url('img/portfolio/mundial/header-mundial.jpg') no-repeat center;
+    background-color: #231f20;
+    height: 300px;
+}
+
+.header-portfolio h1
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'verlag-bold';
+    font-size: 45px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 90px;
+    float: left;
+}
+
+.header-portfolio .image-wrap
+{
+    float: right;
+    line-height: 300px;
+}
+
+.header-portfolio img
+{
+    /*float: right;*/
+    /*margin-top: 90px;*/
+}
+
+.container-fluid.portfolio-aberto
+{
+    padding: 0;
+}
+
+.imagens-solucao img
+{
+    float: left;
+}
+
+.titulo-portfolio h2 
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: verlag-bold;
+    margin-bottom: 0;
+    margin-top: 110px;
+}
+
+.margin-row-portfolio{
+    padding: 20px 0;
+}
+
+.helper 
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
 | 3A Internacional
 --------------------------------------------------------------------------------------------------------------------*/
 
@@ -1505,55 +1569,4 @@ a.visitar
 .container-fluid.premios 
 {
     margin-bottom: 70px;
-}
-
-/*--------------------------------------------------------------------------------------------------------------------
-| PORTFOLIO ABERTO
---------------------------------------------------------------------------------------------------------------------*/
-.header-portfolio
-{
-    background: url('img/portfolio/mundial/header-mundial.jpg') no-repeat center;
-    background-color: #231f20;
-    height: 300px;
-}
-
-.header-portfolio h1
-{
-    padding: 0;
-    margin: 0;
-    font-family: 'verlag-bold';
-    font-size: 45px;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-top: 90px;
-    float: left;
-}
-
-.header-portfolio img
-{
-    float: right;
-    margin-top: 90px;
-}
-
-.container-fluid.portfolio-aberto
-{
-    padding: 0;
-}
-
-.imagens-solucao img
-{
-    float: left;
-}
-
-.titulo-portfolio h2 
-{
-    font-size: 40px;
-    text-transform: uppercase;
-    font-family: verlag-bold;
-    margin-bottom: 0;
-    margin-top: 110px;
-}
-
-.margin-row-portfolio{
-    padding: 20px 0;
 }
