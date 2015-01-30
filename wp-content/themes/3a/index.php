@@ -40,6 +40,7 @@
 	</div>
 
 	<?php get_template_part('sections/portfolio'); ?>
+	<?php get_template_part('sections/portfolio-aberto'); ?>
 
 	<!-- Parallax 3 -->
 
