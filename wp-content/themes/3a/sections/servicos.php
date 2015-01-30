@@ -4,9 +4,14 @@
 
 	$servicos = get_page_by_title("Serviços");
 
+	$lista_midia = array();
+	$lista_relacoes = array();
+	$lista_digital = array();
+	$lista_criacao = array();
+
 ?>
 
-<div class="container-fluid servicos">
+<div class="container-fluid servicos servicos-ativo">
 	
 	<div class="container">
 		
@@ -91,7 +96,7 @@
 			<!-- Imagem da seta -->
 
 			<div class="seta">
-				<img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt="">
+				<a href="javascript:void(0)" class="seta-fechar"><img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt=""></a>
 			</div>
 
 			<!-- Descrição da categoria -->
@@ -107,6 +112,14 @@
 				<ul class="fadeIn animated">
 						
 					<?php while($query->have_posts()) : $query->the_post(); ?>
+
+						<?php 
+
+							// Criar um vetor com os titulos para não ter que fazer a query novamente para o mobile
+
+							$lista_midia[] = get_the_title(); 
+
+						?>
 
 						<li><?php echo the_title(); ?></li>
 
@@ -142,7 +155,7 @@
 			<!-- Imagem da seta -->
 
 			<div class="seta">
-				<img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt="">
+				<a href="javascript:void(0)" class="seta-fechar"><img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt=""></a>
 			</div>
 
 			<!-- Descrição da categoria -->
@@ -156,6 +169,14 @@
 				<ul class="fadeIn animated">
 
 					<?php while($query->have_posts()) : $query->the_post(); ?>
+
+						<?php 
+
+							// Criar um vetor com os titulos para não ter que fazer a query novamente para o mobile
+
+							$lista_relacoes[] = get_the_title(); 
+
+						?>
 
 						<li><?php echo the_title(); ?></li>
 
@@ -191,7 +212,7 @@
 			<!-- Imagem da seta -->
 
 			<div class="seta">
-				<img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt="">
+				<a href="javascript:void(0)" class="seta-fechar"><img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt=""></a>
 			</div>
 
 			<!-- Descrição da categoria -->
@@ -205,6 +226,14 @@
 				<ul class="fadeIn animated">
 				
 					<?php while($query->have_posts()) : $query->the_post(); ?>
+
+						<?php 
+
+							// Criar um vetor com os titulos para não ter que fazer a query novamente para o mobile
+
+							$lista_digital[] = get_the_title(); 
+
+						?>
 
 						<li><?php echo the_title(); ?></li>
 
@@ -240,7 +269,7 @@
 			<!-- Imagem da seta -->
 
 			<div class="seta">
-				<img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt="">
+				<a href="javascript:void(0)" class="seta-fechar"><img src="<?php echo bloginfo('template_url') ?>/img/seta.png" alt=""></a>
 			</div>
 
 			<!-- Descrição da categoria -->
@@ -255,11 +284,162 @@
 					
 					<?php while($query->have_posts()) : $query->the_post(); ?>
 
+						<?php
+
+							// Criar um vetor com os titulos para não ter que fazer a query novamente para o mobile
+
+							$lista_criacao[] = get_the_title();
+
+						?>
+
 						<li><?php echo the_title(); ?></li>
 
 					<?php endwhile; ?>
 
 				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- ****************************************************** Versão Mobile ****************************************************** -->
+
+<div class="container-fluid servicos-mobile servicos-ativo">
+	
+	<div class="container">
+
+		<div class="row principal">
+			
+			<!-- Título com a barrinha azul -->
+
+			<div class="titulo wow fadeInLeft">
+				<h2><?php echo $servicos->post_title; ?></h2>
+				<div class="borda-azul"></div>
+			</div>
+
+			<?php echo apply_filters("the_content", $servicos->post_content); ?>
+
+		</div>
+
+		<div class="row">
+
+			<div class="servico midia">
+				
+				<div class="wrap">
+					<div class="icone">
+						<span></span><div>Mídia</div>
+					</div>
+					<div style="clear: both"></div>
+				</div>
+
+				<div class="texto-categoria">
+					<?php echo $midia->description; ?>
+				</div>
+
+				<div class="lista-servicos">
+
+					<ul class="fadeIn animated">
+							
+						<?php foreach ($lista_midia as $item): ?>
+							
+							<li><?php echo $item; ?></li>
+
+						<?php endforeach ?>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="servico relacoes">
+				
+				<div class="wrap">
+					<div class="icone">
+						<span></span><div>Relações Públicas</div>
+					</div>
+					<div style="clear: both"></div>
+				</div>
+
+				<div class="texto-categoria">
+					<?php echo $relacoes->description; ?>
+				</div>
+
+				<div class="lista-servicos">
+
+					<ul class="fadeIn animated">
+							
+						<?php foreach ($lista_relacoes as $item): ?>
+							
+							<li><?php echo $item; ?></li>
+
+						<?php endforeach ?>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="servico digital">
+				
+				<div class="wrap">
+					<div class="icone">
+						<span></span><div>Digital</div>
+					</div>
+					<div style="clear: both"></div>
+				</div>
+
+				<div class="texto-categoria">
+					<?php echo $digital->description; ?>
+				</div>
+
+				<div class="lista-servicos">
+
+					<ul class="fadeIn animated">
+							
+						<?php foreach ($lista_digital as $item): ?>
+							
+							<li><?php echo $item; ?></li>
+
+						<?php endforeach ?>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="servico criacao">
+				
+				<div class="wrap">
+					<div class="icone">
+						<span></span><div>Criação</div>
+					</div>
+					<div style="clear: both"></div>
+				</div>
+
+				<div class="texto-categoria">
+					<?php echo $criacao->description; ?>
+				</div>
+
+				<div class="lista-servicos">
+
+					<ul class="fadeIn animated">
+							
+						<?php foreach ($lista_criacao as $item): ?>
+							
+							<li><?php echo $item; ?></li>
+
+						<?php endforeach ?>
+
+					</ul>
+
+				</div>
 
 			</div>
 

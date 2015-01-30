@@ -143,6 +143,7 @@ body
 {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .hidden
@@ -490,6 +491,11 @@ div.bio p
 | ServiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§os
 --------------------------------------------------------------------------------------------------------------------*/
 
+.container-fluid.servicos-mobile
+{
+    display: none;
+}
+
 .servicos .titulo h2
 {
     color: #fff;
@@ -514,7 +520,7 @@ div.bio p
 {
     background-color: #4e80c0;
     text-align: center;
-    padding: 83px 25px;
+    padding: 83px 2px;
     cursor: pointer;
     height: 219px;
 }
@@ -556,12 +562,13 @@ div.bio p
 
 /* ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âcones Clicados */
 
-.servicos .item.ativo.midia .icone    { background-position: -56px 0; }
-.servicos .item.ativo.relacoes .icone { background-position: -48px 0; }
-.servicos .item.ativo.digital .icone  { background-position: -63px 0; }
-.servicos .item.ativo.criacao .icone  { background-position: -1px 0; }
+.servicos .item.ativo.midia .icone, .servicos .item:hover.midia .icone    { background-position: -56px 0; }
+.servicos .item.ativo.relacoes .icone, .servicos .item:hover.relacoes .icone { background-position: -48px 0; }
+.servicos .item.ativo.digital .icone, .servicos .item:hover.digital .icone  { background-position: -63px 0; }
+.servicos .item.ativo.criacao .icone, .servicos .item:hover.criacao .icone  { background-position: -1px 0; }
 
-.servicos .item.ativo .caption
+.servicos .item.ativo .caption,
+.servicos .item:hover .caption
 {
     color: #4579bd;
 }
@@ -581,7 +588,8 @@ div.bio p
     background-image: url('');
 }
 
-.servicos .item.ativo
+.servicos .item.ativo,
+.servicos .item:hover
 {
     background-color: #fff;
 }
@@ -645,10 +653,21 @@ div.bio p
     text-transform: uppercase;
 }
 
-.servicos.conteudo ul li:before {
+.servicos.conteudo ul li:before,
+.servicos-mobile ul li:before
+{
     content: " • ";
     color: #4579bd;
     margin-right: 10px;
+}
+
+.servicos-mobile ul
+{
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    margin-top: 25px;
+    font-size: 17px;
 }
 
 .servicos .texto
@@ -664,6 +683,9 @@ div.bio p
 .servicos.conteudo img
 {
     margin: 0 0 20px 0;
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 
 .servicos.conteudo.aberto
@@ -1087,15 +1109,24 @@ a.visitar
 
 .container-fluid.contato
 {
-    padding: 80px;
+    padding: 80px 0;
 }
-.bloco{
+
+.bloco
+{
     float: left;
+    overflow: hidden;
+    min-height: 475px;
 }
-.bloco img{
+
+.bloco img
+{
     margin-bottom: 10px;
+    max-width: 100%;
 }
-.bloco p{
+
+.bloco p
+{
     font-family: 'verlag-book';
     font-size: 16px;
     padding: 4px 0 0 10px;
@@ -1103,6 +1134,7 @@ a.visitar
     color: #7c7c7d;
 
 }
+
 .bloco a
 {  
     margin: 0 auto;
@@ -1117,6 +1149,11 @@ a.visitar
     outline: none;
     text-decoration: none;
     float: left;
+    
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25%;
 
     transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
@@ -1153,9 +1190,154 @@ a.visitar
 
 @media (max-width: 785px){
 
+    /* Esconder as abas de serviços caso seja mobile */
+
+    .container-fluid.servicos
+    {
+        display: none;
+    }
+
+    .container-fluid.contato
+    {
+        padding: 0;
+    }
+
     .container.quem-somos
     {
-        padding-left: 30px;
+        padding: 0 30px;
+    }
+
+    .container-fluid.estrutura
+    {
+        padding: 0;
+    }
+
+    .container-fluid.mapa
+    {
+        padding-bottom: 0;
+    }
+
+    .container-fluid.servicos-mobile
+    {
+        display: block;
+        background-color: #4579BD;
+        color: #fff;
+        padding-bottom: 10px;
+    }
+
+    .estrutura .titulo { margin-left: 15px; }
+
+    .servicos-mobile .borda-azul
+    {
+        background-color: #231f20;
+    }
+
+    .servicos-mobile .servico 
+    {
+        background-color: #fff;
+        color: #231f20;
+        font-family: 'verlag-book';
+        font-size: 19px;
+        padding: 20px;
+        margin-top: 25px;
+    }
+
+    .servicos-mobile .icone 
+    {
+        font-family: 'verlag-black';
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #4579bd;
+        position: relative;
+        margin: 0px auto 45px;
+    }
+
+    .servicos-mobile .midia .icone { width: 150px; }
+    .servicos-mobile .digital .icone { width: 220px; }
+    .servicos-mobile .criacao .icone { width: 264px; }
+
+    .servicos-mobile .midia .icone span 
+    {
+        background-image: url('img/servicos/ico_midia_full.png');
+        display: block;
+        float: left;
+        width: 55px;
+        height: 50px;
+        background-position: -56px 0px;
+    }
+
+    .servicos-mobile .relacoes .icone span 
+    {
+        background-image: url('img/servicos/ico_relacoes_full.png');
+        display: block;
+        float: left;
+        width: 98px;
+        height: 75px;
+        background-position: -46px -1px;
+        margin-top: 0;
+        background-size: 136px;
+    }
+
+    .servicos-mobile .digital .icone span 
+    {
+        background-image: url('img/servicos/ico_digital_full.png');
+        display: block;
+        float: left;
+        width: 70px;
+        height: 50px;
+        background-position: -56px 0px;
+    }
+
+    .servicos-mobile .criacao .icone span 
+    {
+        background-image: url('img/servicos/ico_criacao_full.png');
+        display: block;
+        float: left;
+        width: 75px;
+        height: 50px;
+        background-position: -56px 0px;
+    }
+
+    .criacao .icone div
+    {
+        padding-top: 7px;
+    }
+
+    ul#menu-principal a.ativo
+    {
+        color: #5d5b5c !important;
+        background-color: transparent !important;
+    }
+
+    .lista-3a
+    {
+        height: auto;
+        margin: 70px auto;
+        width: 192px;
+    }
+
+    .navbar-header
+    {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .bloco
+    {
+        overflow: hidden;
+        padding-right: 0;
+        padding-left: 0;
+        margin: 45px 0 25px;  
+        max-width: 100%;
+        min-height: 450px;
+    }
+
+    .bloco a
+    {
+        margin-top: 25px;
+        width: 143px;
+        text-align: center;
+        float: none;
     }
     
     .blocos-premios
@@ -1214,6 +1396,16 @@ a.visitar
     .titulo h2
     {
         font-size: 33px;
+    }
+
+    .container-fluid.redes-sociais
+    {
+        padding: 49px 0 0;
+    }
+
+    .redes-sociais .icone
+    {
+        margin-bottom: 55px;
     }
 
 }

@@ -8,26 +8,6 @@ function parallaxRestart()
 
 /////////////////// Função executada quando todas as imagens da página são carregadas
 
-jQuery(function(){
-
-	$ = jQuery;
-
-	var largura = $(window).width();
-
-	if(largura < 982)
-	{
-		$("*").removeClass("fadeInRightBig");
-		$("*").removeClass("fadeInLeft");
-		$("*").removeClass("fadeInRight");
-		$("*").removeClass("zoomIn");
-		$("*").removeClass("flipInY");
-		$("*").removeClass("flipInX");
-		$("*").removeClass("fadeIn");
-		$("*").removeClass("wow");
-	}
-
-});
-
 jQuery(window).load(function(){
 
 	/*----------------------------------------
@@ -66,22 +46,7 @@ jQuery(window).load(function(){
 	| Plugin para mostrar elementos apenas quando entrarem na tela
 	------------------------------------------------------------------------------*/
 
-	//Executar as animações apenas na versão desktop
-
-	var largura = $(window).width();
-
-	if(largura > 981)
-	{
-		var wow = new WOW({
-				offset : 100
-		});
-
-		//Adicionar os efeitos à todos os parágrafos
-
-		$(".quem-somos p, .principal p").addClass("wow fadeInRight");
-
-		wow.init();
-	}
+	
 
 	/*------------------------------------------------------------------------------
 	| Mapas
@@ -115,13 +80,15 @@ jQuery(window).load(function(){
 
 		var classe_elemento = $(this).attr("href").replace("http://", "");
 
+		console.log(classe_elemento);
+
 		// //Scrollar até o elemento clicado
 
 		animando = true;
 
 		$('html, body').animate({
 	    
-	        scrollTop: $("."+classe_elemento).offset().top - 60
+	        scrollTop: $("."+classe_elemento).offset().top - 59
 	    
 	    }, 1000, "swing", function(){
 
@@ -239,8 +206,6 @@ jQuery(window).load(function(){
 
 		//Animar a altura da div
 
-		console.log("clicou");
-
 		$("div.conteudo.servicos").stop().animate( { height : "300px" }, 0, "linear", function(){
 
 			//Adicionar a classe "aberto" à div
@@ -250,6 +215,18 @@ jQuery(window).load(function(){
 			parallaxRestart();
 
 		});
+
+	});
+
+	// Seta para fechar a aba de serviços
+
+	$(".seta-fechar").click(function(){
+
+		$("div.conteudo.servicos").css({ height : 0 });
+
+		setTimeout(function(){
+			$("div.item").removeClass('ativo');
+		}, 200);
 
 	});
 

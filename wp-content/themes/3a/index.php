@@ -1,7 +1,9 @@
 <?php get_header() ?>
 
 	<div class="container-fluid hero-unit">
-		<img src="<?php bloginfo('template_url'); ?>/img/hero-unit/frase.png" alt="" class="wow fadeInRightBig"/>
+		<div class="row">
+			<img src="<?php bloginfo('template_url'); ?>/img/hero-unit/frase.png" alt="" class="wow fadeInRightBig"/>
+		</div>
 	</div>
 	
 	<!-- Sessão Quem somos -->
@@ -31,6 +33,9 @@
 
 	<?php get_template_part('sections/servicos'); ?>
 
+	<!-- Serviços Mobile -->
+
+	<?php get_template_part('sections/servicos_mobile'); ?>
 
 	<!-- Parallax 2 -->
 
