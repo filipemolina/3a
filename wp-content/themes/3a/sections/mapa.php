@@ -5,7 +5,7 @@
 		<div class="row">
 			<img class="img-responsive" src="<?php echo bloginfo('template_url') ?>/img/3aInternacional/mapa.png" alt="">
 		</div>
-		<div class="row">
+		<div class="row respiro">
 			<h3>ESCRITÓRIOS REGIONAIS</h3>
 		</div>
 		<div class="lista-3a row">
