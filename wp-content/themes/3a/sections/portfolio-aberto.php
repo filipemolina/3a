@@ -6,14 +6,15 @@
 
 		<div class="btn-portfolio">
 			<ul>
-				<li><</li>
-				<li>x</li>
-				<li>></li>
+				<li><a href="javascript:void(0)" data-function="prev"><</a></li>
+				<li><a href="javascript:void(0)" data-function="close">x</a></li>
+				<li><a href="javascript:void(0)" data-function="next">></a></li>
 			</ul>
 		</div>
 
 		<?php 
 				/*Argumentos de equipe */
+				
 				$args = array(
 					'post_type' => 'portfolio',
 					'post_status' => 'publish'
