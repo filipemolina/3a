@@ -798,17 +798,60 @@ div.espacamento
 {
     margin: 0 auto;
 }
-.detalhes{
+
+.img-portfolio .detalhes
+{
+    display: none;
+}
+
+.img-portfolio:hover .detalhes
+{
     width: 140px;
     height: 40px;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid #fff;
     font-family: 'verlag-black';
     font-size: 12px;
-    margin: 40px auto;
     text-align: center;
     padding: 10px 0;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    margin-left: -70px;
+    z-index: 10000;
+    display: block;
 }
+
+.img-portfolio .detalhes a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+div.item-portfolio,
+div.btn-portfolio
+{
+    display: none;
+}
+
+.btn-portfolio ul 
+{
+    margin: 30px auto;
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 123px;
+}
+
+.btn-portfolio li 
+{
+    list-style: none;
+    display: inline;
+    border: 1px solid #000;
+    font-family: 'verlag-bold';
+    padding: 0 13px 3px 14px;
+    font-size: 15px;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------
 | PORTFOLIO ABERTO
 --------------------------------------------------------------------------------------------------------------------*/

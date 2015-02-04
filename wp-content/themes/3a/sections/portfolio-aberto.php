@@ -4,7 +4,14 @@
 			
 		<!-- Título com a barrinha azul -->
 
-		<div class="btn-portfolio"></div>
+		<div class="btn-portfolio">
+			<ul>
+				<li><</li>
+				<li>x</li>
+				<li>></li>
+			</ul>
+		</div>
+
 		<?php 
 				/*Argumentos de equipe */
 				$args = array(
@@ -18,7 +25,7 @@
 				<?php while($query->have_posts()) : $query->the_post();
 		?>
 
-		<div class="item-portfolio">
+		<div class="item-portfolio" data-cliente="<?php echo the_title(); ?>">
 			
 			<div class="header-portfolio">
 				<div class="container">
@@ -34,7 +41,7 @@
 			<div class="container">
 
 				<div class="row">
-					<div class="titulo-portfolio wow fadeInLeft">
+					<div class="titulo-portfolio">
 						<h2>Desafio</h2>
 						<div class="borda-azul"></div>
 					</div>
@@ -44,7 +51,7 @@
 				</div>
 
 				<div class="row col-md-offset-2">
-					<div class="titulo-portfolio wow fadeInLeft">
+					<div class="titulo-portfolio">
 						<h2>Solução</h2>
 						<div class="setinha-azul"></div>
 					</div>

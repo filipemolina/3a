@@ -231,6 +231,27 @@ jQuery(window).load(function(){
 	});
 
 	/*--------------------------------------------------------------------------------
+	| Portfolio
+	--------------------------------------------------------------------------------*/
+
+	$("div.img-portfolio a").click(function(){
+
+		//$("div.pecas-wrap").addClass('fadeOutLeft animated');
+		$("div.portfolio").addClass('fadeOutLeft animated');
+
+		var cliente = $(this).data('cliente');
+
+		setTimeout(function(){
+
+			$("div.portfolio").css('height', 0);
+
+			$("div.item-portfolio[data-cliente='"+cliente+"'], div.btn-portfolio").css('display', 'block').addClass('fadeInRight animated');
+
+		}, 500);
+
+	});
+
+	/*--------------------------------------------------------------------------------
 	| Google Maps
 	--------------------------------------------------------------------------------*/
 

@@ -24,46 +24,49 @@
 				$i = 0;
 				$velocidade = 0.1; ?>
 
-			<!-- Iniciar o Loop Equipe -->
-			
-			<?php while($query->have_posts()) : $query->the_post();?>
+			<div class="pecas-wrap">
 				
-				<?php if ($i % 4 == 0): ?>
-
-					<!-- Abrir uma linha à cada 4 fotos -->
-
-					<div class="row">
-
-				<?php endif;?>
-
-					<!-- Mostrar a Div com a foto -->
+				<!-- Iniciar o Loop Equipe -->
+			
+				<?php while($query->have_posts()) : $query->the_post();?>
 					
-					<div class="col-md-3 container-image img-portfolio" data-wow-delay="<?php echo ($i+1) * $velocidade ?>s">
+					<?php if ($i % 4 == 0): ?>
 
+						<!-- Abrir uma linha à cada 4 fotos -->
+
+						<div class="row">
+
+					<?php endif;?>
+
+						<!-- Mostrar a Div com a foto -->
 						
-						<div class="overlay-hover">
+						<div class="col-md-3 container-image img-portfolio" data-wow-delay="<?php echo ($i+1) * $velocidade ?>s">
+
+							<div class="overlay-hover"></div>
+
+							<div class="logo-clientes"><img class="img-responsive" src='<?php echo types_render_field('logo-do-cliente', array('raw' => 'true')); ?>'/></div>
+
+							<img class="img-responsive zoom-image" src='<?php echo types_render_field('bg-portfolio', array('raw' => 'true')); ?>'/>
+
 							<div class="detalhes">
-								VER DETALHES
+								<a href="javascript:void(0)" data-cliente="<?php echo the_title(); ?>">VER DETALHES</a>
 							</div>
+
 						</div>
-						<div class="logo-clientes"><img class="img-responsive" src='<?php echo types_render_field('logo-do-cliente', array('raw' => 'true')); ?>'/></div>
-
-						<img class="img-responsive zoom-image" src='<?php echo types_render_field('bg-portfolio', array('raw' => 'true')); ?>'/>
-
-						
-					</div>
 
 
-				<?php if (($i + 1) % 4 == 0 || $query->post_count == $i+1):  ?>
+					<?php if (($i + 1) % 4 == 0 || $query->post_count == $i+1):  ?>
 
-					<!-- Fechar uma Div à cada 4 fotos -->
+						<!-- Fechar uma Div à cada 4 fotos -->
 
-					</div>
+						</div>
 
-				<?php endif; ?>
+					<?php endif; ?>
 
-				<?php $i++; //Incrementar o contador ?>
+					<?php $i++; //Incrementar o contador ?>
 
-			<?php endwhile; ?>
+				<?php endwhile; ?>
+
+			</div>
 		
 	</div>
