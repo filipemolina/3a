@@ -254,13 +254,15 @@ jQuery(window).load(function(){
 
 			// Adicionar as classes de animação nas divs de informações do cliente e na navegação
 
-			$("div.item-portfolio[data-cliente='"+cliente+"'], div.btn-portfolio").css('display', 'block').removeClass('fadeOutLeft animated').addClass('fadeInRight animated');
+			$("div.item-portfolio[data-cliente='"+cliente+"'], div.btn-portfolio").css('display', 'block').removeClass('zoomOut animated').addClass('fadeInUp animated');
 
 			// Remover a classe "aberto" de todas as divs e adicionar apenas na div do cliente escolhido
 
 			$("div.item-portfolio").removeClass('aberto');
 
 			$("div.item-portfolio[data-cliente='"+cliente+"']").addClass('aberto');
+
+			parallaxRestart()
 
 		}, 500);
 
@@ -290,7 +292,7 @@ jQuery(window).load(function(){
 		{
 			// Fechar a div com as informações
 
-			$("div.item-portfolio.aberto, div.btn-portfolio").removeClass("fadeInRight animated").addClass('fadeOutLeft animated');
+			$("div.item-portfolio.aberto, div.btn-portfolio").removeClass("fadeInUp animated").addClass('zoomOut animated');
 
 			setTimeout(function(){
 
@@ -299,6 +301,8 @@ jQuery(window).load(function(){
 				$("div.portfolio").css('height', 'auto').removeClass('fadeOutLeft animated').addClass('fadeInRight animated');
 
 				$('div.item-portfolio').css('display', 'none');
+
+				parallaxRestart()
 
 			}, 500);
 		}

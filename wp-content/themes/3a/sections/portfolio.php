@@ -44,9 +44,9 @@
 
 							<div class="overlay-hover"></div>
 
-							<div class="logo-clientes"><img class="img-responsive" src='<?php echo types_render_field('logo-do-cliente', array('raw' => 'true')); ?>'/></div>
+							<div class="logo-clientes"><img class="img-responsive" src='<?php echo types_render_field('logo-externa-port', array('raw' => 'true')); ?>'/></div>
 
-							<img class="img-responsive zoom-image" src='<?php echo types_render_field('bg-portfolio', array('raw' => 'true')); ?>'/>
+							<img class="img-responsive zoom-image" src='<?php echo types_render_field('thumbnail-externo', array('raw' => 'true')); ?>'/>
 
 							<div class="detalhes">
 								<a href="javascript:void(0)" data-cliente="<?php echo the_title(); ?>">VER DETALHES</a>

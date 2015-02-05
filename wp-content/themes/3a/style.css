@@ -863,8 +863,8 @@ div.btn-portfolio
 --------------------------------------------------------------------------------------------------------------------*/
 .header-portfolio
 {
-    background: url('img/portfolio/mundial/header-mundial.jpg') no-repeat center;
-    background-color: #231f20;
+    /*background: url('img/portfolio/mundial/header-mundial.jpg') no-repeat center;*/
+    /*background-color: #231f20;*/
     height: 300px;
 }
 
