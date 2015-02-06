@@ -137,7 +137,7 @@ Theme Name: 3A WorldWide
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| GenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ricos
+| Genericos
 --------------------------------------------------------------------------------------------------------------------*/
 body
 {
@@ -463,7 +463,7 @@ div.bio p
 /* -------------- END Hover imagens da equipe ------------*/
 
 /*--------------------------------------------------------------------------------------------------------------------
-| PrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âªmios
+| Premios
 --------------------------------------------------------------------------------------------------------------------*/
 .blocos-premios{
     margin-top: 40px;
@@ -497,7 +497,7 @@ div.bio p
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| ServiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§os
+| Serviços
 --------------------------------------------------------------------------------------------------------------------*/
 
 .container-fluid.servicos-mobile
@@ -523,15 +523,20 @@ div.bio p
     float: left;
 }
 
-/*************************** ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âcones ***************************/
+/*************************** Serviços icones ***************************/
 
 .servicos .item 
 {
     background-color: #4e80c0;
     text-align: center;
-    padding: 83px 2px;
     cursor: pointer;
     height: 219px;
+}
+.item {
+    position: relative;
+}
+.caption{
+    position: absolute;
 }
 
 /* ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âcones em posiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o normal */
@@ -539,7 +544,7 @@ div.bio p
 .servicos .item.midia .icone
 {
     background-image: url('img/servicos/ico_midia_full.png');
-    height: 50px;
+    height: px;
     width: 54px;
     margin-left: 85px;
 }
@@ -547,24 +552,24 @@ div.bio p
 .servicos .item.relacoes .icone
 {
     background-image: url('img/servicos/ico_relacoes_full.png');
-    height: 50px;
-    width: 46px;
+    height: 213px;
+    width: 263px;
     margin: 0 auto;
 }
 
 .servicos .item.digital .icone
 {
     background-image: url('img/servicos/ico_digital_full.png');
-    height: 50px;
-    width: 62px;
+    height: 213px;
+    width: 263px;
     margin: 0 auto;
 }
 
 .servicos .item.criacao .icone
 {
     background-image: url('img/servicos/ico_criacao_full.png');
-    height: 50px;
-    width: 41px;
+    height: 213px;
+    width: 263px;
     margin: 0 auto;
     background-position: -43px 0;
 }
