@@ -234,20 +234,78 @@ jQuery(window).load(function(){
 	| Portfolio
 	--------------------------------------------------------------------------------*/
 
+	// Imagens do portfolio fechado
+
 	$("div.img-portfolio a").click(function(){
 
-		//$("div.pecas-wrap").addClass('fadeOutLeft animated');
+		// Esconder a Div com o portfólio fechado
+
 		$("div.portfolio").addClass('fadeOutLeft animated');
+
+		// Obter o nome do cliente para ser aberto
 
 		var cliente = $(this).data('cliente');
 
 		setTimeout(function(){
 
+			// Reduzir a altura da div "portfolio" para a entrada da div com as informações do cliente
+
 			$("div.portfolio").css('height', 0);
 
-			$("div.item-portfolio[data-cliente='"+cliente+"'], div.btn-portfolio").css('display', 'block').addClass('fadeInRight animated');
+			// Adicionar as classes de animação nas divs de informações do cliente e na navegação
+
+			$("div.item-portfolio[data-cliente='"+cliente+"'], div.btn-portfolio").css('display', 'block').removeClass('zoomOut animated').addClass('fadeInUp animated');
+
+			// Remover a classe "aberto" de todas as divs e adicionar apenas na div do cliente escolhido
+
+			$("div.item-portfolio").removeClass('aberto');
+
+			$("div.item-portfolio[data-cliente='"+cliente+"']").addClass('aberto');
+
+			parallaxRestart()
 
 		}, 500);
+
+	});
+
+	// Navegação do portfolio aberto
+
+	$(".btn-portfolio a").click(function(){
+
+		// Próximo
+
+		if($(this).data('function') == 'next')
+		{
+			$("div.item-portfolio.aberto").removeClass('aberto').next('div.item-portfolio').addClass('aberto');
+		}
+
+		// Anterior
+
+		if($(this).data('function') == 'prev')
+		{
+			$("div.item-portfolio.aberto").removeClass('aberto').prev('div.item-portfolio').addClass('aberto');	
+		}
+
+		// Fechar
+
+		if($(this).data('function') == 'close')
+		{
+			// Fechar a div com as informações
+
+			$("div.item-portfolio.aberto, div.btn-portfolio").removeClass("fadeInUp animated").addClass('zoomOut animated');
+
+			setTimeout(function(){
+
+				// Mostrar novamente a lista de todos os clientes
+
+				$("div.portfolio").css('height', 'auto').removeClass('fadeOutLeft animated').addClass('fadeInRight animated');
+
+				$('div.item-portfolio').css('display', 'none');
+
+				parallaxRestart()
+
+			}, 500);
+		}
 
 	});
 

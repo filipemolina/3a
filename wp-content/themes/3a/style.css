@@ -857,13 +857,19 @@ div.btn-portfolio
     font-size: 15px;
 }
 
+.btn-portfolio a 
+{
+    text-decoration: none;
+    color: #000;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------
 | PORTFOLIO ABERTO
 --------------------------------------------------------------------------------------------------------------------*/
 .header-portfolio
 {
-    background: url('img/portfolio/mundial/header-mundial.jpg') no-repeat center;
-    background-color: #231f20;
+    /*background: url('img/portfolio/mundial/header-mundial.jpg') no-repeat center;*/
+    /*background-color: #231f20;*/
     height: 300px;
 }
 
