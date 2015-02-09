@@ -766,12 +766,14 @@ div.espacamento
 | Portfolio
 --------------------------------------------------------------------------------------------------------------------*/
 
-.img-portfolio
+.img-portfolio,
+.img-portfolio-mobile
 {
     padding: 0;
 }
 
-.img-portfolio .overlay-hover img
+.img-portfolio .overlay-hover img,
+.img-portfolio-mobile .overlay-hover img
 {
     display: block;
     margin: 0 auto;
@@ -786,7 +788,8 @@ div.espacamento
     width: 100%;
     height: 100%;
 }
-.img-portfolio:hover .logo-clientes
+.img-portfolio:hover .logo-clientes,
+.img-portfolio-mobile:hover .logo-clientes
 {
     display: block;
     opacity: 1;
@@ -799,17 +802,20 @@ div.espacamento
 }
 
 
-.img-portfolio img
+.img-portfolio img,
+.img-portfolio-mobile img
 {
     margin: 0 auto;
 }
 
-.img-portfolio .detalhes
+.img-portfolio .detalhes,
+.img-portfolio-mobile .detalhes
 {
     display: none;
 }
 
-.img-portfolio:hover .detalhes
+.img-portfolio:hover .detalhes,
+.img-portfolio-mobile:hover .detalhes
 {
     width: 140px;
     height: 40px;
@@ -826,7 +832,8 @@ div.espacamento
     display: block;
 }
 
-.img-portfolio .detalhes a
+.img-portfolio .detalhes a,
+.img-portfolio-mobile .detalhes a
 {
     text-decoration: none;
     color: #fff;
