@@ -137,4 +137,6 @@
 		<?php $i++; //Incrementar o contador ?>
 
 	<?php endwhile; ?>
+
+		<a href="javascript:void(0)" class="btn-vermais">VER MAIS</a>
 	</div>

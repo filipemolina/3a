@@ -281,6 +281,10 @@ jQuery(window).load(function(){
 	| Portfolio
 	--------------------------------------------------------------------------------*/
 
+	// Mostrar apenas os 8 primeiros itens do portfolio
+
+	$("div.img-portfolio").slice(4).css('display', 'none');
+
 	// Imagens do portfolio fechado
 
 	$("div.img-portfolio a").click(function(){
@@ -301,13 +305,13 @@ jQuery(window).load(function(){
 
 			// Adicionar as classes de animação nas divs de informações do cliente e na navegação
 
-			$("div.item-portfolio[data-cliente='"+cliente+"'], div.btn-portfolio").css('display', 'block').removeClass('zoomOutDown animated').addClass('fadeInUp animated');
+			$("div.portfolio-aberto div.item-portfolio[data-cliente='"+cliente+"'], div.portfolio-aberto div.btn-portfolio").css('display', 'block').removeClass('zoomOutDown animated').addClass('fadeInUp animated');
 
 			// Remover a classe "aberto" de todas as divs e adicionar apenas na div do cliente escolhido
 
-			$("div.item-portfolio").removeClass('aberto');
+			$("div.portfolio-aberto div.item-portfolio").removeClass('aberto');
 
-			$("div.item-portfolio[data-cliente='"+cliente+"']").addClass('aberto');
+			$("div.portfolio-aberto div.item-portfolio[data-cliente='"+cliente+"']").addClass('aberto');
 
 			scroll('btn-portfolio', 90);
 
@@ -315,7 +319,7 @@ jQuery(window).load(function(){
 
 			setTimeout(function(){
 
-				$("div.item-portfolio[data-cliente='"+cliente+"'], div.btn-portfolio").removeClass('fadeInUp animated');
+				$("div.portfolio-aberto div.item-portfolio[data-cliente='"+cliente+"'], div.portfolio-aberto div.btn-portfolio").removeClass('fadeInUp animated');
 
 			}, 1000);
 
@@ -325,7 +329,7 @@ jQuery(window).load(function(){
 
 	// Navegação do portfolio aberto
 
-	$(".btn-portfolio a").click(function(){
+	$(".portfolio-aberto .btn-portfolio a").click(function(){
 
 		// Próximo
 
@@ -426,8 +430,122 @@ jQuery(window).load(function(){
 
 	$('div.img-portfolio-mobile a').click(function(){
 
-		
-		
+		//Rolar até o portfólio aberto
+
+		scroll('conteudo-portfolio-mobile', 50);
+
+		// Obter o nome do cliente para ser aberto
+
+		var cliente = $(this).data('cliente');
+
+		setTimeout(function(){
+
+			// Abrir o portfólio
+
+			$(".conteudo-portfolio-mobile .item-portfolio[data-cliente='"+cliente+"']").css('display', 'block').addClass('fadeInUp animated aberto');
+
+			// Mostrar os botões de navegação
+
+			$(".conteudo-portfolio-mobile .btn-portfolio").css('display', 'block').addClass('fadeInUp animated');
+
+			parallaxRestart();
+
+			setTimeout(function(){
+
+				$(".conteudo-portfolio-mobile .item-portfolio[data-cliente='"+cliente+"']").removeClass('fadeInUp animated');
+				$(".conteudo-portfolio-mobile .btn-portfolio").removeClass('fadeInUp animated');
+
+			}, 1000);
+
+			// Adicionar as classes de animação nas divs de informações do cliente e na navegação
+
+		}, 1000);
+
+	});
+
+	$(".conteudo-portfolio-mobile .btn-portfolio a").click(function(){
+
+		if($(this).data('function') == 'next')
+		{
+			// Esconder o item atual
+
+			$("div.item-portfolio.aberto").addClass('fadeOut animated');
+
+			// Abrir o próximo item
+
+			setTimeout(function(){
+
+				$("div.item-portfolio.aberto").css('display', 'none').removeClass('fadeOut animated');
+
+				// Obter o próximo item da lista
+
+				proximo_item = proximo(".conteudo-portfolio-mobile div.item-portfolio.aberto", ".conteudo-portfolio-mobile div.item-portfolio", "cliente");
+
+				// Trocar a classe
+
+				$("div.item-portfolio.aberto").removeClass('aberto');
+
+				// Mostrar o próximo
+
+				$(proximo_item).css('display', 'block').addClass('fadeIn animated aberto')
+
+				setTimeout(function(){
+
+					$(proximo_item).removeClass('fadeIn animated');
+
+				}, 1000);
+
+			}, 500);
+		}
+
+		if($(this).data('function') == 'prev')
+		{
+			// Esconder o item atual
+
+			$("div.item-portfolio.aberto").addClass('fadeOut animated');
+
+			// Abrir o próximo item
+
+			setTimeout(function(){
+
+				$("div.item-portfolio.aberto").css('display', 'none').removeClass('fadeOut animated');
+
+				// Obter o próximo item da lista
+
+				proximo_item = anterior(".conteudo-portfolio-mobile div.item-portfolio.aberto", ".conteudo-portfolio-mobile div.item-portfolio", "cliente");
+
+				// Trocar a classe
+
+				$("div.item-portfolio.aberto").removeClass('aberto');
+
+				// Mostrar o próximo
+
+				$(proximo_item).css('display', 'block').addClass('fadeIn animated aberto')
+
+				setTimeout(function(){
+
+					$(proximo_item).removeClass('fadeIn animated');
+
+				}, 1000);
+
+			}, 500);
+		}
+
+		if($(this).data('function') == 'close')
+		{
+			$(".conteudo-portfolio-mobile div.item-portfolio").addClass("fadeOut animated").removeClass('aberto');
+			$(".conteudo-portfolio-mobile div.btn-portfolio").addClass("fadeOut animated");
+
+			scroll('portfolio-mobile', 50);
+
+			setTimeout(function(){
+
+				$(".conteudo-portfolio-mobile div.item-portfolio").css('display', 'none').removeClass('fadeOut animated');
+				$(".conteudo-portfolio-mobile div.btn-portfolio").css('display', 'none').removeClass('fadeOut animated');
+
+			}, 1000);
+		}
+
 	});
 
 	/*--------------------------------------------------------------------------------
@@ -475,6 +593,8 @@ jQuery(window).load(function(){
 			$(".container-fluid.mapa-contato").slideDown();
 
 		});
+
+		scroll('mapa-contato', 70);
 
 	});
 
