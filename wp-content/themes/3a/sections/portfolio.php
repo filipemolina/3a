@@ -17,7 +17,8 @@
 				/*Argumentos de portfolio */
 				$args = array(
 					'post_type' => 'portfolio',
-					'post_status' => 'publish'
+					'post_status' => 'publish',
+					'posts_per_page' => -1
 				); 
 
 				$query = new WP_Query($args);

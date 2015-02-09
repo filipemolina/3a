@@ -17,7 +17,8 @@
 				
 				$args = array(
 					'post_type' => 'portfolio',
-					'post_status' => 'publish'
+					'post_status' => 'publish',
+					'posts_per_page' => -1
 				); 
 
 				$query = new WP_Query($args);
@@ -38,7 +39,7 @@
 				<div class="header-portfolio" style="background-image: url('<?php echo types_render_field('imagem-de-fundo-interna', array('raw' => 'true')); ?>'); background-position: center center; background-repeat: no-repeat; background-color: <?php echo types_render_field('cor-de-fundo', array('raw' => 'true')); ?>;">
 					<div class="container">
 						<div class="text-wrap">
-							<h1><?php echo get_the_title(); ?></h1>
+							<h1><?php echo the_content(); ?></h1>
 						</div>
 						<div class="image-wrap">
 							<img src='<?php echo types_render_field('logo-interno', array('raw' => 'true')); ?>' alt="">
@@ -101,7 +102,7 @@
 				<div class="header-portfolio" style="background-image: url('<?php echo types_render_field('imagem-de-fundo-interna', array('raw' => 'true')); ?>'); background-position: center center; background-repeat: no-repeat; background-color: <?php echo types_render_field('cor-de-fundo', array('raw' => 'true')); ?>;">
 					<div class="container">
 						<div class="text-wrap">
-							<h1><?php echo get_the_title(); ?></h1>
+							<h1><?php echo the_content(); ?></h1>
 						</div>
 						<div class="image-wrap">
 							<img src='<?php echo types_render_field('logo-interno', array('raw' => 'true')); ?>' alt="">
@@ -123,7 +124,7 @@
 
 					<div class="row">
 						<div class="imagens-solucao">
-							<?php echo types_render_field('imagens-da-peca', array()); ?>
+							<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
 						</div>
 					</div>
 

@@ -46,6 +46,7 @@
 
 	<?php get_template_part('sections/portfolio'); ?>
 	<?php get_template_part('sections/portfolio-aberto'); ?>
+	<?php get_template_part('sections/portfolio-mobile'); ?>
 
 	<!-- Parallax 3 -->
 
