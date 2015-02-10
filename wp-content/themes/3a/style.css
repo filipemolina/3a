@@ -497,7 +497,7 @@ div.bio p
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| Serviços
+| ServiÃ§os
 --------------------------------------------------------------------------------------------------------------------*/
 
 .container-fluid.servicos-mobile
@@ -523,7 +523,7 @@ div.bio p
     float: left;
 }
 
-/*************************** Serviços icones ***************************/
+/*************************** ServiÃ§os icones ***************************/
 
 .servicos .item 
 {
@@ -539,7 +539,7 @@ div.bio p
     position: absolute;
 }
 
-/* ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âcones em posiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o normal */
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones em posiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o normal */
 
 .servicos .item.midia .icone
 {
@@ -574,7 +574,7 @@ div.bio p
     background-position: -43px 0;
 }
 
-/* ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âcones Clicados */
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones Clicados */
 
 .servicos .item.ativo.midia .icone, .servicos .item:hover.midia .icone    { background-position: -56px 0; }
 .servicos .item.ativo.relacoes .icone, .servicos .item:hover.relacoes .icone { background-position: -48px 0; }
@@ -626,7 +626,7 @@ div.bio p
     background-color: #4579bd;
 }
 
-/*************************** ConteÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºdo ***************************/
+/*************************** ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo ***************************/
 
 .servicos.conteudo
 {
@@ -670,7 +670,7 @@ div.bio p
 .servicos.conteudo ul li:before,
 .servicos-mobile ul li:before
 {
-    content: " • ";
+    content: " â€¢ ";
     color: #4579bd;
     margin-right: 10px;
 }
@@ -933,7 +933,15 @@ div.btn-portfolio
     height: 100%;
     vertical-align: middle;
 }
-
+.text-desafio{
+    font-family: 'verlag-book';
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.text-solucao{
+    font-family: 'verlag-book';
+    font-size: 18px;
+}
 /*--------------------------------------------------------------------------------------------------------------------
 | 3A Internacional
 --------------------------------------------------------------------------------------------------------------------*/
@@ -1019,7 +1027,7 @@ a.visitar
 | Mapa 
 --------------------------------------------------------------------------------------------------------------------*/
 .container-fluid.mapa{
-    background: #e6e7e8;
+    background: #f4f4f4;
     margin-top: 110px;
     padding: 70px 0px;
 }
@@ -1050,7 +1058,7 @@ a.visitar
     text-transform: uppercase;
 }
 .lista-3a li:before{
-    content: " • ";
+    content: " â€¢ ";
 }
 
 .lista-3a li.america-do-sul:before{
@@ -1076,7 +1084,7 @@ a.visitar
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| Formulário de Contato
+| FormulÃ¡rio de Contato
 --------------------------------------------------------------------------------------------------------------------*/
 
 .container-fluid.form-contato
@@ -1171,7 +1179,7 @@ a.visitar
 .container-fluid.redes-sociais
 {
     background: #4579bd;
-    padding: 49px 0;
+    padding: 75px 0;
     margin-top: 80px;
 }
 
@@ -1312,9 +1320,6 @@ a.visitar
     
     position: absolute;
     bottom: 0;
-    left: 50%;
-    margin-left: -25%;
-
     transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -1350,7 +1355,7 @@ a.visitar
 
 @media (max-width: 785px){
 
-    /* Esconder as abas de serviços caso seja mobile */
+    /* Esconder as abas de serviÃ§os caso seja mobile */
 
     .container-fluid.servicos
     {
@@ -1656,4 +1661,7 @@ a.visitar
 .container-fluid.premios 
 {
     margin-bottom: 70px;
+}
+.margin-estrutura{
+    margin-bottom: 40px;
 }
