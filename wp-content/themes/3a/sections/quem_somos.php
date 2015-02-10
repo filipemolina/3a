@@ -1,4 +1,4 @@
-
+<div class="container-fluid">
 	<div class="container quem-somos">
 		<div class="row">
 
@@ -19,3 +19,4 @@
 
 		</div>
 	</div>
+</div>
