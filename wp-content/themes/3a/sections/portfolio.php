@@ -1,6 +1,6 @@
 <!-- Portfolio -->
 
-	<div class="container-fluid portfolio">
+	<div class="container-fluid portfolio desktop">
 			
 			<!-- Título com a barrinha azul -->
 

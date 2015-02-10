@@ -819,11 +819,9 @@ div.espacamento
 {
     width: 140px;
     height: 40px;
-    border: 2px solid #fff;
     font-family: 'verlag-black';
     font-size: 12px;
     text-align: center;
-    padding: 10px 0;
     position: absolute;
     top: 160px;
     left: 50%;
@@ -837,10 +835,12 @@ div.espacamento
 {
     text-decoration: none;
     color: #fff;
+    border: 2px solid #fff;
+    padding: 5px 15px;
 }
 
-div.item-portfolio,
-div.btn-portfolio
+.portfolio-aberto div.item-portfolio,
+.portfolio-aberto div.btn-portfolio
 {
     display: none;
 }
@@ -858,9 +858,7 @@ div.btn-portfolio
 {
     list-style: none;
     display: inline;
-    border: 1px solid #000;
     font-family: 'verlag-bold';
-    padding: 0 13px 3px 14px;
     font-size: 15px;
 }
 
@@ -868,6 +866,8 @@ div.btn-portfolio
 {
     text-decoration: none;
     color: #000;
+    border: 1px solid #000;
+    padding: 0px 10px 4px 10px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -933,6 +933,7 @@ div.btn-portfolio
     height: 100%;
     vertical-align: middle;
 }
+
 .text-desafio{
     font-family: 'verlag-book';
     font-size: 18px;
@@ -942,6 +943,31 @@ div.btn-portfolio
     font-family: 'verlag-book';
     font-size: 18px;
 }
+
+a.btn-vermais 
+{
+    display: block;
+    margin: 28px auto 0px;
+    width: 165px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-family: 'verlag-bold';
+    border: 2px solid #000;
+    padding: 6px 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------
+| Portfolio Mobile
+--------------------------------------------------------------------------------------------------------------------*/
+
+.portfolio-mobile,
+.conteudo-portfolio-mobile .btn-portfolio,
+.conteudo-portfolio-mobile .item-portfolio
+{
+    display: none;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------
 | 3A Internacional
 --------------------------------------------------------------------------------------------------------------------*/
@@ -1466,6 +1492,23 @@ a.visitar
     .criacao .icone div
     {
         padding-top: 7px;
+    }
+
+    /* Esconder a área de portfólio normal caso seja mobile */
+
+    div.portfolio.desktop
+    {
+        display: none;
+    }
+
+    div.portfolio-mobile
+    {
+        display: block;
+    }
+
+    .conteudo-portfolio-mobile .item-portfolio
+    {
+        display: none;
     }
 
     ul#menu-principal a.ativo
