@@ -59,12 +59,12 @@
 						</div>
 					</div>
 
-					<div class="row col-md-offset-2">
+					<div class="row">
 						<div class="titulo-portfolio">
 							<h2>Solução</h2>
 							<div class="setinha-azul"></div>
 						</div>
-						<div class="text-desafio">
+						<div class="text-solucao">
 							<?php echo types_render_field('solucao-port', array('raw' => 'true')); ?>
 						</div>
 					</div>

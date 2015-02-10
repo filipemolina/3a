@@ -10,7 +10,7 @@
 				<h2>Estrutura</h2>
 				<div class="borda-azul"></div>
 			</div>
-
+		
 			<?php 
 			
 				$args = array(
@@ -25,7 +25,7 @@
 
 			<!-- FlexSlider -->
 
-			<div class="flexslider wow fadeIn" data-wow-offset="300">
+			<div class="flexslider wow fadeIn margin-estrutura" data-wow-offset="300">
 
 				<ul class="slides">
 					
