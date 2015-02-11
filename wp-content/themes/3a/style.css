@@ -680,7 +680,7 @@ div.bio p
 .servicos.conteudo ul li:before,
 .servicos-mobile ul li:before
 {
-    content: " â€¢ ";
+    content: " • ";
     color: #4579bd;
     margin-right: 10px;
 }
