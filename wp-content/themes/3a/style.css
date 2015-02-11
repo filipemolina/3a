@@ -775,6 +775,11 @@ div.espacamento
 | Portfolio
 --------------------------------------------------------------------------------------------------------------------*/
 
+.portfolio .row.fechada
+{
+    display: none;
+}
+
 .img-portfolio,
 .img-portfolio-mobile
 {
@@ -964,6 +969,20 @@ a.btn-vermais
     font-family: 'verlag-bold';
     border: 2px solid #000;
     padding: 6px 0;
+
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition:    all 0.2s ease-in;
+    transition:         all 0.2s ease-in;
+}
+
+a.btn-vermais:hover 
+{
+    background-color: #000;
+    color: #fff;
+    
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition:    all 0.2s ease-in;
+    transition:         all 0.2s ease-in;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------

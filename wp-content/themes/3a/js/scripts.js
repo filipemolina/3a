@@ -420,10 +420,74 @@ jQuery(window).load(function(){
 
 	});
 
+	// Indica se o portfólio está sendo animado
+
+	var animando = false;
+
+	// Número de linhas para mostrar quando o portfólio estiver fechado
+
+	var linhas = 1;
+
+	// Mostrar todas as peças e cases no portfolio
+
 	$("a.btn-vermais").click(function(){
 
-		$("div.img-portfolio").css("display", 'block');
-		parallaxRestart();
+		// Realizar as ações apenas se o portfolio não estiver sendo animado
+
+		if(!animando)
+		{
+			// Obter o status do botão
+
+			var status = $(this).data('status');
+
+			// Caso o portfolio esteja fechado
+
+			if(status == 'fechado')
+			{
+				animando = true;
+
+				$("div.portfolio div.row.fechada").removeClass('fechada').addClass('fadeIn animated');
+
+				$("a.btn-vermais").data('status', 'aberto').html('FECHAR');
+
+				// Remover as classe
+
+				setTimeout(function(){
+
+					$("div.portfolio div.row").removeClass('fadeIn animated');
+
+					// Reiniciar o parallax
+			
+					parallaxRestart();
+
+					animando = false;
+
+				}, 1000);
+			}
+			else
+			{
+				animando = true;
+
+				$('div.portfolio div.row').slice(linhas).addClass('fadeOut animated');
+
+				$("a.btn-vermais").data('status', 'fechado').addClass('fadeOut animated');
+
+				scroll('portfolio', 50);
+
+				setTimeout(function(){
+
+					$('div.portfolio div.row').removeClass('fadeOut animated').slice(linhas).addClass('fechada');;
+					$("a.btn-vermais").removeClass('fadeOut animated').html('VER MAIS');
+
+					// Reiniciar o parallax
+			
+					parallaxRestart();
+
+					animando = false;
+
+				}, 1000);
+			}
+		}
 
 	});
 
