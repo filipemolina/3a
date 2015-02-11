@@ -497,11 +497,11 @@ div.bio p
 .container-fluid.estrutura
 {
     background-color: #f4f4f4;
-    padding-bottom: 135px;
+    padding-bottom: 100px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| ServiÃƒÂ§os
+| ServiÃƒÆ’Ã‚Â§os
 --------------------------------------------------------------------------------------------------------------------*/
 
 .container-fluid.servicos-mobile
@@ -527,7 +527,7 @@ div.bio p
     float: left;
 }
 
-/*************************** ServiÃƒÂ§os icones ***************************/
+/*************************** ServiÃƒÆ’Ã‚Â§os icones ***************************/
 
 .servicos .item 
 {
@@ -543,14 +543,14 @@ div.bio p
     position: absolute;
 }
 
-/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones em posiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o normal */
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones em posiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o normal */
 
 .servicos .item.midia .icone
 {
     background-image: url('img/servicos/ico_midia_full.png');
-    height: px;
-    width: 54px;
-    margin-left: 85px;
+    height: 100%;
+    width: 100%;
+    background-position: -3px 0px;
 }
 
 .servicos .item.relacoes .icone
@@ -575,15 +575,15 @@ div.bio p
     height: 213px;
     width: 263px;
     margin: 0 auto;
-    background-position: -43px 0;
+    background-position: 0 0;
 }
 
-/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones Clicados */
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones Clicados */
 
-.servicos .item.ativo.midia .icone, .servicos .item:hover.midia .icone    { background-position: -56px 0; }
-.servicos .item.ativo.relacoes .icone, .servicos .item:hover.relacoes .icone { background-position: -48px 0; }
-.servicos .item.ativo.digital .icone, .servicos .item:hover.digital .icone  { background-position: -63px 0; }
-.servicos .item.ativo.criacao .icone, .servicos .item:hover.criacao .icone  { background-position: -1px 0; }
+.servicos .item.ativo.midia .icone, .servicos .item:hover.midia .icone    { background-position: -267px 0px; }
+.servicos .item.ativo.relacoes .icone, .servicos .item:hover.relacoes .icone { background-position: -267px 0px; }
+.servicos .item.ativo.digital .icone, .servicos .item:hover.digital .icone  { background-position: -267px 0px; }
+.servicos .item.ativo.criacao .icone, .servicos .item:hover.criacao .icone  { background-position: -267px 0px; }
 
 .servicos .item.ativo .caption,
 .servicos .item:hover .caption
@@ -623,6 +623,11 @@ div.bio p
     font-size: 20px;
     color: white;
     margin-top: 5px;
+    position: absolute;
+    bottom: 50px;
+    width: 210px;
+    left: 50%;
+    margin-left: -105px;
 }
 
 .container-fluid.servicos
@@ -631,7 +636,7 @@ div.bio p
     margin-bottom: 125px;
 }
 
-/*************************** ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo ***************************/
+/*************************** ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo ***************************/
 
 .servicos.conteudo
 {
@@ -675,7 +680,7 @@ div.bio p
 .servicos.conteudo ul li:before,
 .servicos-mobile ul li:before
 {
-    content: " Ã¢â‚¬Â¢ ";
+    content: " â€¢ ";
     color: #4579bd;
     margin-right: 10px;
 }
@@ -1114,13 +1119,14 @@ a.visitar
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| FormulÃƒÂ¡rio de Contato
+| FormulÃƒÆ’Ã‚Â¡rio de Contato
 --------------------------------------------------------------------------------------------------------------------*/
 
 .container-fluid.form-contato
 {
     background-color: #fafafa;
     padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 .form-contato input[type=text], 
@@ -1138,6 +1144,7 @@ a.visitar
     padding-left: 10px;
     color: #b8b9ba !important;
     resize: none;
+    padding-top: 10px;
 }
 
 .form-contato input[type=submit]
@@ -1149,6 +1156,33 @@ a.visitar
     color: #010202;
     font-family: 'verlag-black';
     font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    outline: none;
+    margin-top: 15px;
+}
+.form-contato input[type=submit]:hover
+{
+    margin: 0 auto;
+    display: block;
+    background: transparent;
+    border: 2px solid #010202;
+    color: #010202;
+    font-family: 'verlag-black';
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    outline: none;
+}
+.form-contato input[type=submit]:hover
+{
+    margin: 0 auto;
+    display: block;
+    background:#000000;
+    border: 2px solid #010202;
+    color: #ffffff;
+    font-family: 'verlag-black';
+    font-size: 13px;
     text-transform: uppercase;
     padding: 10px 50px;
     outline: none;
@@ -1385,7 +1419,7 @@ a.visitar
 
 @media (max-width: 785px){
 
-    /* Esconder as abas de serviÃƒÂ§os caso seja mobile */
+    /* Esconder as abas de serviÃƒÆ’Ã‚Â§os caso seja mobile */
 
     .container-fluid.servicos
     {
@@ -1498,7 +1532,7 @@ a.visitar
         padding-top: 7px;
     }
 
-    /* Esconder a Ã¡rea de portfÃ³lio normal caso seja mobile */
+    /* Esconder a ÃƒÂ¡rea de portfÃƒÂ³lio normal caso seja mobile */
 
     div.portfolio.desktop
     {
