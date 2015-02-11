@@ -107,7 +107,7 @@
 
 			<!-- Lista de serviços dessa categoria -->
 	
-			<div class="lista-servicos">
+			<div class="lista-servicos col-md-4">
 
 				<ul class="fadeIn animated">
 						
@@ -159,12 +159,13 @@
 			</div>
 
 			<!-- Descrição da categoria -->
-
-			<p class="fadeIn animated"><?php echo $relacoes->description; ?></p>
+			<div class="col-md-8">
+				<p class="fadeIn animated"><?php echo $relacoes->description; ?></p>
+			</div>
 
 			<!-- Lista de serviços desta categoria -->
 
-			<div class="lista-servicos">
+			<div class="lista-servicos col-md-4">
 
 				<ul class="fadeIn animated">
 
@@ -216,12 +217,13 @@
 			</div>
 
 			<!-- Descrição da categoria -->
-
-			<p class="fadeIn animated"><?php echo $digital->description; ?></p>
+			<div class="col-md-8">
+				<p class="fadeIn animated"><?php echo $digital->description; ?></p>
+			</div>
 
 			<!-- Lista de serviços desta categoria -->
 
-			<div class="lista-servicos">
+			<div class="lista-servicos col-md-4">
 				
 				<ul class="fadeIn animated">
 				
@@ -274,11 +276,13 @@
 
 			<!-- Descrição da categoria -->
 
-			<p class="fadeIn animated"><?php echo $criacao->description; ?></p>
+			<div class="col-md-8">
+				<p class="fadeIn animated"><?php echo $criacao->description; ?></p>
+			</div>
 
 			<!-- Lista de serviços desta categoria -->
 
-			<div class="lista-servicos">
+			<div class="lista-servicos col-md-4">
 				
 				<ul class="fadeIn animated">
 					

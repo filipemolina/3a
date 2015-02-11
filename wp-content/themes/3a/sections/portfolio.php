@@ -30,12 +30,22 @@
 				<!-- Iniciar o Loop Equipe -->
 			
 				<?php while($query->have_posts()) : $query->the_post();?>
+
+					<?php // Abrir uma row a cada 4 items. ?>
 					
 					<?php if ($i % 4 == 0): ?>
 
-						<!-- Abrir uma linha à cada 4 fotos -->
+						<?php // Apenas a primeira row é mostrada, as próximas recebem a classe "fechada" ?>
 
-						<div class="row">
+						<?php if ($i == 0): ?>
+
+							<div class="row">
+
+						<?php else: ?>
+
+							<div class="row fechada">
+							
+						<?php endif; ?>
 
 					<?php endif;?>
 

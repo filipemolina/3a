@@ -281,10 +281,6 @@ jQuery(window).load(function(){
 	| Portfolio
 	--------------------------------------------------------------------------------*/
 
-	// Mostrar apenas os 8 primeiros itens do portfolio
-
-	$("div.img-portfolio").slice(4).css('display', 'none');
-
 	// Imagens do portfolio fechado
 
 	$("div.img-portfolio a").click(function(){
@@ -427,6 +423,7 @@ jQuery(window).load(function(){
 	$("a.btn-vermais").click(function(){
 
 		$("div.img-portfolio").css("display", 'block');
+		parallaxRestart();
 
 	});
 
