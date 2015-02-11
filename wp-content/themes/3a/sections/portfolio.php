@@ -37,7 +37,7 @@
 
 						<?php // Apenas a primeira row é mostrada, as próximas recebem a classe "fechada" ?>
 
-						<?php if ($i == 0): ?>
+						<?php if ($i == 0 || $i == 4): ?>
 
 							<div class="row">
 

@@ -138,5 +138,5 @@
 
 	<?php endwhile; ?>
 
-		<a href="javascript:void(0)" class="btn-vermais" data-status="fechado">VER MAIS</a>
+		<a href="javascript:void(0)" class="btn-vermais" data-status="fechado" data-secao="portfolio-aberto" data-scroll="portfolio">VER MAIS</a>
 	</div>

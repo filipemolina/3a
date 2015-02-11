@@ -4,7 +4,7 @@
 
 	<div class="container">
 
-		<div class="row">
+		<!-- <div class="row"> -->
 
 			<!-- Título com a barrinha azul -->
 
@@ -32,9 +32,15 @@
 				
 				<?php if ($i % 4 == 0): ?>
 
-					<!-- Abrir uma linha à cada 4 fotos -->
+					<?php if ($i == 0 || $i == 4): ?>
 
-					<div class="row">
+						<div class="row">
+						
+					<?php else: ?>
+
+						<div class="row fechada">
+
+					<?php endif; ?>
 
 				<?php endif;?>
 
@@ -60,6 +66,8 @@
 			<?php endwhile; ?>
 		</div>
 
-	</div>
+	<!-- </div> -->
+
+	<a href="javascript:void(0)" class="btn-vermais" data-status="fechado" data-secao="premios" data-scroll="premios">VER MAIS</a>
 	
 </div>

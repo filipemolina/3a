@@ -259,9 +259,13 @@ jQuery(window).load(function(){
 
 			$("div.conteudo.servicos").addClass("aberto");
 
+		});
+
+		setTimeout(function(){
+
 			parallaxRestart();
 
-		});
+		}, 200);
 
 	});
 
@@ -288,6 +292,10 @@ jQuery(window).load(function(){
 		// Esconder a Div com o portfólio fechado
 
 		$("div.portfolio").addClass('fadeOutLeft animated');
+
+		// Esconder o botão "Ver Mais"
+
+		$("a.btn-vermais").css('display', 'none');
 
 		// Obter o nome do cliente para ser aberto
 
@@ -415,6 +423,8 @@ jQuery(window).load(function(){
 
 				parallaxRestart();
 
+				$("a.btn-vermais").css('display', 'block');
+
 			}, 500);
 		}
 
@@ -426,7 +436,7 @@ jQuery(window).load(function(){
 
 	// Número de linhas para mostrar quando o portfólio estiver fechado
 
-	var linhas = 1;
+	var linhas = 2;
 
 	// Mostrar todas as peças e cases no portfolio
 
@@ -440,21 +450,29 @@ jQuery(window).load(function(){
 
 			var status = $(this).data('status');
 
+			// Qual é a seção deste botão
+
+			var secao = $(this).data('secao');
+
+			// Em qual div está o conteúdo a ser mostrado
+
+			var conteudo = $(this).data('scroll');
+
 			// Caso o portfolio esteja fechado
 
 			if(status == 'fechado')
 			{
 				animando = true;
 
-				$("div.portfolio div.row.fechada").removeClass('fechada').addClass('fadeIn animated');
+				$("div."+conteudo+" div.row.fechada").not('.portfolio-mobile .row').removeClass('fechada').addClass('fadeIn animated');
 
-				$("a.btn-vermais").data('status', 'aberto').html('FECHAR');
+				$("."+secao+" a.btn-vermais").data('status', 'aberto').html('FECHAR');
 
 				// Remover as classe
 
 				setTimeout(function(){
 
-					$("div.portfolio div.row").removeClass('fadeIn animated');
+					$("div."+secao+" div.row").not('.portfolio-mobile .row').removeClass('fadeIn animated');
 
 					// Reiniciar o parallax
 			
@@ -468,16 +486,16 @@ jQuery(window).load(function(){
 			{
 				animando = true;
 
-				$('div.portfolio div.row').slice(linhas).addClass('fadeOut animated');
+				$("div."+conteudo+":not('.portfolio-mobile') div.row").slice(linhas).addClass('fadeOut animated');
 
-				$("a.btn-vermais").data('status', 'fechado').addClass('fadeOut animated');
+				$("."+secao+" a.btn-vermais").data('status', 'fechado').addClass('fadeOut animated');
 
-				scroll('portfolio', 50);
+				scroll(conteudo, 50);
 
 				setTimeout(function(){
 
-					$('div.portfolio div.row').removeClass('fadeOut animated').slice(linhas).addClass('fechada');;
-					$("a.btn-vermais").removeClass('fadeOut animated').html('VER MAIS');
+					$("div."+conteudo+":not('.portfolio-mobile') div.row").removeClass('fadeOut animated').slice(linhas).addClass('fechada');;
+					$("."+secao+" a.btn-vermais").removeClass('fadeOut animated').html('VER MAIS');
 
 					// Reiniciar o parallax
 			
