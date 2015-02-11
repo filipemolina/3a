@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid bg-quemsomos">
 	<div class="container quem-somos">
 		<div class="row">
 

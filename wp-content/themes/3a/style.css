@@ -188,7 +188,7 @@ div.overlay.inativo
 .titulo
 {
     margin-bottom: 25px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .titulo h2 
@@ -358,7 +358,6 @@ ul#menu-principal a[href*="estrutura"].ativo
 
 .container.quem-somos 
 {
-    margin-top: 20px;
 }
 
 .quem-somos p
@@ -369,7 +368,7 @@ ul#menu-principal a[href*="estrutura"].ativo
 }
 .equipe{
     background: #e6e7e8;
-    margin-top: 125px;
+    padding-top: 125px;
 }
 .equipe .col-md-3{
     padding: 0;
@@ -459,6 +458,10 @@ div.bio p
     text-transform: uppercase;
     border-bottom: 2px solid #868585;
 }
+.bg-quemsomos{
+    background: #f4f4f4;
+    padding: 50px 0;
+}
 
 /* -------------- END Hover imagens da equipe ------------*/
 
@@ -494,10 +497,11 @@ div.bio p
 .container-fluid.estrutura
 {
     background-color: #f4f4f4;
+    padding-bottom: 135px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| ServiÃ§os
+| ServiÃƒÂ§os
 --------------------------------------------------------------------------------------------------------------------*/
 
 .container-fluid.servicos-mobile
@@ -523,7 +527,7 @@ div.bio p
     float: left;
 }
 
-/*************************** ServiÃ§os icones ***************************/
+/*************************** ServiÃƒÂ§os icones ***************************/
 
 .servicos .item 
 {
@@ -539,7 +543,7 @@ div.bio p
     position: absolute;
 }
 
-/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones em posiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o normal */
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones em posiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o normal */
 
 .servicos .item.midia .icone
 {
@@ -574,7 +578,7 @@ div.bio p
     background-position: -43px 0;
 }
 
-/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones Clicados */
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones Clicados */
 
 .servicos .item.ativo.midia .icone, .servicos .item:hover.midia .icone    { background-position: -56px 0; }
 .servicos .item.ativo.relacoes .icone, .servicos .item:hover.relacoes .icone { background-position: -48px 0; }
@@ -624,9 +628,10 @@ div.bio p
 .container-fluid.servicos
 {
     background-color: #4579bd;
+    margin-bottom: 125px;
 }
 
-/*************************** ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo ***************************/
+/*************************** ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo ***************************/
 
 .servicos.conteudo
 {
@@ -670,7 +675,7 @@ div.bio p
 .servicos.conteudo ul li:before,
 .servicos-mobile ul li:before
 {
-    content: " â€¢ ";
+    content: " Ã¢â‚¬Â¢ ";
     color: #4579bd;
     margin-right: 10px;
 }
@@ -728,7 +733,6 @@ div.espacamento
 
 .parallax
 {
-    margin: 50px 0 0 0;
     padding: 100px 0;
     background-attachment: fixed;
 }
@@ -906,7 +910,7 @@ div.espacamento
 
 .container-fluid.portfolio-aberto
 {
-    padding: 0;
+    padding-bottom: 100px;
 }
 
 .imagens-solucao img
@@ -1084,7 +1088,7 @@ a.visitar
     text-transform: uppercase;
 }
 .lista-3a li:before{
-    content: " â€¢ ";
+    content: " • ";
 }
 
 .lista-3a li.america-do-sul:before{
@@ -1110,7 +1114,7 @@ a.visitar
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
-| FormulÃ¡rio de Contato
+| FormulÃƒÂ¡rio de Contato
 --------------------------------------------------------------------------------------------------------------------*/
 
 .container-fluid.form-contato
@@ -1381,7 +1385,7 @@ a.visitar
 
 @media (max-width: 785px){
 
-    /* Esconder as abas de serviÃ§os caso seja mobile */
+    /* Esconder as abas de serviÃƒÂ§os caso seja mobile */
 
     .container-fluid.servicos
     {
@@ -1494,7 +1498,7 @@ a.visitar
         padding-top: 7px;
     }
 
-    /* Esconder a área de portfólio normal caso seja mobile */
+    /* Esconder a Ã¡rea de portfÃ³lio normal caso seja mobile */
 
     div.portfolio.desktop
     {
@@ -1703,7 +1707,7 @@ a.visitar
 /* EXTRA */
 .container-fluid.premios 
 {
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 .margin-estrutura{
     margin-bottom: 40px;
