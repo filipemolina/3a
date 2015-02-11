@@ -544,9 +544,9 @@ div.bio p
 .servicos .item.midia .icone
 {
     background-image: url('img/servicos/ico_midia_full.png');
-    height: px;
-    width: 54px;
-    margin-left: 85px;
+    height: 100%;
+    width: 100%;
+    background-position: -3px 0px;
 }
 
 .servicos .item.relacoes .icone
@@ -571,15 +571,15 @@ div.bio p
     height: 213px;
     width: 263px;
     margin: 0 auto;
-    background-position: -43px 0;
+    background-position: 0 0;
 }
 
 /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones Clicados */
 
-.servicos .item.ativo.midia .icone, .servicos .item:hover.midia .icone    { background-position: -56px 0; }
-.servicos .item.ativo.relacoes .icone, .servicos .item:hover.relacoes .icone { background-position: -48px 0; }
-.servicos .item.ativo.digital .icone, .servicos .item:hover.digital .icone  { background-position: -63px 0; }
-.servicos .item.ativo.criacao .icone, .servicos .item:hover.criacao .icone  { background-position: -1px 0; }
+.servicos .item.ativo.midia .icone, .servicos .item:hover.midia .icone    { background-position: -267px 0px; }
+.servicos .item.ativo.relacoes .icone, .servicos .item:hover.relacoes .icone { background-position: -267px 0px; }
+.servicos .item.ativo.digital .icone, .servicos .item:hover.digital .icone  { background-position: -267px 0px; }
+.servicos .item.ativo.criacao .icone, .servicos .item:hover.criacao .icone  { background-position: -267px 0px; }
 
 .servicos .item.ativo .caption,
 .servicos .item:hover .caption
@@ -619,6 +619,11 @@ div.bio p
     font-size: 20px;
     color: white;
     margin-top: 5px;
+    position: absolute;
+    bottom: 50px;
+    width: 210px;
+    left: 50%;
+    margin-left: -105px;
 }
 
 .container-fluid.servicos
@@ -670,7 +675,7 @@ div.bio p
 .servicos.conteudo ul li:before,
 .servicos-mobile ul li:before
 {
-    content: " â€¢ ";
+    content: " • ";
     color: #4579bd;
     margin-right: 10px;
 }
@@ -1084,7 +1089,7 @@ a.visitar
     text-transform: uppercase;
 }
 .lista-3a li:before{
-    content: " â€¢ ";
+    content: " • ";
 }
 
 .lista-3a li.america-do-sul:before{
