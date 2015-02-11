@@ -49,11 +49,11 @@
 
 				<div class="container">
 
-					<div class="row">
-						<div class="titulo-portfolio">
-							<h2>Desafio</h2>
-							<div class="borda-azul"></div>
-						</div>
+					<div class="row titulo-portfolio">
+
+						<h2>Desafio</h2>
+						<div class="borda-azul"></div>
+
 						<div class="text-desafio">
 							<?php echo types_render_field('desafio-port', array('raw' => 'true')); ?>
 						</div>
