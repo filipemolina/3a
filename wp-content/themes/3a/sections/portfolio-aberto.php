@@ -31,7 +31,8 @@
 		// Saber se esse item do portfolio é uma peça ou um case
 
 		$tipo = types_render_field('tipo-portfolio', array());
-		$midia = types_render_field('midia-da-solucao', array());
+		$video_solucao = types_render_field('video', array());
+		$video_peca = types_render_field('video-da-peca', array());
 
 		if($tipo == "Case") : ?>
 
@@ -72,25 +73,21 @@
 						</div>
 					</div>
 
-					<?php /////////////////////// Testar o tipo de mídia desse Case ?>
+					<div class="row">
+						<div class="imagens-solucao">
+							<?php echo types_render_field('imagens-da-solucao', array('class' => 'col-md-6')); ?>
+						</div>
+					</div>
 
-						<?php if ($midia == 'Imagens'): ?>
+					<?php /////////////////////// Exibir os videos apenas se o campo não estiver vazio ?>
 
-							<div class="row">
-								<div class="imagens-solucao">
-									<?php echo types_render_field('imagens-da-solucao', array('class' => 'col-md-6')); ?>
-								</div>
-							</div>
+					<?php if($video_solucao != ""): ?>					
 
-						<?php else: ?>
+						<div class="row">
+							<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
+						</div>
 
-							<div class="row">
-								<div class="video-solucao">
-									<iframe width="600" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
-								</div>
-							</div>
-
-						<?php endif; ?>
+					<?php endif; ?>
 				
 					<div class="row margin-row-portfolio">
 						<div class="titulo-portfolio wow fadeInLeft">
@@ -139,27 +136,21 @@
 						</div>
 					</div>
 
-					<?php /////////////////////// Testar o tipo de mídia dessa peça ?>
+					<div class="row">
+						<div class="imagens-solucao">
+							<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
+						</div>
+					</div>
 
-					<?php $midia_peca = types_render_field('midia-da-peca', array()); ?>
+					<?php /////////////////////// Exibir os videos apenas se o campo não estiver vazio ?>
 
-					<?php if ($midia_peca == 'Imagens'): ?>
+					<?php if($video_peca != ""): ?>					
 
 						<div class="row">
-							<div class="imagens-solucao">
-								<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
-							</div>
+							<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video-da-peca', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
 						</div>
 
-					<?php else: ?>
-
-						<div class="row">
-							<div class="video-solucao">
-								<iframe width="600" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video-da-peca', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
-							</div>
-						</div>
-
-					<?php endif ?>
+					<?php endif; ?>
 
 				</div>
 
@@ -170,6 +161,14 @@
 		<?php $i++; //Incrementar o contador ?>
 
 	<?php endwhile; ?>
+
+		<div class="btn-portfolio">
+			<ul>
+				<li><a href="javascript:void(0)" data-function="prev"><</a></li>
+				<li><a href="javascript:void(0)" data-function="close">x</a></li>
+				<li><a href="javascript:void(0)" data-function="next">></a></li>
+			</ul>
+		</div>
 
 		<a href="javascript:void(0)" class="btn-vermais" data-status="fechado" data-secao="portfolio-aberto" data-scroll="portfolio">VER MAIS</a>
 	</div>

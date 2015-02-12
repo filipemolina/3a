@@ -6,8 +6,10 @@
 			
 			<?php //Obter todos os itens da categoria "Equipe" ?>
 
-			<?php 
+			<?php
+
 				/*Argumentos de equipe */
+
 				$args = array(
 					'post_type' => 'equipe',
 					'post_status' => 'publish'
@@ -18,6 +20,8 @@
 				$velocidade = 0.1; ?>
 
 			<!-- Iniciar o Loop Equipe -->
+
+			<div class="row">
 			
 			<?php while($query->have_posts()) : $query->the_post();?>
 				
@@ -31,7 +35,7 @@
 
 					<!-- Mostrar a Div com a foto -->
 					
-					<div class="col-md-3 container-image wow flipInY" data-wow-delay="<?php echo ($i+1) * $velocidade ?>s">
+					<div class="col-md-3 col-sm-6 container-image wow flipInY" data-wow-delay="<?php echo ($i+1) * $velocidade ?>s">
 
 						<div class="overlay-hover">
 
@@ -60,6 +64,9 @@
 				<?php $i++; //Incrementar o contador ?>
 
 			<?php endwhile; ?>
+
+			</div>
+
 		</div>
 		
 	</div>

@@ -41,7 +41,7 @@
 
 					<!-- Mostrar a Div com a foto -->
 					
-					<div class="col-md-3 container-image img-portfolio-mobile" data-wow-delay="<?php echo ($i+1) * $velocidade ?>s">
+					<div class="col-md-3 col-sm-6 container-image img-portfolio-mobile" data-wow-delay="<?php echo ($i+1) * $velocidade ?>s">
 
 						<div class="overlay-hover"></div>
 

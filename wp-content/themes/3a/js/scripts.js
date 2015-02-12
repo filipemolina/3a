@@ -241,9 +241,11 @@ jQuery(window).load(function(){
 
 		$(".servicos .item").removeClass("ativo");
 
-		$("div.espacamento").css('height', 0);
-
 		$(this).addClass("ativo");
+
+		//Esconder a div "espaçamento"
+
+		$("div.espacamento").css('height', 0);
 
 		//Mostrar apenas o texto do serviço clicado
 
@@ -274,6 +276,8 @@ jQuery(window).load(function(){
 	$(".seta-fechar").click(function(){
 
 		$("div.conteudo.servicos").css({ height : 0 });
+
+		$("div.espacamento").css('height', 120);
 
 		setTimeout(function(){
 			$("div.item").removeClass('ativo');

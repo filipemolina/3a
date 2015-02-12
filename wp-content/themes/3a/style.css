@@ -706,7 +706,7 @@ div.bio p
 .servicos.conteudo ul li:before,
 .servicos-mobile ul li:before
 {
-    content: " ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ ";
+    content: " • ";
     color: #4579bd;
     margin-right: 10px;
 }
@@ -756,6 +756,10 @@ div.bio p
 div.espacamento
 {
     height: 120px;
+    
+    transition: height 0.2s ease-in;
+    -moz-transition: height 0.2s ease-in;
+    -webkit-transition: height 0.2s ease-in;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -804,6 +808,11 @@ div.espacamento
 .header-portfolio .container 
 {
     position: relative;
+}
+
+.item-portfolio .row
+{
+    margin-top: 10px;
 }
 
 .header-portfolio .text-wrap 
@@ -1160,7 +1169,7 @@ a.visitar
     text-transform: uppercase;
 }
 .lista-3a li:before{
-    content: " â€¢ ";
+    content: " • ";
 }
 
 .lista-3a li.america-do-sul:before{
