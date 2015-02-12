@@ -33,11 +33,14 @@
 
 	                <li>
 	                	<img src="<?php echo types_render_field('foto', array('raw' => 'true')); ?>" alt="">
+
+	                	<?php // Obter o texto para o caption do slide ?>
+
+	                	<?php $caption = get_the_content(); ?>
+	                
+	                	<div class="flex-caption"><?php echo $caption; ?></div>
 	                	
 	                </li>
-	                <?php $caption = get_the_content(); ?>
-	                
-	                		<div class="flex-caption"><?php echo $caption; ?></div>
 
 				<?php endwhile; ?>
 
