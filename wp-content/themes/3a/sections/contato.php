@@ -4,7 +4,7 @@
 
 		<div class="row">
 			
-			<div class="bloco rio-de-janeiro col-md-4">
+			<div class="bloco rio-de-janeiro col-md-4 col-sm-12">
 
 				<img src="<?php echo bloginfo('template_url') ?>/img/contato/rio.png" alt="">
 
@@ -17,7 +17,7 @@
 				
 			</div>
 
-			<div class="bloco sao-paulo col-md-4">
+			<div class="bloco sao-paulo col-md-4 col-sm-12">
 
 				<img src="<?php echo bloginfo('template_url') ?>/img/contato/sao_paulo.png" alt="">
 
@@ -30,7 +30,7 @@
 				
 			</div>
 
-			<div class="bloco goiania col-md-4">
+			<div class="bloco goiania col-md-4 col-sm-12">
 
 				<img src="<?php echo bloginfo('template_url') ?>/img/contato/goiania.png" alt="">
 

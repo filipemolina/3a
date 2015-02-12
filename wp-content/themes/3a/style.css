@@ -1436,6 +1436,7 @@ a.visitar
     float: left;
     overflow: hidden;
     min-height: 475px;
+    text-align: center;
 }
 
 .bloco img
@@ -1667,7 +1668,7 @@ a.visitar
     {
         height: auto;
         margin: 70px auto;
-        width: 192px;
+        /*width: 192px;*/
     }
 
     .navbar-header
@@ -1688,10 +1689,24 @@ a.visitar
 
     .bloco a
     {
-        margin-top: 25px;
-        width: 143px;
-        text-align: center;
+        display: block;
+        position: relative;
         float: none;
+
+        border: 2px solid #010202;
+        color: #010202;
+        font-family: 'verlag-black';
+        font-size: 12px;
+        text-transform: uppercase;
+        outline: none;
+
+        padding: 10px 20px;
+        width: 150px;
+        margin: 20px auto 0;
+
+        transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
     }
     
     .blocos-premios
