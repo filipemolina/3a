@@ -76,7 +76,7 @@
 
 						<?php if ($midia == 'Imagens'): ?>
 
-							<div class="row">
+							<div class="row margin-portfolio">
 								<div class="imagens-solucao">
 									<?php echo types_render_field('imagens-da-solucao', array('class' => 'col-md-6')); ?>
 								</div>
@@ -84,7 +84,7 @@
 
 						<?php else: ?>
 
-							<div class="row">
+							<div class="row margin-portfolio">
 								<div class="video-solucao">
 									<iframe width="600" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
 								</div>
@@ -145,7 +145,7 @@
 
 					<?php if ($midia_peca == 'Imagens'): ?>
 
-						<div class="row">
+						<div class="row margin-portfolio">
 							<div class="imagens-solucao">
 								<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
 							</div>
@@ -153,7 +153,7 @@
 
 					<?php else: ?>
 
-						<div class="row">
+						<div class="row margin-portfolio">
 							<div class="video-solucao">
 								<iframe width="600" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video-da-peca', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
 							</div>
