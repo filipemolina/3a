@@ -30,7 +30,8 @@
 		<?php 
 		// Saber se esse item do portfolio é uma peça ou um case
 
-		$tipo = types_render_field('tipo-portfolio', array()); 
+		$tipo = types_render_field('tipo-portfolio', array());
+		$midia = types_render_field('midia-da-solucao', array());
 
 		if($tipo == "Case") : ?>
 
@@ -52,11 +53,13 @@
 					<div class="row titulo-portfolio">
 
 						<h2>Desafio</h2>
+
 						<div class="borda-azul"></div>
 
 						<div class="text-desafio">
 							<?php echo types_render_field('desafio-port', array('raw' => 'true')); ?>
 						</div>
+
 					</div>
 
 					<div class="row">
@@ -69,11 +72,25 @@
 						</div>
 					</div>
 
-					<div class="row">
-						<div class="imagens-solucao">
-							<?php echo types_render_field('imagens-da-solucao', array('class' => 'col-md-6')); ?>
-						</div>
-					</div>
+					<?php /////////////////////// Testar o tipo de mídia desse Case ?>
+
+						<?php if ($midia == 'Imagens'): ?>
+
+							<div class="row">
+								<div class="imagens-solucao">
+									<?php echo types_render_field('imagens-da-solucao', array('class' => 'col-md-6')); ?>
+								</div>
+							</div>
+
+						<?php else: ?>
+
+							<div class="row">
+								<div class="video-solucao">
+									<iframe width="600" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+
+						<?php endif; ?>
 				
 					<div class="row margin-row-portfolio">
 						<div class="titulo-portfolio wow fadeInLeft">
@@ -122,11 +139,27 @@
 						</div>
 					</div>
 
-					<div class="row">
-						<div class="imagens-solucao">
-							<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
+					<?php /////////////////////// Testar o tipo de mídia dessa peça ?>
+
+					<?php $midia_peca = types_render_field('midia-da-peca', array()); ?>
+
+					<?php if ($midia_peca == 'Imagens'): ?>
+
+						<div class="row">
+							<div class="imagens-solucao">
+								<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
+							</div>
 						</div>
-					</div>
+
+					<?php else: ?>
+
+						<div class="row">
+							<div class="video-solucao">
+								<iframe width="600" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video-da-peca', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+
+					<?php endif ?>
 
 				</div>
 
