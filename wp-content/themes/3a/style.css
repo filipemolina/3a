@@ -744,7 +744,7 @@ div.bio p
 
 .servicos.conteudo.aberto
 {
-    padding: 0px 0 330px 0;
+    /*padding: 0px 0 330px 0;*/
 }
 
 .servicos .texto p
@@ -1561,6 +1561,7 @@ a.visitar
         background-color: #4579BD;
         color: #fff;
         padding-bottom: 10px;
+        margin-bottom: 50px;
     }
 
     .estrutura .titulo { margin-left: 15px; }
@@ -1594,7 +1595,7 @@ a.visitar
     .servicos-mobile .digital .icone { width: 220px; }
     .servicos-mobile .criacao .icone { width: 264px; }
 
-    .servicos-mobile .midia .icone span 
+    /*.servicos-mobile .midia .icone span 
     {
         background-image: url('img/servicos/ico_midia_full.png');
         display: block;
@@ -1634,7 +1635,11 @@ a.visitar
         width: 75px;
         height: 50px;
         background-position: -56px 0px;
-    }
+    }*/
+
+    .servicos-mobile span { display: none; }
+
+    .servicos-mobile .icone div { text-align: center; }
 
     .criacao .icone div
     {
@@ -1651,6 +1656,7 @@ a.visitar
     div.portfolio-mobile
     {
         display: block;
+        margin-bottom: 50px;
     }
 
     .conteudo-portfolio-mobile .item-portfolio
@@ -1760,6 +1766,11 @@ a.visitar
         float: none !important;
         margin: 0 auto;
         width: 170px;
+    }
+
+    .portfolio-aberto .btn-vermais
+    {
+        display: none;
     }
 
     .titulo h2
