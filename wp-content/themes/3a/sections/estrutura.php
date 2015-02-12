@@ -33,11 +33,16 @@
 
 	                <li>
 	                	<img src="<?php echo types_render_field('foto', array('raw' => 'true')); ?>" alt="">
+	                	
 	                </li>
+	                <?php $caption = get_the_content(); ?>
+	                
+	                		<div class="flex-caption"><?php echo $caption; ?></div>
 
 				<?php endwhile; ?>
 
 				</ul>
+
 	            
 	        </div>
 
