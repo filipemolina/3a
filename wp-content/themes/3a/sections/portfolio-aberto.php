@@ -83,7 +83,8 @@
 
 					<?php if($video_solucao != ""): ?>					
 
-						<div class="row">
+
+						<div class="row margin-portfolio">
 							<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
 						</div>
 
@@ -146,7 +147,7 @@
 
 					<?php if($video_peca != ""): ?>					
 
-						<div class="row">
+						<div class="row margin-portfolio">
 							<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video-da-peca', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
 						</div>
 
