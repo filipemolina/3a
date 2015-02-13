@@ -21,8 +21,6 @@
 				$velocidade = 0.1; ?>
 
 			<!-- Iniciar o Loop Equipe -->
-
-			<div class="row">
 			
 			<?php while($query->have_posts()) : $query->the_post();?>
 				
@@ -65,8 +63,6 @@
 				<?php $i++; //Incrementar o contador ?>
 
 			<?php endwhile; ?>
-
-			</div>
 
 		</div>
 		
