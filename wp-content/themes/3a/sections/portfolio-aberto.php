@@ -74,21 +74,19 @@
 					</div>
 
 					<div class="row">
+					<?php /////////////////////// Exibir os videos apenas se o campo não estiver vazio ?>
+					<?php if($video_solucao != ""): ?>					
+
+					<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
+
+					<?php endif; ?>
 						<div class="imagens-solucao">
 							<?php echo types_render_field('imagens-da-solucao', array('class' => 'col-md-6')); ?>
 						</div>
+
 					</div>
 
-					<?php /////////////////////// Exibir os videos apenas se o campo não estiver vazio ?>
-
-					<?php if($video_solucao != ""): ?>					
-
-
-						<div class="row margin-portfolio">
-							<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
-						</div>
-
-					<?php endif; ?>
+				
 				
 					<div class="row margin-row-portfolio">
 						<div class="titulo-portfolio wow fadeInLeft">
