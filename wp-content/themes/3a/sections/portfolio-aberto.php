@@ -145,8 +145,9 @@
 									<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video-da-peca', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
 							<?php endif; ?>
 							
-							<div class="imagens-solucao margin-peca">
-								<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
+							<div class="imagens-solucao">
+								<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive margin-peca')); ?>
+								<div style="clear: both"></div>
 							</div>
 						</div>
 					</div>
