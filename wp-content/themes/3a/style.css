@@ -1874,3 +1874,7 @@ a.visitar
 .margin-portfolio{
     margin-top: 40px;
 }
+
+.flex-control-nav{
+    display: none;
+}

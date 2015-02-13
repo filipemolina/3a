@@ -34,7 +34,7 @@
 
 				<img src="<?php echo bloginfo('template_url') ?>/img/contato/goiania.png" alt="">
 
-				<p>Av. Dep. Jamel Cecílio, 22 Quadra B,lote 04E sl B85</p>
+				<p>AV. DEP. JAMEL CECÍLIO, 2.496 | SALA 86A EDIFÍCIO NEW BUSINESS</p>
 				<p>Jardim Goiás - Goiás - GO</p>
 				<p>CEP: 74810-100</p>
 				<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 62 3624 9340</p>
