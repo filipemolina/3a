@@ -35,7 +35,9 @@
 
 	<!-- Overlay de Carregamento da Página -->
 
-	<div class="overlay"></div>
+	<div class="overlay">
+		<img src="<?php bloginfo("template_url"); ?>/img/32.gif" alt="">
+	</div>
 
 	<!-- Menu Superior -->
 

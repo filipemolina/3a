@@ -174,6 +174,15 @@ div.overlay
     transition: all 0.2s ease-in;
 }
 
+div.overlay img
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -33px;
+    margin-top: -33px;
+}
+
 div.overlay.inativo
 {
     opacity: 0; 
@@ -585,45 +594,50 @@ div.bio p
 
 /* ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones em posiÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o normal */
 
+.servicos .item .icone
+{
+    height: 50px;
+    width: 54px;
+    position: absolute;
+    left: 50%;
+    margin-left: -27px;
+    top: 60px;
+}
+
 .servicos .item.midia .icone
 {
     background-image: url('img/servicos/ico_midia_full.png');
-    height: 100%;
-    width: 100%;
-    background-position: -3px 0px;
+    background-position: -106px -64px;
+    width: 63px;
 }
 
 .servicos .item.relacoes .icone
 {
     background-image: url('img/servicos/ico_relacoes_full.png');
-    height: 213px;
-    width: 263px;
-    margin: 0 auto;
+    background-position: -107px -60px;
 }
 
 .servicos .item.digital .icone
 {
     background-image: url('img/servicos/ico_digital_full.png');
-    height: 213px;
-    width: 263px;
-    margin: 0 auto;
+    background-position: -101px -60px;
+    width: 66px;
+    height: 55px;
+
 }
 
 .servicos .item.criacao .icone
 {
     background-image: url('img/servicos/ico_criacao_full.png');
-    height: 213px;
-    width: 263px;
-    margin: 0 auto;
-    background-position: 0 0;
+    background-position: -104px -63px;
 }
 
 /* ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âcones Clicados */
 
-.servicos .item.ativo.midia .icone, .servicos .item:hover.midia .icone    { background-position: -267px 0px; }
-.servicos .item.ativo.relacoes .icone, .servicos .item:hover.relacoes .icone { background-position: -267px 0px; }
-.servicos .item.ativo.digital .icone, .servicos .item:hover.digital .icone  { background-position: -267px 0px; }
-.servicos .item.ativo.criacao .icone, .servicos .item:hover.criacao .icone  { background-position: -267px 0px; }
+.servicos .item.ativo.midia .icone, .servicos .item:hover.midia .icone    { background-position: -369px -64px; }
+.servicos .item.ativo.relacoes .icone, .servicos .item:hover.relacoes .icone { background-position: -368px -60px; }
+.servicos .item.ativo.digital .icone, .servicos .item:hover.digital .icone  { background-position: -364px -60px; }
+.servicos .item.ativo.criacao .icone, .servicos .item:hover.criacao .icone  { background-position: -371px -63px; }
 
 .servicos .item.ativo .caption,
 .servicos .item:hover .caption
@@ -1023,9 +1037,29 @@ div.espacamento
     font-size: 18px;
 }
 
-a.btn-vermais 
+a.btn-vermais
 {
     display: block;
+    margin: 28px auto 0px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-family: 'verlag-black';
+    border: 2px solid #000;
+    padding: 6px 0;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    font-size: 13px;
+    text-transform: uppercase;
+    height: 41px;
+    padding-top: 10px;
+}
+
+a.btn-vermais-mobile
+{
     margin: 28px auto 0px;
     width: 150px;
     text-align: center;
@@ -1073,6 +1107,11 @@ div.video-solucao
 .conteudo-portfolio-mobile 
 {
     margin-bottom: 50px;
+}
+
+.btn-vermais-mobile
+{
+    display: none;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -1598,51 +1637,14 @@ a.visitar
     .servicos-mobile .digital .icone { width: 220px; }
     .servicos-mobile .criacao .icone { width: 264px; }
 
-    /*.servicos-mobile .midia .icone span 
-    {
-        background-image: url('img/servicos/ico_midia_full.png');
-        display: block;
-        float: left;
-        width: 55px;
-        height: 50px;
-        background-position: -56px 0px;
-    }
-
-    .servicos-mobile .relacoes .icone span 
-    {
-        background-image: url('img/servicos/ico_relacoes_full.png');
-        display: block;
-        float: left;
-        width: 98px;
-        height: 75px;
-        background-position: -46px -1px;
-        margin-top: 0;
-        background-size: 136px;
-    }
-
-    .servicos-mobile .digital .icone span 
-    {
-        background-image: url('img/servicos/ico_digital_full.png');
-        display: block;
-        float: left;
-        width: 70px;
-        height: 50px;
-        background-position: -56px 0px;
-    }
-
-    .servicos-mobile .criacao .icone span 
-    {
-        background-image: url('img/servicos/ico_criacao_full.png');
-        display: block;
-        float: left;
-        width: 75px;
-        height: 50px;
-        background-position: -56px 0px;
-    }*/
-
     .servicos-mobile span { display: none; }
 
     .servicos-mobile .icone div { text-align: center; }
+
+    .btn-mobile-vermais
+    {
+        display: block;
+    }
 
     .criacao .icone div
     {

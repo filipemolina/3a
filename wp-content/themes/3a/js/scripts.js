@@ -263,6 +263,8 @@ jQuery(window).load(function(){
 
 		});
 
+		scroll('servicos .abas', 70);
+
 		setTimeout(function(){
 
 			parallaxRestart();
@@ -527,7 +529,7 @@ jQuery(window).load(function(){
 
 				$("div.portfolio-mobile .row.fechada").removeClass('fechada').addClass('fadeIn animated');
 
-				$("div.portfolio-mobile .btn-vermais-mobile").data('status', 'aberto').html("FECHAR");
+				$("div.conteudo-portfolio-mobile .btn-vermais-mobile").data('status', 'aberto').html("FECHAR");
 
 				setTimeout(function(){
 
@@ -543,17 +545,22 @@ jQuery(window).load(function(){
 			{
 				animando = true;
 
-				$("div.portfolio .row").slice(2).addClass('fadeOut animated');
+				$("div.portfolio-mobile .row").slice(2).addClass('fadeOut animated');
 
-				$("div.portfolio-mobile .btn-vermais-mobile").data('status', 'fechado').addClass('fadeOut animated');
+				$("div.conteudo-portfolio-mobile .btn-vermais-mobile").data('status', 'fechado').addClass('fadeOut animated');
 
 				scroll('portfolio-mobile', 50);
 
 				setTimeout(function(){
 
 					$("div.portfolio-mobile .row").removeClass('fadeOut animated').slice(2).addClass('fechada');
+					$("div.conteudo-portfolio-mobile .btn-vermais-mobile").data('status', 'fechado').html('Ver Mais').removeClass('fadeOut animated');
 
-				});
+					parallaxRestart();
+
+					animando = false;
+
+				}, 1000);
 			}
 		}
 
