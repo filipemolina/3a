@@ -139,15 +139,15 @@
 					<div class="row">
 						<div class="imagens-solucao margin-peca">
 
-						<?php /////////////////////// Exibir os videos apenas se o campo não estiver vazio ?>
+							<?php /////////////////////// Exibir os videos apenas se o campo não estiver vazio ?>
 
-						<?php if($video_peca != ""): ?>			
-								<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video-da-peca', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
-						<?php endif; ?>
-						
-						<div class="imagens-solucao">
-
-							<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
+							<?php if($video_peca != ""): ?>			
+									<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video-da-peca', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
+							<?php endif; ?>
+							
+							<div class="imagens-solucao">
+								<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
+							</div>
 						</div>
 					</div>
 
