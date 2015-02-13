@@ -498,7 +498,7 @@ jQuery(window).load(function(){
 
 				setTimeout(function(){
 
-					$("div."+conteudo+":not('.portfolio-mobile') div.row").removeClass('fadeOut animated').slice(linhas).addClass('fechada');;
+					$("div."+conteudo+":not('.portfolio-mobile') div.row").removeClass('fadeOut animated').slice(linhas).addClass('fechada');
 					$("."+secao+" a.btn-vermais").removeClass('fadeOut animated').html('VER MAIS');
 
 					// Reiniciar o parallax
@@ -508,6 +508,52 @@ jQuery(window).load(function(){
 					animando = false;
 
 				}, 1000);
+			}
+		}
+
+	});
+
+	$("a.btn-vermais-mobile").click(function(){
+
+		// Obter o status do botão
+
+		var status = $(this).data('status');
+
+		if(!animando)
+		{
+			if(status == 'fechado')
+			{
+				animando = true;
+
+				$("div.portfolio-mobile .row.fechada").removeClass('fechada').addClass('fadeIn animated');
+
+				$("div.portfolio-mobile .btn-vermais-mobile").data('status', 'aberto').html("FECHAR");
+
+				setTimeout(function(){
+
+					$("div.portfolio-mobile .row").removeClass('fadeIn animated');
+
+					parallaxRestart();
+
+					animando = false;
+
+				}, 1000);
+			}
+			else
+			{
+				animando = true;
+
+				$("div.portfolio .row").slice(2).addClass('fadeOut animated');
+
+				$("div.portfolio-mobile .btn-vermais-mobile").data('status', 'fechado').addClass('fadeOut animated');
+
+				scroll('portfolio-mobile', 50);
+
+				setTimeout(function(){
+
+					$("div.portfolio-mobile .row").removeClass('fadeOut animated').slice(2).addClass('fechada');
+
+				});
 			}
 		}
 
