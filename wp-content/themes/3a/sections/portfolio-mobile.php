@@ -84,9 +84,9 @@
 
 		<div class="btn-portfolio">
 			<ul>
-				<li><a href="javascript:void(0)" data-function="prev"><</a></li>
-				<li><a href="javascript:void(0)" data-function="close">x</a></li>
-				<li><a href="javascript:void(0)" data-function="next">></a></li>
+				<li><a href="javascript:void(0)" data-function="prev"><img src="<?php echo bloginfo('template_url')?>/img/bt_left.png"></a></li>
+				<li><a href="javascript:void(0)" data-function="close"><img src="<?php echo bloginfo('template_url')?>/img/bt_close.png"></a></li>
+				<li><a href="javascript:void(0)" data-function="next"><img src="<?php echo bloginfo('template_url')?>/img/bt_right.png"></a></li>
 			</ul>
 		</div>
 

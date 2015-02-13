@@ -33,7 +33,6 @@
 			<div class="bloco goiania col-md-4 col-sm-4">
 
 				<img src="<?php echo bloginfo('template_url') ?>/img/contato/goiania.png" alt="">
-
 				<p>Av. Dep. Jamel Cecílio, 2.496 | Sala 86A Edifício New Business</p>
 				<p>Jardim Goiás - Goiás - GO</p>
 				<p>CEP: 74810-100</p>
