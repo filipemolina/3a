@@ -210,7 +210,7 @@
 							<?php endif; ?>
 							
 							<div class="imagens-solucao">
-								<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
+								<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive margin-peca')); ?>
 							</div>
 						</div>
 
