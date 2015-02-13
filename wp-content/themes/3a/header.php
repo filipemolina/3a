@@ -13,6 +13,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
+	<meta name="format-detection" content="telephone=no">
 	<title><?php wp_title("|", true, 'right'); bloginfo('name'); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">

@@ -4,7 +4,7 @@
 
 		<div class="row">
 			
-			<div class="bloco rio-de-janeiro col-md-4 col-sm-12">
+			<div class="bloco rio-de-janeiro col-md-4 col-sm-4">
 
 				<img src="<?php echo bloginfo('template_url') ?>/img/contato/rio.png" alt="">
 
@@ -17,7 +17,7 @@
 				
 			</div>
 
-			<div class="bloco sao-paulo col-md-4 col-sm-12">
+			<div class="bloco sao-paulo col-md-4 col-sm-4">
 
 				<img src="<?php echo bloginfo('template_url') ?>/img/contato/sao_paulo.png" alt="">
 
@@ -30,11 +30,11 @@
 				
 			</div>
 
-			<div class="bloco goiania col-md-4 col-sm-12">
+			<div class="bloco goiania col-md-4 col-sm-4">
 
 				<img src="<?php echo bloginfo('template_url') ?>/img/contato/goiania.png" alt="">
 
-				<p>Av. Dep. Jamel Cecílio, 22 Quadra B,lote 04E sl B85</p>
+				<p>Av. Dep. Jamel Cecílio, 2.496 | Sala 86A Edifício New Business</p>
 				<p>Jardim Goiás - Goiás - GO</p>
 				<p>CEP: 74810-100</p>
 				<p><span><img src="<?php echo bloginfo('template_url'); ?>/img/contato/telefone.png" alt=""></span>+55 62 3624 9340</p>
