@@ -107,7 +107,9 @@
 			<?php 
 			// Saber se esse item do portfolio é uma peça ou um case
 
-			$tipo = types_render_field('tipo-portfolio', array()); 
+			$tipo = types_render_field('tipo-portfolio', array());
+			$video_solucao = types_render_field('video', array());
+			$video_peca = types_render_field('video-da-peca', array());
 
 			if($tipo == "Case") : ?>
 
@@ -144,9 +146,15 @@
 						</div>
 
 						<div class="row">
+							
+							<?php if($video_solucao != ""): ?>					
+								<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
+							<?php endif; ?>
+
 							<div class="imagens-solucao">
-								<?php echo types_render_field('imagens-da-solucao', array('class' => 'col-md-6 img-responsive')); ?>
+								<?php echo types_render_field('imagens-da-solucao', array('class' => 'col-md-6')); ?>
 							</div>
+
 						</div>
 					
 						<div class="row margin-row-portfolio">
@@ -197,6 +205,10 @@
 						</div>
 
 						<div class="row">
+							<?php if($video_peca != ""): ?>			
+								<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video-da-peca', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe width="600" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
+							<?php endif; ?>
+							
 							<div class="imagens-solucao">
 								<?php echo types_render_field('imagens-da-peca', array('class' => 'img-responsive')); ?>
 							</div>
