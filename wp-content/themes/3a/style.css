@@ -1010,7 +1010,7 @@ div.espacamento
 .imagens-solucao img
 {
     float: left;
-    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .titulo-portfolio h2 
@@ -1897,6 +1897,9 @@ a.visitar
 
 .flex-control-nav{
     display: none;
+}
+.padding-video{
+    padding-top: 100px;
 }
 /*--------------------------------------------------------------------------------------------------------------------
 | Regras EspecÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ficas do Firefox
