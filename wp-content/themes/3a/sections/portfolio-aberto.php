@@ -128,7 +128,7 @@
 				<div class="container">
 
 					<div class="row">
-						<div class="titulo-portfolio">
+						<div class="titulo-portfolio peca">
 							<h2>Descrição</h2>
 							<div class="borda-azul"></div>
 						</div>

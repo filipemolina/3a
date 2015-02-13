@@ -10,12 +10,12 @@
 		</div>
 		<div class="lista-3a row">
 				<ul class="col-xs-12 col-sm-4 col-md-2">
-					<li class="america-do-sul">brasil</li>
+					<li class="america-do-sul brasil">brasil</li>
 					<li class="america-do-sul">argentina</li>
 					<li class="america-do-sul">chile</li>
 					<li class="america-do-sul">uruguai</li>
-					<li class="america-central">méxico</li>
-					<li class="america-do-norte">estados unidos</li>
+					<li class="america-central mexico">méxico</li>
+					<li class="america-do-norte eua">estados unidos</li>
 				</ul>
 				<ul class="col-xs-12 col-sm-4 col-md-2">
 					<li class="america-do-norte">canadá</li>
@@ -26,9 +26,9 @@
 					<li class="america-do-norte">porto rico</li>
 				</ul>
 				<ul class="col-xs-12 col-sm-4 col-md-2">
-					<li class="america-do-norte">repÚblica dominicana</li>
+					<li class="america-do-norte">rep. dominicana</li>
 					<li class="america-do-norte">venezuela</li>
-					<li class="europa">espanha</li>
+					<li class="europa espanha">espanha</li>
 					<li class="europa">alemanha</li>
 					<li class="europa">bélgica</li>
 					<li class="europa">china</li>

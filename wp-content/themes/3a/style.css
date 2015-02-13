@@ -280,13 +280,18 @@ ul#menu-principal a.ativo
     color: #e6e7e8;
 }
 
-ul#menu-principal a[href*="quem-somos"].ativo,
 ul#menu-principal a[href*="premios"].ativo,
 ul#menu-principal a[href*="portfolio"].ativo,
 ul#menu-principal a[href*="3ainternacional"].ativo,
 ul#menu-principal a[href*="contato"].ativo
 {
     background-color: #fff;
+    color: #231f20;
+}
+
+ul#menu-principal a[href*="quem-somos"].ativo
+{
+    background-color: #F4F4F4;
     color: #231f20;
 }
 
@@ -372,6 +377,12 @@ ul#menu-principal a[href*="estrutura"].ativo
 .equipe{
     background: #e6e7e8;
     padding-top: 125px;
+}
+
+.equipe .container 
+{
+    padding-left: 0;
+    padding-right: 0;
 }
 .equipe .col-md-3{
     padding: 0;
@@ -523,10 +534,10 @@ div.bio p
     height: 50px;
     font-family: 'verlag-book';
     color: #fff;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
-
     padding-top: 10px;
+    padding-left: 27px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -744,7 +755,7 @@ div.bio p
 
 .servicos.conteudo.aberto
 {
-    padding: 0px 0 330px 0;
+    /*padding: 0px 0 330px 0;*/
 }
 
 .servicos .texto p
@@ -1059,6 +1070,11 @@ div.video-solucao
     display: none;
 }
 
+.conteudo-portfolio-mobile 
+{
+    margin-bottom: 50px;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------
 | 3A Internacional
 --------------------------------------------------------------------------------------------------------------------*/
@@ -1191,6 +1207,31 @@ a.visitar
 .lista-3a li.europa:before{
     color: #d23138;
 }
+
+.lista-3a li.brasil
+{
+    font-weight: bold;
+    color: #4579BD;
+}
+
+.lista-3a li.mexico
+{
+    font-weight: bold;
+    color: #009D4E;
+}
+
+.lista-3a li.eua
+{
+    font-weight: bold;
+    color: #873494;
+}
+
+.lista-3a li.espanha
+{
+    font-weight: bold;
+    color: #D23138;
+}
+
 .container-fluid.mapa .row h3{
     text-align: center;
     font-size: 35px;
@@ -1254,19 +1295,6 @@ a.visitar
     -webkit-transition: all 0.2s ease-in;
     -moz-transition:    all 0.2s ease-in;
     transition:         all 0.2s ease-in;
-}
-.form-contato input[type=submit]:hover
-{
-    margin: 0 auto;
-    display: block;
-    background:#000000;
-    border: 2px solid #010202;
-    color: #ffffff;
-    font-family: 'verlag-black';
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 10px 50px;
-    outline: none;
 }
 
 .container.trabalhe-conosco
@@ -1429,7 +1457,7 @@ a.visitar
 {
     float: left;
     overflow: hidden;
-    min-height: 475px;
+    min-height: 500px;
     text-align: center;
 }
 
@@ -1444,14 +1472,13 @@ a.visitar
     font-family: 'verlag-book';
     font-size: 16px;
     padding: 4px 0 0 10px;
-    margin: 0;
+    margin: 0 0 0 -9px;
     color: #7c7c7d;
-
+    text-align: left;
 }
 
 .bloco a
 {  
-    margin: 0 auto;
     display: block;
     background: transparent;
     border: 2px solid #010202;
@@ -1462,10 +1489,11 @@ a.visitar
     padding: 10px 20px;
     outline: none;
     text-decoration: none;
-    float: left;
-    
     position: absolute;
     bottom: 0;
+    left: 50%;
+    margin-left: -69px;
+
     transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -1494,26 +1522,6 @@ a.visitar
 }
 .mapa-goias{
     
-}
-
-/*--------------------------------------------------------------------------------------------------------------------
-| Regras EspecÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ficas do Firefox
---------------------------------------------------------------------------------------------------------------------*/
-
-@-moz-document url-prefix() {
-
-    .row.titulo-portfolio
-    {
-        float: left;
-        width: 100%;
-        margin-top: -255px;
-    }
-
-    .titulo-portfolio h2
-    {
-        margin-bottom: 0;
-    }
-
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -1555,6 +1563,7 @@ a.visitar
         background-color: #4579BD;
         color: #fff;
         padding-bottom: 10px;
+        margin-bottom: 50px;
     }
 
     .estrutura .titulo { margin-left: 15px; }
@@ -1572,6 +1581,7 @@ a.visitar
         font-size: 19px;
         padding: 20px;
         margin-top: 25px;
+        margin-right: 15px;
     }
 
     .servicos-mobile .icone 
@@ -1588,7 +1598,7 @@ a.visitar
     .servicos-mobile .digital .icone { width: 220px; }
     .servicos-mobile .criacao .icone { width: 264px; }
 
-    .servicos-mobile .midia .icone span 
+    /*.servicos-mobile .midia .icone span 
     {
         background-image: url('img/servicos/ico_midia_full.png');
         display: block;
@@ -1628,7 +1638,11 @@ a.visitar
         width: 75px;
         height: 50px;
         background-position: -56px 0px;
-    }
+    }*/
+
+    .servicos-mobile span { display: none; }
+
+    .servicos-mobile .icone div { text-align: center; }
 
     .criacao .icone div
     {
@@ -1645,6 +1659,7 @@ a.visitar
     div.portfolio-mobile
     {
         display: block;
+        margin-bottom: 50px;
     }
 
     .conteudo-portfolio-mobile .item-portfolio
@@ -1665,6 +1680,11 @@ a.visitar
         /*width: 192px;*/
     }
 
+    .lista-3a ul
+    {
+        margin-top: -10px;
+    }
+
     .navbar-header
     {
         margin-right: 0 !important;
@@ -1674,33 +1694,21 @@ a.visitar
     .bloco
     {
         overflow: hidden;
-        padding-right: 0;
-        padding-left: 0;
-        margin: 45px 0 25px;  
+        margin: 45px 0 25px;
         max-width: 100%;
-        min-height: 450px;
+        min-height: 400px;
     }
 
-    .bloco a
+    .contato .bloco p a
     {
-        display: block;
-        position: relative;
-        float: none;
+        font-family: 'verlag-book';
+        font-size: 16px;
+        padding: 4px 0 0 10px;
+        margin: 0;
+        color: #7c7c7d;
 
-        border: 2px solid #010202;
-        color: #010202;
-        font-family: 'verlag-black';
-        font-size: 12px;
-        text-transform: uppercase;
-        outline: none;
-
-        padding: 10px 20px;
-        width: 150px;
-        margin: 20px auto 0;
-
-        transition: all 0.2s ease-in;
-        -moz-transition: all 0.2s ease-in;
-        -webkit-transition: all 0.2s ease-in;
+        border: none;
+        float: left;
     }
     
     .blocos-premios
@@ -1754,6 +1762,11 @@ a.visitar
         float: none !important;
         margin: 0 auto;
         width: 170px;
+    }
+
+    .portfolio-aberto .btn-vermais
+    {
+        display: none;
     }
 
     .titulo h2
@@ -1877,4 +1890,28 @@ a.visitar
 
 .flex-control-nav{
     display: none;
+}
+/*--------------------------------------------------------------------------------------------------------------------
+| Regras EspecÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ficas do Firefox
+--------------------------------------------------------------------------------------------------------------------*/
+
+@-moz-document url-prefix() {
+
+    .row.titulo-portfolio
+    {
+        float: left;
+        width: 100%;
+        margin-top: -200px;
+    }
+
+    .peca.titulo-portfolio
+    {
+        margin-top: -100px;
+    }
+
+    .titulo-portfolio h2
+    {
+        margin-bottom: 0;
+    }
+
 }
