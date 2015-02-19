@@ -2,6 +2,11 @@
 
 	<div class="container">
 
+		<div class="titulo wow fadeInLeft">
+			<h2>Contato</h2>
+			<div class="borda-azul"></div>
+		</div>
+
 		<div class="row">
 			
 			<div class="bloco rio-de-janeiro col-md-4 col-sm-4">

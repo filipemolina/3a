@@ -978,6 +978,30 @@ div.espacamento
     font-size: 15px;
 }
 
+.btn-portfolio a
+{
+    height: 44px;
+    width: 44px;
+    display: block;
+    float: left;
+    border: 2px solid #000;
+    margin-left: 5px;
+    margin-bottom: 33px;
+}
+
+.btn-portfolio a:hover 
+{ 
+    background-size: 41px;
+    background-position: -1px -1px;
+}
+
+.btn-portfolio a.portfolio-prev        { background-image: url('img/bt_left.png');  }
+.btn-portfolio a.portfolio-close       { background-image: url('img/bt_close.png'); }
+.btn-portfolio a.portfolio-next        { background-image: url('img/bt_right.png'); }
+.btn-portfolio a.portfolio-prev:hover  { background-image: url('img/bt_left_over.png');  }
+.btn-portfolio a.portfolio-close:hover { background-image: url('img/bt_close_over.png'); }
+.btn-portfolio a.portfolio-next:hover  { background-image: url('img/bt_right_over.png'); }
+
 .btn-portfolio img
 {
     border: 2px solid #000;
@@ -1523,7 +1547,7 @@ a.visitar
 
 .container-fluid.contato
 {
-    padding: 80px 0;
+    padding: 0 0;
 }
 
 .bloco
@@ -1905,6 +1929,21 @@ a.visitar
     .hero-unit img
     {
         margin-left: -518px;
+    }
+
+    .container-image .nome span
+    {
+        font-size: 1.5em;
+    }
+
+    .overlay-hover p.cargo
+    {
+        font-size: 16px;
+    }
+
+    div.bio p
+    {
+        font-size: 18px;
     }
 
 }

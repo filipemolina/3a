@@ -323,9 +323,16 @@ jQuery(window).load(function(){
 
 			$("div.portfolio-aberto div.item-portfolio[data-cliente='"+cliente+"']").addClass('aberto');
 
-			scroll('btn-portfolio', 90);
+			// Rola a página até o elemento especificado. O primeiro argumento é a classe do elemento para o qual se deve rolar
+			// o segundo é o offset em pixels com relação ao topo da página
+
+			scroll('portfolio-aberto', 60);
+
+			// Reiniciar o plugin de parallax para evitar que se atinja o limite das imagens
 
 			parallaxRestart();
+
+			// Remover as classes de animação após 1 segundo.
 
 			setTimeout(function(){
 
@@ -433,6 +440,8 @@ jQuery(window).load(function(){
 
 			}, 500);
 		}
+
+		scroll('portfolio-aberto', 60);
 
 	});
 

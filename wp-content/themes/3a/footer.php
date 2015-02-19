@@ -103,7 +103,7 @@
 
 	<?php endif; ?>
 
-	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/scripts.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/scripts.min.js"></script>
 
 </body>
 </html>

@@ -6,10 +6,11 @@
 
 		<div class="btn-portfolio">
 			<ul>
-				<li><a href="javascript:void(0)" data-function="prev"><img src="<?php echo bloginfo('template_url')?>/img/bt_left.png"></a></li>
-				<li><a href="javascript:void(0)" data-function="close"><img src="<?php echo bloginfo('template_url')?>/img/bt_close.png"></a></li>
-				<li><a href="javascript:void(0)" data-function="next"><img src="<?php echo bloginfo('template_url')?>/img/bt_right.png"></a></li>
+				<li><a href="javascript:void(0)" data-function="prev" class="portfolio-prev"></a></li>
+				<li><a href="javascript:void(0)" data-function="close" class="portfolio-close"></a></li>
+				<li><a href="javascript:void(0)" data-function="next" class="portfolio-next"></a></li>
 			</ul>
+			<div style="clear:both"></div>
 		</div>
 
 		<?php 
@@ -164,9 +165,9 @@
 
 		<div class="btn-portfolio">
 			<ul>
-				<li><a href="javascript:void(0)" data-function="prev"><img src="<?php echo bloginfo('template_url')?>/img/bt_left.png"></a></li>
-				<li><a href="javascript:void(0)" data-function="close"><img src="<?php echo bloginfo('template_url')?>/img/bt_close.png"></a></li>
-				<li><a href="javascript:void(0)" data-function="next"><img src="<?php echo bloginfo('template_url')?>/img/bt_right.png"></a></li>
+				<li><a href="javascript:void(0)" data-function="prev" class="portfolio-prev"></a></li>
+				<li><a href="javascript:void(0)" data-function="close" class="portfolio-close"></a></li>
+				<li><a href="javascript:void(0)" data-function="next" class="portfolio-next"></a></li>
 			</ul>
 		</div>
 
