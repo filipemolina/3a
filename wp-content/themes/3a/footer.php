@@ -14,8 +14,6 @@
 	$detect = new Mobile_Detect;
 
 ?>
-
-<?php wp_footer(); ?>
 	
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/jquery.stellar.js"></script>
@@ -103,7 +101,9 @@
 
 	<?php endif; ?>
 
-	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/scripts.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/scripts.js"></script>
+
+	<?php wp_footer(); ?>
 
 </body>
 </html>

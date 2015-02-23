@@ -312,6 +312,7 @@ jQuery(window).load(function(){
 			// Reduzir a altura da div "portfolio" para a entrada da div com as informações do cliente
 
 			$("div.portfolio").css('height', 0);
+			$("div.portfolio").css('display', 'none');
 
 			// Adicionar as classes de animação nas divs de informações do cliente e na navegação
 
@@ -430,7 +431,7 @@ jQuery(window).load(function(){
 
 				// Mostrar novamente a lista de todos os clientes
 
-				$("div.portfolio").css('height', 'auto').removeClass('fadeOutLeft animated').addClass('fadeInRight animated');
+				$("div.portfolio.desktop").css('height', 'auto').css('display', 'block').removeClass('fadeOutLeft animated').addClass('fadeInRight animated');
 
 				$('div.item-portfolio, div.btn-portfolio').css('display', 'none').removeClass('zoomOutDown animated aberto');
 
@@ -710,6 +711,7 @@ jQuery(window).load(function(){
 			$(".container-fluid.mapa-contato").slideUp(400);
 			$(this).html("COMO CHEGAR");
 			$(this).removeClass("ativo");
+			scroll('container-fluid.contato', 60);
 			return false;
 		}
 
@@ -745,7 +747,7 @@ jQuery(window).load(function(){
 
 		});
 
-		scroll('mapa-contato', 70);
+		scroll('mapa-contato', 60);
 
 	});
 

@@ -257,6 +257,7 @@ ul#menu-principal a
     font-size: 9pt;
     font-family: 'verlag-book';
     text-transform: uppercase;
+    outline: none;
 
     border-radius         : 0 !important;
     -moz-border-radius    : 0 !important;
@@ -1548,6 +1549,7 @@ a.visitar
 .container-fluid.contato
 {
     padding: 0 0;
+    margin-bottom: 50px;
 }
 
 .bloco
@@ -1596,7 +1598,8 @@ a.visitar
     -webkit-transition: all 0.2s ease-in;
 }
 
-.bloco a.ativo
+.bloco a.ativo,
+.bloco a:hover
 {
     background: #231f20;
     color: #fff;
@@ -1977,13 +1980,6 @@ a.visitar
 --------------------------------------------------------------------------------------------------------------------*/
 
 @-moz-document url-prefix() {
-
-    .row.titulo-portfolio
-    {
-        float: left;
-        width: 100%;
-        margin-top: -200px;
-    }
 
     .peca.titulo-portfolio
     {
