@@ -11,8 +11,6 @@
 				</div>
 			</div>
 
-			<?php //Obter todos os itens da categoria "Equipe" ?>
-
 			<?php 
 				/*Argumentos de portfolio */
 				$args = array(

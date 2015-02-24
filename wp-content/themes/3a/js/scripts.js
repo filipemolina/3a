@@ -747,7 +747,7 @@ jQuery(window).load(function(){
 
 		});
 
-		scroll('mapa-contato', 60);
+		scroll('btn-mapa', 80);
 
 	});
 
