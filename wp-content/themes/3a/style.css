@@ -355,7 +355,7 @@ ul#menu-principal a[href*="estrutura"].ativo
 
 .hero-unit
 {
-    background: url('img/hero-unit/foto_rj.png') no-repeat center center;
+    /*background: url('img/hero-unit/foto_rj.png') no-repeat center center;*/
     background-size: cover;
     width: 100%;
     position: relative;

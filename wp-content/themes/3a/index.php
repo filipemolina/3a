@@ -1,20 +1,43 @@
 <?php get_header() ?>
 
-	<div class="container-fluid hero-unit">
+	<?php //Obter o conteúdo da página "Banner" ?>
+		<?php $args = array(
+			'post_type' => 'banner',
+			'post_status' => 'publish'
+		); ?>
+
+	<?php	$query = new WP_Query($args); ?>
+
+	<?php while($query->have_posts()) : $query->the_post();?>
+
+	<div class="container-fluid hero-unit" style="background-image: url('<?php echo types_render_field('bg_banner', array('raw' => 'true')); ?>');">
 		<div class="row">
-			<img src="<?php bloginfo('template_url'); ?>/img/hero-unit/frase.png" alt="" class="wow fadeInRightBig"/>
+			<img class="img-responsive wow fadeInRightBig" src='<?php echo types_render_field('banner', array('raw' => 'true')); ?>'/>
 		</div>
 	</div>
-	
+	<?php endwhile; ?>
 	<!-- Sessão Quem somos -->
 
 	<?php get_template_part('sections/quem_somos'); ?>
 
 	<!-- Parallax 1 -->
 
+	<?php $args = array(
+		'post_type' => 'frase',
+		'post_status' => 'publish'
+	); ?>
+
+	<?php	$query = new WP_Query($args);
+			$frases = array();
+	 ?>
+
+	<?php while($query->have_posts()) : $query->the_post();?>
+
+		<?php $frases[] =  get_the_content();  ?>
+	<?php endwhile;?>
+
 	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-1">
-		<div class="strong wow zoomIn">Nós comunicamos marcas</div>
-		<div class="wow zoomIn">além de fronteiras</div>
+		<div class="wow zoomIn"><?php echo $frases[0]; ?></div>
 	</div>
 
 	<!-- Seção Equipe -->
@@ -40,8 +63,7 @@
 	<!-- Parallax 2 -->
 
 	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-2">
-		<div class="strong wow zoomIn">Liberdade é a nossa inspiração</div>
-		<div class="wow zoomIn">para gerar resultados</div>
+		<div class=" wow zoomIn"><?php echo $frases[1]; ?></div>
 	</div>
 
 	<?php get_template_part('sections/portfolio'); ?>
@@ -51,8 +73,7 @@
 	<!-- Parallax 3 -->
 
 	<div class="parallax" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="150" id="parallax-3">
-		<div class="strong wow zoomIn">Queremos encantar os mercados</div>
-		<div class="wow zoomIn">com criatividade funcional</div>
+		<div class="wow zoomIn"><?php echo $frases[2]; ?></div>
 	</div>
 
 	<!-- 3A Internacional -->
