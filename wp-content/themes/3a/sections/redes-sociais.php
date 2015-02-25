@@ -5,40 +5,31 @@
 	<div class="container">
 
 		<div class="row">
+
+		<?php 
+
+			$args = array(
+				'post_type' => 'redes-sociais',
+				'post_status' => 'publish',
+				'posts_per_page' => -1
+			);
+
+			$query = new WP_Query($args);
+
+			if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+
+		?>
 			
-			<div class="icone facebook col-md-3 col-sm-3 col-xs-6">
-				<a href="https://www.facebook.com/3aworldwidebrasil?fref=ts">
+			<div class="icone <?php echo get_the_title(); ?> col-md-3 col-sm-3 col-xs-3">
+				<a href="<?php echo get_the_content(); ?>">
 
-					<img src="<?php echo bloginfo('template_url'); ?>/img/redes-sociais/ico_facebook.png" alt="">
+					<img src="<?php echo bloginfo('template_url'); ?>/img/redes-sociais/ico_<?php echo get_the_title(); ?>.png" alt="">
 					<div class="borda"></div>
 				</a>
 				
 			</div>
 
-			<div class="icone twitter col-md-3 col-sm-3 col-xs-6">
-				<a href="https://twitter.com/3aworldwidebr">
-					<img src="<?php echo bloginfo('template_url'); ?>/img/redes-sociais/ico_twitter.png" alt="">
-					<div class="borda"></div>
-				</a>
-				
-			</div>
-
-			<div class="icone youtube col-md-3 col-sm-3 col-xs-6">
-				<a href="https://www.youtube.com/user/GrupoUnlike">
-					<img src="<?php echo bloginfo('template_url'); ?>/img/redes-sociais/ico_youtube.png" alt="">
-					<div class="borda"></div>
-				</a>
-				
-			</div>
-
-				
-			<div class="icone linkedin col-md-3 col-sm-3 col-xs-6">
-				<a href="https://www.linkedin.com/company/3a-worldwide">
-					<img src="<?php echo bloginfo('template_url'); ?>/img/redes-sociais/ico_linkedin.png" alt="">
-					<div class="borda"></div>
-				</a>
-				
-			</div>
+		<?php endwhile; endif; ?>
 
 		</div>
 

@@ -1,40 +1,55 @@
-<?php get_header() ?>
+<?php 
 
-	<?php //Obter o conteúdo da página "Banner" ?>
-		<?php $args = array(
-			'post_type' => 'banner',
-			'post_status' => 'publish'
-		); ?>
+	get_header();
 
-	<?php	$query = new WP_Query($args); ?>
+	require_once("vendor/Mobile_Detect.php");
 
-	<?php while($query->have_posts()) : $query->the_post();?>
+	$detect = new Mobile_Detect;
 
-	<div class="container-fluid hero-unit" style="background-image: url('<?php echo types_render_field('bg_banner', array('raw' => 'true')); ?>');">
-		<div class="row">
-			<img class="img-responsive wow fadeInRightBig" src='<?php echo types_render_field('banner', array('raw' => 'true')); ?>'/>
+	//Obter o conteúdo da página "Banner" 
+
+	$args = array(
+		'post_type' => 'banner',
+		'post_status' => 'publish'
+	); 
+
+	$query = new WP_Query($args); 
+
+	while($query->have_posts()) : $query->the_post(); ?>
+
+		<div class="container-fluid hero-unit" style="background-image: url('<?php echo types_render_field('bg_banner', array('raw' => 'true')); ?>');">
+			<div class="row">
+				<img class="img-responsive wow fadeInRightBig" src='<?php echo types_render_field('banner', array('raw' => 'true')); ?>'/>
+			</div>
 		</div>
-	</div>
+
 	<?php endwhile; ?>
+
 	<!-- Sessão Quem somos -->
 
 	<?php get_template_part('sections/quem_somos'); ?>
 
+	<?php
+
+		// Obter todas as frases dos parallaxes, e gaurdá-los no vetor $frases
+
+		$args = array(
+			'post_type' => 'frase',
+			'post_status' => 'publish'
+		); 	
+
+		$query = new WP_Query($args);
+		$frases = array();
+
+	 	while($query->have_posts())
+	 	{
+		 	$query->the_post();
+		 	$frases[] =  get_the_content();  
+	 	}
+
+	?>
+
 	<!-- Parallax 1 -->
-
-	<?php $args = array(
-		'post_type' => 'frase',
-		'post_status' => 'publish'
-	); ?>
-
-	<?php	$query = new WP_Query($args);
-			$frases = array();
-	 ?>
-
-	<?php while($query->have_posts()) : $query->the_post();?>
-
-		<?php $frases[] =  get_the_content();  ?>
-	<?php endwhile;?>
 
 	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-1">
 		<div class="wow zoomIn"><?php echo $frases[0]; ?></div>
@@ -56,15 +71,19 @@
 
 	<?php get_template_part('sections/servicos'); ?>
 
-	<!-- Serviços Mobile -->
+	<?php if($detect->isMobile()): ?>
+	
+		<?php get_template_part('sections/servicos_mobile');  ?>
 
-	<?php get_template_part('sections/servicos_mobile'); ?>
+	<?php endif; ?>
 
 	<!-- Parallax 2 -->
 
 	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-2">
 		<div class=" wow zoomIn"><?php echo $frases[1]; ?></div>
 	</div>
+
+	<!-- Portfolio -->
 
 	<?php get_template_part('sections/portfolio'); ?>
 	<?php get_template_part('sections/portfolio-aberto'); ?>

@@ -88,6 +88,7 @@
 				<li><a href="javascript:void(0)" data-function="close"><img src="<?php echo bloginfo('template_url')?>/img/bt_close.png"></a></li>
 				<li><a href="javascript:void(0)" data-function="next"><img src="<?php echo bloginfo('template_url')?>/img/bt_right.png"></a></li>
 			</ul>
+			<div style="clear: both;"></div>
 		</div>
 
 		<?php 
@@ -225,5 +226,14 @@
 		<?php endwhile; ?>
 
 		<a href="javascript:void(0)" class="btn-vermais-mobile" data-status="fechado" data-secao="conteudo-portfolio-mobile" data-scroll="portfolio-mobile">VER MAIS</a>
+
+		<div class="btn-portfolio">
+			<ul>
+				<li><a href="javascript:void(0)" data-function="prev"><img src="<?php echo bloginfo('template_url')?>/img/bt_left.png"></a></li>
+				<li><a href="javascript:void(0)" data-function="close"><img src="<?php echo bloginfo('template_url')?>/img/bt_close.png"></a></li>
+				<li><a href="javascript:void(0)" data-function="next"><img src="<?php echo bloginfo('template_url')?>/img/bt_right.png"></a></li>
+			</ul>
+			<div style="clear: both;"></div>
+		</div>
 	
 </div>

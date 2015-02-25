@@ -1054,6 +1054,7 @@ div.espacamento
 .imagens-solucao img
 {
     float: left;
+    max-width: 100%;
     
 }
 .margin-peca{
@@ -1659,6 +1660,20 @@ a.visitar
         padding: 0;
     }
 
+    .flex-caption 
+    {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 25px;
+        font-family: 'verlag-book';
+        color: #fff;
+        text-align: left;
+        font-size: 17px;
+        padding-left: 9px;
+    }
+
     .container-fluid.mapa
     {
         padding-bottom: 0;
@@ -1732,9 +1747,19 @@ a.visitar
         margin-bottom: 50px;
     }
 
+    .img-portfolio-mobile .detalhes
+    {
+        top: 145px;
+    }
+
     .conteudo-portfolio-mobile .item-portfolio
     {
         display: none;
+    }
+
+    .btn-portfolio img
+    {
+        border: 0;
     }
 
     ul#menu-principal a.ativo
@@ -1766,7 +1791,7 @@ a.visitar
         overflow: hidden;
         margin: 45px 0 25px;
         max-width: 100%;
-        min-height: 400px;
+        min-height: 450px;
     }
 
     .contato .bloco p a
@@ -1843,9 +1868,66 @@ a.visitar
         padding: 49px 0 0;
     }
 
+    /* Redes Sociais */
+
     .redes-sociais .icone
     {
         margin-bottom: 55px;
+        margin: 0px 0 55px -3px;
+    }
+
+    .redes-sociais .icone a 
+    {
+        border-radius: 50%;
+        width: 65px;
+        display: block;
+        height: 65px;
+        padding-top: 10px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.1);
+
+        transition        : all 0.2s ease-in;
+        -moz-transition   : all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in; 
+    }
+
+    .icone.facebook a img 
+    {
+        margin-left: -4px;
+        margin-top: 0px;
+        width: 21px;
+    }
+
+    .icone.twitter a img 
+    {
+        margin-top: 5px;
+        margin-left: -1px;
+        width: 45px;
+    }
+
+    .icone.youtube a img 
+    {
+        margin-top: 1px;
+        margin-left: 1px;
+        width: 45px;
+    }
+
+    .icone.linkedin a img 
+    {
+        margin-left: 3px;
+        margin-top: 0px;
+        width: 41px;
+    }
+
+    .icone a:hover .borda 
+    {
+        border: 2px solid #fff;
+        height: 65px;
+        width: 65px;
+
+        transition        : all 0.2s ease-in;
+        -moz-transition   : all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
     }
 
 }
