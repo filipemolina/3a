@@ -8,6 +8,11 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
+
+require_once('vendor/Mobile_Detect.php');
+
+$detect = new Mobile_Detect;
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>

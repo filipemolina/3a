@@ -584,7 +584,7 @@ jQuery(window).load(function(){
 
 		//Rolar até o portfólio aberto
 
-		scroll('conteudo-portfolio-mobile', 50);
+		scroll('conteudo-portfolio-mobile', 70);
 
 		// Obter o nome do cliente para ser aberto
 
@@ -600,12 +600,17 @@ jQuery(window).load(function(){
 
 			$(".conteudo-portfolio-mobile .btn-portfolio").css('display', 'block').addClass('fadeInUp animated');
 
+			// Esconder o botão "Ver Mais"
+
+			$(".btn-vermais-mobile").addClass('fadeOut animated');
+
 			parallaxRestart();
 
 			setTimeout(function(){
 
 				$(".conteudo-portfolio-mobile .item-portfolio[data-cliente='"+cliente+"']").removeClass('fadeInUp animated');
 				$(".conteudo-portfolio-mobile .btn-portfolio").removeClass('fadeInUp animated');
+				$(".btn-vermais-mobile").css('display', 'none').removeClass('fadeOut animated');				
 
 			}, 1000);
 
@@ -619,6 +624,10 @@ jQuery(window).load(function(){
 
 		if($(this).data('function') == 'next')
 		{
+			// Subir a tela
+
+			scroll('conteudo-portfolio-mobile', 70);
+
 			// Esconder o item atual
 
 			$("div.item-portfolio.aberto").addClass('fadeOut animated');
@@ -652,6 +661,10 @@ jQuery(window).load(function(){
 
 		if($(this).data('function') == 'prev')
 		{
+			// Subir a tela
+			
+			scroll('conteudo-portfolio-mobile', 70);
+			
 			// Esconder o item atual
 
 			$("div.item-portfolio.aberto").addClass('fadeOut animated');
@@ -687,13 +700,15 @@ jQuery(window).load(function(){
 		{
 			$(".conteudo-portfolio-mobile div.item-portfolio").addClass("fadeOut animated").removeClass('aberto');
 			$(".conteudo-portfolio-mobile div.btn-portfolio").addClass("fadeOut animated");
+			$(".btn-vermais-mobile").css('display', 'block').addClass('fadeIn animated');
 
-			scroll('portfolio-mobile', 50);
+			scroll('portfolio-mobile', 70);
 
 			setTimeout(function(){
 
 				$(".conteudo-portfolio-mobile div.item-portfolio").css('display', 'none').removeClass('fadeOut animated');
 				$(".conteudo-portfolio-mobile div.btn-portfolio").css('display', 'none').removeClass('fadeOut animated');
+				$(".btn-vermais-mobile").removeClass('fadeIn animated');
 
 			}, 1000);
 		}
