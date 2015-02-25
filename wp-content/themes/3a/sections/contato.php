@@ -62,7 +62,9 @@
 
 			$link_mapa = str_replace('<iframe src="', '', $link_mapa);
 
-			$link_mapa = explode('"', $link_mapa)[0];
+			$vetor = explode('"', $link_mapa);
+
+			$link_mapa = $vetor[0];
 
 		?>
 
