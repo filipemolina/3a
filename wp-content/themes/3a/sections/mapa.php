@@ -9,15 +9,15 @@
 			<h3>ESCRITÓRIOS REGIONAIS</h3>
 		</div>
 		<div class="lista-3a row">
-				<ul class="col-xs-12 col-sm-4 col-md-2">
+				<ul class="col-xs-6 col-sm-4 col-md-2">
 					<li class="america-do-sul brasil">brasil</li>
 					<li class="america-do-sul">argentina</li>
 					<li class="america-do-sul">chile</li>
 					<li class="america-do-sul">uruguai</li>
 					<li class="america-central mexico">méxico</li>
-					<li class="america-do-norte eua">estados unidos</li>
+					<li class="america-do-norte eua">EUA</li>
 				</ul>
-				<ul class="col-xs-12 col-sm-4 col-md-2">
+				<ul class="col-xs-6 col-sm-4 col-md-2">
 					<li class="america-do-norte">canadá</li>
 					<li class="america-do-norte">colÔmbia</li>
 					<li class="america-do-norte">haiti</li>
@@ -25,7 +25,7 @@
 					<li class="america-do-norte">peru</li>
 					<li class="america-do-norte">porto rico</li>
 				</ul>
-				<ul class="col-xs-12 col-sm-4 col-md-2">
+				<ul class="col-xs-6 col-sm-4 col-md-2">
 					<li class="america-do-norte">rep. dominicana</li>
 					<li class="america-do-norte">venezuela</li>
 					<li class="europa espanha">espanha</li>
@@ -33,7 +33,7 @@
 					<li class="europa">bélgica</li>
 					<li class="europa">china</li>
 				</ul>
-				<ul class="col-xs-12 col-sm-4 col-md-2">
+				<ul class="col-xs-6 col-sm-4 col-md-2">
 					<li class="europa">dinamarca</li>
 					<li class="europa">estÔnia</li>
 					<li class="europa">finlândia</li>
@@ -41,7 +41,7 @@
 					<li class="europa">grécia</li>
 					<li class="europa">índia</li>
 				</ul>
-				<ul class="col-xs-12 col-sm-4 col-md-2">
+				<ul class="col-xs-6 col-sm-4 col-md-2">
 					<li class="europa">itália</li>
 					<li class="europa">letÔnia</li>
 					<li class="europa">lituânia</li>
@@ -49,9 +49,9 @@
 					<li class="europa">marrocos</li>
 					<li class="europa">países baixos</li>
 				</ul>
-				<ul class="col-xs-12 col-sm-4 col-md-2">
+				<ul class="col-xs-6 col-sm-4 col-md-2">
 					<li class="europa">noruega</li>
-					<li class="europa">oriente médio ccg</li>
+					<li class="europa">oriente médio</li>
 					<li class="europa">portugal</li>
 					<li class="europa">rÚssia</li>
 					<li class="europa">suécia</li>

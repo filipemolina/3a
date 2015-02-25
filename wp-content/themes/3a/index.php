@@ -98,9 +98,15 @@
 	</div>
 
 	<!-- 3A Internacional -->
+	<?php if($detect->isMobile()): ?>
+	
+		<?php get_template_part('sections/3ainternacional_mobile');  ?>
+
+	<?php else: ?>
 
 	<?php get_template_part('sections/3ainternacional'); ?>
 
+	<?php endif; ?>
 	<!-- 3A Internacional MAPA -->
 
 	<?php get_template_part('sections/mapa'); ?>
