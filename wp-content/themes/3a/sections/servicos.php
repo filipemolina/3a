@@ -335,7 +335,7 @@
 				
 				<div class="wrap">
 					<div class="icone">
-						<span></span><div>Mídia</div>
+						<span><img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_midia.png" alt=""></span><div>Mídia</div>
 					</div>
 					<div style="clear: both"></div>
 				</div>
@@ -364,7 +364,7 @@
 				
 				<div class="wrap">
 					<div class="icone">
-						<span></span><div>Relações Públicas</div>
+						<span><img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_rp.png" alt=""></span><div>Relações Públicas</div>
 					</div>
 					<div style="clear: both"></div>
 				</div>
@@ -393,7 +393,7 @@
 				
 				<div class="wrap">
 					<div class="icone">
-						<span></span><div>Digital</div>
+						<span><img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_digital.png" alt=""></span><div>Digital</div>
 					</div>
 					<div style="clear: both"></div>
 				</div>
@@ -422,7 +422,7 @@
 				
 				<div class="wrap">
 					<div class="icone">
-						<span></span><div>Criação</div>
+						<span><img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_criacao.png" alt=""></span><div>Criação</div>
 					</div>
 					<div style="clear: both"></div>
 				</div>
