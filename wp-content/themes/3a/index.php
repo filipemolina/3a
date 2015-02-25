@@ -57,11 +57,13 @@
 
 	<!-- Seção Equipe -->
 
-	<?php get_template_part('sections/equipe'); ?>
-
 	<?php if($detect->isMobile()): ?>
 
 		<?php get_template_part('sections/equipe_mobile'); ?>
+
+	<?php else: ?>
+
+		<?php get_template_part('sections/equipe'); ?>
 
 	<?php endif; ?>
 
@@ -75,11 +77,13 @@
 
 	<!-- Seção Serviços -->
 
-	<?php get_template_part('sections/servicos'); ?>
-
 	<?php if($detect->isMobile()): ?>
 	
 		<?php get_template_part('sections/servicos_mobile');  ?>
+
+	<?php else: ?>
+
+		<?php get_template_part('sections/servicos'); ?>
 
 	<?php endif; ?>
 

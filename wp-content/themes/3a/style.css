@@ -1670,6 +1670,24 @@ a.visitar
 
 @media (max-width: 785px){
 
+    .hero-unit
+    {
+        height: auto !important;
+    }
+
+    .hero-unit img 
+    {
+        left: 0;
+        position: relative;
+        margin-left: 0;
+    }
+
+    .bg-quemsomos 
+    {
+        background: #f4f4f4;
+        padding: 0 0;
+    }
+
     .btn-vermais-mobile
     {
         display: block;
