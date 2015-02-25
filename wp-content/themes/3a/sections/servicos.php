@@ -335,7 +335,7 @@
 				
 				<div class="wrap">
 					<div class="icone">
-						<span><img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_midia.png" alt=""></span><div>Mídia</div>
+						<img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_midia.png" alt="" class="icone_1"><div class="midia-text">Mídia</div>
 					</div>
 					<div style="clear: both"></div>
 				</div>
@@ -364,7 +364,7 @@
 				
 				<div class="wrap">
 					<div class="icone">
-						<span><img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_rp.png" alt=""></span><div>Relações Públicas</div>
+					<img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_rp.png" alt="" class="icone_2"><div class="rp-text">Relações</br>Públicas</div>
 					</div>
 					<div style="clear: both"></div>
 				</div>
@@ -393,7 +393,7 @@
 				
 				<div class="wrap">
 					<div class="icone">
-						<span><img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_digital.png" alt=""></span><div>Digital</div>
+					<img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_digital.png" alt="" class="icone_3"><div class="digital-text">Digital</div>
 					</div>
 					<div style="clear: both"></div>
 				</div>
@@ -422,7 +422,7 @@
 				
 				<div class="wrap">
 					<div class="icone">
-						<span><img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_criacao.png" alt=""></span><div>Criação</div>
+					<img src="<?php echo bloginfo('template_url') ?>/img/servicos/icon_criacao.png" alt="" class="icone_4"><div class="criacao-text">Criação</div>
 					</div>
 					<div style="clear: both"></div>
 				</div>
