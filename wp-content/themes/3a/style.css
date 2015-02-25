@@ -1670,6 +1670,8 @@ padding: 0;
 
 @media (max-width: 785px){
 
+    /* Hero Unit */
+
     .hero-unit
     {
         height: auto !important;
@@ -1681,6 +1683,25 @@ padding: 0;
         position: relative;
         margin-left: 0;
     }
+
+    /* Menu Principal */
+
+    #menu-principal li a
+    {
+        float: left;
+        width: 50%;
+        border-top: 1px solid #fff !important;
+        border-left: 1px solid #fff !important;
+    }
+
+    #menu-principal li:last-child a 
+    {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Quem Somos */
 
     .bg-quemsomos 
     {
@@ -1815,7 +1836,7 @@ padding: 0;
         margin-left: 10px;
         margin-top: 10px;
     }
-    
+
     .servicos-mobile .midia .icone { width: 160px; padding: 10px 0px; height: 80px;}
     .servicos-mobile .digital .icone { width: 180px; height: 90px; padding-top: 10px;}
     .servicos-mobile .criacao .icone { width: 210px; height: 90px; padding-top: 10px;}

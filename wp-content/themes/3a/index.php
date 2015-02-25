@@ -77,15 +77,7 @@
 
 	<!-- Seção Serviços -->
 
-	<?php if($detect->isMobile()): ?>
-	
-		<?php get_template_part('sections/servicos_mobile');  ?>
-
-	<?php else: ?>
-
-		<?php get_template_part('sections/servicos'); ?>
-
-	<?php endif; ?>
+	<?php get_template_part('sections/servicos'); ?>
 
 	<!-- Parallax 2 -->
 
