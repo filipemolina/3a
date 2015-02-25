@@ -59,6 +59,12 @@
 
 	<?php get_template_part('sections/equipe'); ?>
 
+	<?php if($detect->isMobile()): ?>
+
+		<?php get_template_part('sections/equipe_mobile'); ?>
+
+	<?php endif; ?>
+
 	<!-- Seção Premios -->
 
 	<?php get_template_part('sections/premios'); ?>

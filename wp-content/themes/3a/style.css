@@ -1672,6 +1672,7 @@ a.visitar
         text-align: left;
         font-size: 17px;
         padding-left: 9px;
+        padding-top: 0;
     }
 
     .container-fluid.mapa
