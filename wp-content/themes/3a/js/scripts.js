@@ -128,20 +128,23 @@ jQuery(window).load(function(){
 		//para o qual se deve scrollar
 
 		var classe_elemento = $(this).attr("href").replace("http://", "");
+		console.log(classe_elemento);
 
 		// //Scrollar até o elemento clicado
 
 		animando = true;
 
-		$('html, body').animate({
-	    
-	        scrollTop: $("."+classe_elemento).offset().top - 59
-	    
-	    }, 1000, "swing", function(){
+		scroll(classe_elemento, 59);
 
-	    	animando = false;
+		// $('html, body').animate({
+	    
+	 //        scrollTop: $("."+classe_elemento).offset().top - 59
+	    
+	 //    }, 1000, "swing", function(){
 
-	    });
+	 //    	animando = false;
+
+	 //    });
 
 	});
 
@@ -415,6 +418,8 @@ jQuery(window).load(function(){
 
 		if($(this).data('function') == 'close')
 		{
+			parallaxRestart();
+
 			// Fechar a div com as informações
 
 			$("div.item-portfolio.aberto, div.btn-portfolio").removeClass("fadeInUp animated").addClass('zoomOutDown animated');
@@ -426,8 +431,6 @@ jQuery(window).load(function(){
 				$("div.portfolio.desktop").css('height', 'auto').css('display', 'block').removeClass('fadeOutLeft animated').addClass('fadeInRight animated');
 
 				$('div.item-portfolio, div.btn-portfolio').css('display', 'none').removeClass('zoomOutDown animated aberto');
-
-				parallaxRestart();
 
 				$("a.btn-vermais").css('display', 'block');
 
@@ -470,6 +473,10 @@ jQuery(window).load(function(){
 
 			if(status == 'fechado')
 			{
+				// Reiniciar o parallax
+			
+				parallaxRestart();
+
 				animando = true;
 
 				$("div."+conteudo+" div.row.fechada").not('.portfolio-mobile .row').removeClass('fechada').addClass('fadeIn animated');
@@ -482,16 +489,16 @@ jQuery(window).load(function(){
 
 					$("div."+secao+" div.row").not('.portfolio-mobile .row').removeClass('fadeIn animated');
 
-					// Reiniciar o parallax
-			
-					parallaxRestart();
-
 					animando = false;
 
 				}, 1000);
 			}
 			else
 			{
+				// Reiniciar o parallax
+			
+				parallaxRestart();
+
 				animando = true;
 
 				$("div."+conteudo+":not('.portfolio-mobile') div.row").slice(linhas).addClass('fadeOut animated');
@@ -504,10 +511,6 @@ jQuery(window).load(function(){
 
 					$("div."+conteudo+":not('.portfolio-mobile') div.row").removeClass('fadeOut animated').slice(linhas).addClass('fechada');
 					$("."+secao+" a.btn-vermais").removeClass('fadeOut animated').html('VER MAIS');
-
-					// Reiniciar o parallax
-			
-					parallaxRestart();
 
 					animando = false;
 
@@ -527,6 +530,8 @@ jQuery(window).load(function(){
 		{
 			if(status == 'fechado')
 			{
+				parallaxRestart();
+
 				animando = true;
 
 				$("div.portfolio-mobile .row.fechada").removeClass('fechada').addClass('fadeIn animated');
@@ -537,14 +542,14 @@ jQuery(window).load(function(){
 
 					$("div.portfolio-mobile .row").removeClass('fadeIn animated');
 
-					parallaxRestart();
-
 					animando = false;
 
 				}, 1000);
 			}
 			else
 			{
+				parallaxRestart();
+
 				animando = true;
 
 				$("div.portfolio-mobile .row").slice(2).addClass('fadeOut animated');
@@ -557,8 +562,6 @@ jQuery(window).load(function(){
 
 					$("div.portfolio-mobile .row").removeClass('fadeOut animated').slice(2).addClass('fechada');
 					$("div.conteudo-portfolio-mobile .btn-vermais-mobile").data('status', 'fechado').html('Ver Mais').removeClass('fadeOut animated');
-
-					parallaxRestart();
 
 					animando = false;
 
@@ -582,6 +585,8 @@ jQuery(window).load(function(){
 
 		var cliente = $(this).data('cliente');
 
+		parallaxRestart();
+
 		setTimeout(function(){
 
 			// Abrir o portfólio
@@ -595,8 +600,6 @@ jQuery(window).load(function(){
 			// Esconder o botão "Ver Mais"
 
 			$(".btn-vermais-mobile").addClass('fadeOut animated');
-
-			parallaxRestart();
 
 			setTimeout(function(){
 
@@ -616,6 +619,8 @@ jQuery(window).load(function(){
 
 		if($(this).data('function') == 'next')
 		{
+			parallaxRestart();
+
 			// Subir a tela
 
 			scroll('conteudo-portfolio-mobile', 70);
@@ -653,10 +658,12 @@ jQuery(window).load(function(){
 
 		if($(this).data('function') == 'prev')
 		{
+			parallaxRestart();
+
 			// Subir a tela
 			
 			scroll('conteudo-portfolio-mobile', 70);
-			
+
 			// Esconder o item atual
 
 			$("div.item-portfolio.aberto").addClass('fadeOut animated');
@@ -690,6 +697,8 @@ jQuery(window).load(function(){
 
 		if($(this).data('function') == 'close')
 		{
+			parallaxRestart();
+			
 			$(".conteudo-portfolio-mobile div.item-portfolio").addClass("fadeOut animated").removeClass('aberto');
 			$(".conteudo-portfolio-mobile div.btn-portfolio").addClass("fadeOut animated");
 			$(".btn-vermais-mobile").css('display', 'block').addClass('fadeIn animated');

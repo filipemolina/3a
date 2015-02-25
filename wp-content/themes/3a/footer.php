@@ -35,7 +35,7 @@
 		    premios = $(".container-fluid.premios").offset().top - 70,
 		    estrutura = $(".container-fluid.estrutura").offset().top - 70,
 		    servicos = $(".container-fluid.servicos").offset().top - 70,
-		    portfolio = $(".container-fluid.portfolio").offset().top - 70,
+		    portfolio = $(".container-fluid.portfolio-mobile").offset().top - 70,
 		    internacional = $(".container-fluid.3ainternacional").offset().top - 70,
 		    contato = $(".container-fluid.contato").offset().top - 70,
 		    body = $("body");

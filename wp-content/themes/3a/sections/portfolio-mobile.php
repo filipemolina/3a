@@ -118,18 +118,20 @@
 					
 					<div class="header-portfolio" style="background-image: url('<?php echo types_render_field('imagem-de-fundo-interna', array('raw' => 'true')); ?>'); background-position: center center; background-repeat: no-repeat; background-color: <?php echo types_render_field('cor-de-fundo', array('raw' => 'true')); ?>;">
 						<div class="container">
+							<div class="logo-wrap">
+								<img src='<?php echo types_render_field('logo-interno', array('raw' => 'true')); ?>' alt="">
+							</div>
 							<div class="text-wrap">
 								<h1><?php echo the_content(); ?></h1>
 							</div>
 						</div>
 					</div>
 
-					<div class="container">
+					<div class="container conteudo">
 
 						<div class="row">
 							<div class="titulo-portfolio">
 								<h2>Desafio</h2>
-								<div class="borda-azul"></div>
 							</div>
 							<div class="text-desafio">
 								<?php echo types_render_field('desafio-port', array('raw' => 'true')); ?>
@@ -139,7 +141,6 @@
 						<div class="row col-md-offset-2">
 							<div class="titulo-portfolio">
 								<h2>Solução</h2>
-								<div class="setinha-azul"></div>
 							</div>
 							<div class="text-desafio">
 								<?php echo types_render_field('solucao-port', array('raw' => 'true')); ?>
@@ -149,7 +150,7 @@
 						<div class="row">
 							
 							<?php if($video_solucao != ""): ?>					
-								<iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/<?php echo types_render_field('video', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe class="col-md-6" height="315" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
+								<iframe class="col-md-6" width="300" src="https://www.youtube.com/embed/<?php echo types_render_field('video', array('output' => 'raw', 'separator' => '" frameborder="0" allowfullscreen></iframe><iframe class="col-md-6" width="300" src="https://www.youtube.com/embed/')); ?>" frameborder="0" allowfullscreen></iframe>
 							<?php endif; ?>
 
 							<div class="imagens-solucao">
@@ -161,7 +162,6 @@
 						<div class="row margin-row-portfolio">
 							<div class="titulo-portfolio wow fadeInLeft">
 								<h2>Resultado</h2>
-								<div class="setinha-azul"></div>
 							</div>
 							<div class="text-desafio">
 								<?php echo types_render_field('resultado-port', array('raw' => 'true')); ?>
