@@ -505,6 +505,43 @@ div.bio p
 
 /* -------------- END Hover imagens da equipe ------------*/
 
+/*------------------------------
+| Equipe - Mobile
+------------------------------*/
+
+.equipe-mobile 
+{
+    padding-top: 60px;
+}
+
+.equipe-mobile .nome span 
+{
+    font-family: 'verlag-black';
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.equipe-mobile p.cargo 
+{
+    font-family: 'verlag-bold-italic';
+    font-size: 16px;
+}
+
+.equipe-mobile .bio p 
+{
+    color: #333;
+    font-family: 'verlag-book';
+    font-size: 14px;
+    padding: 0;
+}
+
+.equipe-mobile .info 
+{
+    padding-left: 8px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------
 | Premios
 --------------------------------------------------------------------------------------------------------------------*/

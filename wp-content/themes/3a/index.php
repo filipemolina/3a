@@ -57,13 +57,13 @@
 
 	<!-- Seção Equipe -->
 
-	<?php get_template_part('sections/equipe'); ?>
+	<?php //get_template_part('sections/equipe'); ?>
 
-	<?php if($detect->isMobile()): ?>
+	<?php //if($detect->isMobile()): ?>
 
 		<?php get_template_part('sections/equipe_mobile'); ?>
 
-	<?php endif; ?>
+	<?php //endif; ?>
 
 	<!-- Seção Premios -->
 
