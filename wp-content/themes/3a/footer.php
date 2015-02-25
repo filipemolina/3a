@@ -28,11 +28,23 @@
 
 		<script type="text/javascript">
 
+			$ = jQuery;
+
+			var scrollou = false,
+		    quem_somos = $(".container.quem-somos").offset().top - 70,
+		    premios = $(".container-fluid.premios").offset().top - 70,
+		    estrutura = $(".container-fluid.estrutura").offset().top - 70,
+		    servicos = $(".container-fluid.servicos").offset().top - 70,
+		    portfolio = $(".container-fluid.portfolio").offset().top - 70,
+		    internacional = $(".container-fluid.3ainternacional").offset().top - 70,
+		    contato = $(".container-fluid.contato").offset().top - 70,
+		    body = $("body");
+
 			/////////////////// Executada antes que as imagens sejam carregadas.
 
-			jQuery(function(){
+			$(function(){
 
-				$ = jQuery;
+				
 
 				var largura = $(window).width();
 
@@ -74,9 +86,19 @@
 
 		<script type="text/javascript">
 
-			jQuery(window).load(function(){
+			$ = jQuery;
 
-				$ = jQuery;
+			var scrollou = false,
+		    quem_somos = $(".container.quem-somos").offset().top - 70,
+		    premios = $(".container-fluid.premios").offset().top - 70,
+		    estrutura = $(".container-fluid.estrutura").offset().top - 70,
+		    servicos = $(".container-fluid.servicos").offset().top - 70,
+		    portfolio = $(".container-fluid.portfolio").offset().top - 70,
+		    internacional = $(".container-fluid.3ainternacional").offset().top - 70,
+		    contato = $(".container-fluid.contato").offset().top - 70,
+		    body = $("body");
+
+			$(window).load(function(){
 
 				//Executar as animações apenas na versão desktop
 
