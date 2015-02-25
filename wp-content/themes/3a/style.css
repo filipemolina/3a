@@ -355,7 +355,7 @@ ul#menu-principal a[href*="estrutura"].ativo
 
 .hero-unit
 {
-    /*background: url('img/hero-unit/foto_rj.png') no-repeat center center;*/
+    background: url('img/hero-unit/foto_rj.png') no-repeat center center;
     background-size: cover;
     width: 100%;
     position: relative;
@@ -527,6 +527,7 @@ div.bio p
      font-family: 'verlag-bold';
      font-size: 18px;
      color: #231f20;
+     text-align: left;
 }
 
 .blocos-premios p
@@ -534,6 +535,7 @@ div.bio p
     font-family: 'verlag-book';
     font-size: 15px;
     color:#7c7c7d;
+    text-align: left;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -1774,14 +1776,8 @@ a.visitar
         padding: 4px 0 0 10px;
         margin: 0;
         color: #7c7c7d;
-
         border: none;
         float: left;
-    }
-    
-    .blocos-premios
-    {
-        text-align: center;
     }
 
     .blocos-premios img
