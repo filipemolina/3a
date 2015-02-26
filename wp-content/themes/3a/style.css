@@ -2021,6 +2021,7 @@ padding: 0;
     .blocos-premios img
     {
         margin: 0 auto;
+        width: 100%;
     }
 
     .servicos .item.midia .icone

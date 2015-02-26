@@ -21,8 +21,6 @@ function scroll(classe_elemento, offset)
 	    	animando = false;
 
 	    });
-
-	console.log("Scroll to: " + classe_elemento + " com offset: " + offset);
 }
 
 function proximo(item, grupo, atributo)
@@ -130,7 +128,6 @@ jQuery(window).load(function(){
 		//para o qual se deve scrollar
 
 		var classe_elemento = $(this).attr("href").replace("http://", "");
-		console.log(classe_elemento);
 
 		// //Scrollar até o elemento clicado
 
@@ -455,10 +452,14 @@ jQuery(window).load(function(){
 
 	$("a.btn-vermais").click(function(){
 
+		console.log("Clicou");
+
 		// Realizar as ações apenas se o portfolio não estiver sendo animado
 
 		if(!animando)
 		{
+			console.log("Não está animando");
+
 			// Obter o status do botão
 
 			var status = $(this).data('status');
@@ -497,6 +498,9 @@ jQuery(window).load(function(){
 			}
 			else
 			{
+
+				console.log("Está animando");
+				
 				animando = true;
 
 				$("div."+conteudo+":not('.portfolio-mobile') div.row").slice(linhas).addClass('fadeOut animated');
