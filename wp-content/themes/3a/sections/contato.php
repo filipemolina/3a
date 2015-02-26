@@ -72,4 +72,6 @@
 
 	<?php endwhile; endif; ?>
 
+	<a href="javascript:void(0)" class="btn-fechar-mapa">Fechar</a>
+
 </div>

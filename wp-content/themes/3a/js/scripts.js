@@ -452,13 +452,13 @@ jQuery(window).load(function(){
 
 	$("a.btn-vermais").click(function(){
 
-		console.log("Clicou");
+		console.log("Bla");
 
 		// Realizar as ações apenas se o portfolio não estiver sendo animado
 
 		if(!animando)
 		{
-			console.log("Clicou");
+			console.log("Blabla");
 
 			// Obter o status do botão
 
@@ -476,6 +476,8 @@ jQuery(window).load(function(){
 
 			if(status == 'fechado')
 			{
+				console.log("Blabla");
+
 				animando = true;
 
 				$("div."+conteudo+" div.row.fechada").not('.portfolio-mobile .row').removeClass('fechada').addClass('fadeIn animated');
@@ -499,8 +501,8 @@ jQuery(window).load(function(){
 			else
 			{
 
-				console.log("Clicou");
-				
+				console.log("Blabla");
+
 				animando = true;
 
 				$("div."+conteudo+":not('.portfolio-mobile') div.row").slice(linhas).addClass('fadeOut animated');
@@ -778,7 +780,28 @@ jQuery(window).load(function(){
 
 		});
 
-		scroll('btn-mapa', 80);
+		scroll('container-fluid.mapa-contato', 60);
+
+	});
+
+	$(".btn-fechar-mapa").click(function(){
+
+		scroll('container-fluid.contato', 60);
+
+		//Levantar a div do mapa
+
+		$(".container-fluid.mapa-contato").slideUp(400, function(){
+
+			//Esconder todos os mapas
+         
+			$(".google-map").hide();
+
+			//Retirar a classe "ativo" de todos os links
+
+			$(".bloco a").removeClass("ativo");
+			$(".bloco a").html("COMO CHEGAR");
+
+		});
 
 	});
 

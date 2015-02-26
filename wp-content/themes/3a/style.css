@@ -1405,6 +1405,37 @@ margin-top:70px;
 
 }
 
+.btn-fechar-mapa
+{
+    display: block;
+    background: #000;
+    border: 2px solid #010202;
+    color: #fff;
+    font-family: 'verlag-black';
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    outline: none;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -46px;
+    text-decoration: none;
+    outline: none;
+}
+
+.btn-fechar-mapa:hover
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-fluid.mapa-contato
+{
+    position: relative;
+}
+
 /*--------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------*/
 
@@ -1981,7 +2012,7 @@ padding: 0;
 
     .container.principal .row.primeira 
     {
-        padding-left: 15px;
+        padding-left: 25px;
     }
 
     ul#menu-principal a.ativo
@@ -2290,6 +2321,19 @@ display: none;
 }
 }
 
+/*--------------------------------------------------------------------------------------------------------------------
+| Regra para iPhone em Landscape
+--------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width : 700px) and (orientation: landscape){
+
+    nav.menu.navbar
+    {
+        position: relative !important;
+        margin-bottom: 0 !important;
+    }
+
+}
 
 /*--------------------------------------------------------------------------------------------------------------------
 | Regras Especificas do Firefox
