@@ -473,10 +473,6 @@ jQuery(window).load(function(){
 
 			if(status == 'fechado')
 			{
-				// Reiniciar o parallax
-			
-				parallaxRestart();
-
 				animando = true;
 
 				$("div."+conteudo+" div.row.fechada").not('.portfolio-mobile .row').removeClass('fechada').addClass('fadeIn animated');
@@ -491,14 +487,14 @@ jQuery(window).load(function(){
 
 					animando = false;
 
+					// Reiniciar o parallax
+			
+					parallaxRestart();
+
 				}, 1000);
 			}
 			else
 			{
-				// Reiniciar o parallax
-			
-				parallaxRestart();
-
 				animando = true;
 
 				$("div."+conteudo+":not('.portfolio-mobile') div.row").slice(linhas).addClass('fadeOut animated');
@@ -513,6 +509,10 @@ jQuery(window).load(function(){
 					$("."+secao+" a.btn-vermais").removeClass('fadeOut animated').html('VER MAIS');
 
 					animando = false;
+
+					// Reiniciar o parallax
+			
+					parallaxRestart();
 
 				}, 1000);
 			}
@@ -530,8 +530,6 @@ jQuery(window).load(function(){
 		{
 			if(status == 'fechado')
 			{
-				parallaxRestart();
-
 				animando = true;
 
 				$("div.portfolio-mobile .row.fechada").removeClass('fechada').addClass('fadeIn animated');
@@ -544,12 +542,12 @@ jQuery(window).load(function(){
 
 					animando = false;
 
+					parallaxRestart();
+
 				}, 1000);
 			}
 			else
 			{
-				parallaxRestart();
-
 				animando = true;
 
 				$("div.portfolio-mobile .row").slice(2).addClass('fadeOut animated');
@@ -565,6 +563,8 @@ jQuery(window).load(function(){
 
 					animando = false;
 
+					parallaxRestart();
+
 				}, 1000);
 			}
 		}
@@ -579,13 +579,15 @@ jQuery(window).load(function(){
 
 		//Rolar até o portfólio aberto
 
-		scroll('conteudo-portfolio-mobile', 70);
+		//scroll('conteudo-portfolio-mobile', 70);
+
+		// Esconder a parte externa dos portfólios
+
+		$(".portfolio-mobile").addClass("fadeOut animated");
 
 		// Obter o nome do cliente para ser aberto
 
 		var cliente = $(this).data('cliente');
-
-		parallaxRestart();
 
 		setTimeout(function(){
 
@@ -597,6 +599,8 @@ jQuery(window).load(function(){
 
 			$(".conteudo-portfolio-mobile .btn-portfolio").css('display', 'block').addClass('fadeInUp animated');
 
+			$(".portfolio-mobile").removeClass('fadeOut animated').css('display', 'none');
+
 			// Esconder o botão "Ver Mais"
 
 			$(".btn-vermais-mobile").addClass('fadeOut animated');
@@ -605,7 +609,9 @@ jQuery(window).load(function(){
 
 				$(".conteudo-portfolio-mobile .item-portfolio[data-cliente='"+cliente+"']").removeClass('fadeInUp animated');
 				$(".conteudo-portfolio-mobile .btn-portfolio").removeClass('fadeInUp animated');
-				$(".btn-vermais-mobile").css('display', 'none').removeClass('fadeOut animated');				
+				$(".btn-vermais-mobile").css('display', 'none').removeClass('fadeOut animated');
+
+				parallaxRestart();			
 
 			}, 1000);
 
@@ -619,8 +625,6 @@ jQuery(window).load(function(){
 
 		if($(this).data('function') == 'next')
 		{
-			parallaxRestart();
-
 			// Subir a tela
 
 			scroll('conteudo-portfolio-mobile', 70);
@@ -651,6 +655,8 @@ jQuery(window).load(function(){
 
 					$(proximo_item).removeClass('fadeIn animated');
 
+					parallaxRestart();
+
 				}, 1000);
 
 			}, 500);
@@ -658,8 +664,6 @@ jQuery(window).load(function(){
 
 		if($(this).data('function') == 'prev')
 		{
-			parallaxRestart();
-
 			// Subir a tela
 			
 			scroll('conteudo-portfolio-mobile', 70);
@@ -690,6 +694,8 @@ jQuery(window).load(function(){
 
 					$(proximo_item).removeClass('fadeIn animated');
 
+					parallaxRestart();
+
 				}, 1000);
 
 			}, 500);
@@ -697,11 +703,11 @@ jQuery(window).load(function(){
 
 		if($(this).data('function') == 'close')
 		{
-			parallaxRestart();
-			
 			$(".conteudo-portfolio-mobile div.item-portfolio").addClass("fadeOut animated").removeClass('aberto');
 			$(".conteudo-portfolio-mobile div.btn-portfolio").addClass("fadeOut animated");
 			$(".btn-vermais-mobile").css('display', 'block').addClass('fadeIn animated');
+
+			$(".portfolio-mobile").css('display', 'block').addClass("fadeIn animated");
 
 			scroll('portfolio-mobile', 70);
 
@@ -710,6 +716,9 @@ jQuery(window).load(function(){
 				$(".conteudo-portfolio-mobile div.item-portfolio").css('display', 'none').removeClass('fadeOut animated');
 				$(".conteudo-portfolio-mobile div.btn-portfolio").css('display', 'none').removeClass('fadeOut animated');
 				$(".btn-vermais-mobile").removeClass('fadeIn animated');
+				$(".portfolio-mobile").removeClass('fadeIn animated');
+
+				parallaxRestart();
 
 			}, 1000);
 		}

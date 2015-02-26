@@ -57,7 +57,7 @@
 
 	<!-- Seção Equipe -->
 
-	<?php if($detect->isMobile()): ?>
+	<?php if($detect->isMobile() && !$detect->isTablet()): ?>
 
 		<?php get_template_part('sections/equipe_mobile'); ?>
 
