@@ -21,6 +21,8 @@ function scroll(classe_elemento, offset)
 	    	animando = false;
 
 	    });
+
+	console.log("Scroll to: " + classe_elemento + " com offset: " + offset);
 }
 
 function proximo(item, grupo, atributo)
@@ -579,7 +581,7 @@ jQuery(window).load(function(){
 
 		//Rolar até o portfólio aberto
 
-		//scroll('conteudo-portfolio-mobile', 70);
+		scroll('parallax.segundo', -400);
 
 		// Esconder a parte externa dos portfólios
 
@@ -709,7 +711,7 @@ jQuery(window).load(function(){
 
 			$(".portfolio-mobile").css('display', 'block').addClass("fadeIn animated");
 
-			scroll('portfolio-mobile', 70);
+			scroll('parallax.segundo', -400);
 
 			setTimeout(function(){
 

@@ -81,7 +81,7 @@
 
 	<!-- Parallax 2 -->
 
-	<div class="parallax" data-stellar-background-ratio="0.5" id="parallax-2">
+	<div class="parallax segundo" data-stellar-background-ratio="0.5" id="parallax-2">
 		<div class=" wow zoomIn"><?php echo $frases[1]; ?></div>
 	</div>
 

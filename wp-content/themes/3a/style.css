@@ -1750,6 +1750,7 @@ padding: 0;
     .conteudo-portfolio-mobile .header-portfolio img 
     {
         margin: 33px auto 0;
+        max-width: 100%;
     }
 
     .header-portfolio h1
@@ -1956,13 +1957,22 @@ padding: 0;
         text-transform: uppercase;
         margin-top: 27px;
         text-align: center;
-        float: left;
         margin-left: -15px;
     }
 
     .btn-portfolio img
     {
         border: 0;
+    }
+
+    .conteudo-portfolio-mobile .container.principal 
+    {
+        padding-left: 15px;
+    }
+
+    .container.principal .row.primeira 
+    {
+        padding-left: 15px;
     }
 
     ul#menu-principal a.ativo

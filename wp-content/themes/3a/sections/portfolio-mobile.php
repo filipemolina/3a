@@ -193,12 +193,11 @@
 						</div>
 					</div>
 
-					<div class="container">
+					<div class="container principal">
 
-						<div class="row">
+						<div class="row primeira">
 							<div class="titulo-portfolio">
 								<h2>Descrição</h2>
-								<div class="borda-azul"></div>
 							</div>
 							<div class="text-desafio">
 								<?php echo types_render_field('descricao-da-peca', array('raw' => 'true')); ?>
