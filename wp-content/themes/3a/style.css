@@ -2165,6 +2165,14 @@ div.bio p
 {
 font-size: 18px;
 }
+.bloco
+{
+overflow: hidden;
+margin: 45px 0 25px;
+max-width: 100%;
+min-height: 400px;
+}
+
 
 }
 
