@@ -458,7 +458,7 @@ jQuery(window).load(function(){
 
 		if(!animando)
 		{
-			console.log("Não está animando");
+			console.log("Clicou");
 
 			// Obter o status do botão
 
@@ -499,7 +499,7 @@ jQuery(window).load(function(){
 			else
 			{
 
-				console.log("Está animando");
+				console.log("Clicou");
 				
 				animando = true;
 

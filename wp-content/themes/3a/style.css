@@ -1044,7 +1044,7 @@ background-position: -1px -1px;
 
 .btn-portfolio img
 {
-border: 2px solid #000;
+    /*border: 2px solid #000;*/
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -1193,30 +1193,34 @@ text-align: center;
 --------------------------------------------------------------------------------------------------------------------*/
 
 .portfolio-mobile,
-.conteudo-portfolio-mobile .btn-portfolio,
 .conteudo-portfolio-mobile .item-portfolio
 {
-display: none;
+    display: none;
 }
 
 .conteudo-portfolio-mobile 
 {
-margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .btn-vermais-mobile
 {
-display: none;
+    display: none;
 }
 
 .img-portfolio-mobile .detalhes
 {
-display: block;
-position: absolute;
-top: 170px;
-left: 50%;
-margin-left: -69px;
-z-index: 10000;
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-left: -69px;
+    z-index: 10000;
+}
+
+.portfolio-mobile .logo-clientes 
+{
+    margin-top: -20px;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------
@@ -1691,6 +1695,11 @@ padding: 0;
 
 @media (max-width: 785px){
 
+    .conteudo-portfolio-mobile .btn-portfolio
+    {
+        display: none;
+    }
+
     /* Hero Unit */
 
     .hero-unit
@@ -1967,7 +1976,7 @@ padding: 0;
 
     .conteudo-portfolio-mobile .container.principal 
     {
-        padding-left: 15px;
+        /*padding-left: 15px;*/
     }
 
     .container.principal .row.primeira 
