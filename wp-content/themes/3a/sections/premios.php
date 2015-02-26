@@ -64,9 +64,9 @@
 				<?php $i++; //Incrementar o contador ?>
 
 			<?php endwhile; ?>
-		</div>
+		
 
-	<!-- </div> -->
+	</div>
 
 	<a href="javascript:void(0)" class="btn-vermais" data-status="fechado" data-secao="premios" data-scroll="premios">VER MAIS</a>
 	
