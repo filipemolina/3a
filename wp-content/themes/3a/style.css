@@ -1734,6 +1734,48 @@ padding: 0;
         display: none;
     }
 
+    /* Portfolio */
+
+    .conteudo-portfolio-mobile .container 
+    {
+        padding-left: 0;
+    }
+
+    .conteudo-portfolio-mobile .header-portfolio img 
+    {
+        margin: 33px auto 0;
+    }
+
+    .header-portfolio h1
+    {
+        font-size: 33px;
+        float: none;
+    }
+
+    .header-portfolio .text-wrap
+    {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo-wrap 
+    {
+        width: 100%;
+        text-align: center;
+        padding-left: 15px;
+    }
+
+    .container.conteudo 
+    {
+        padding-left: 25px;
+    }
+
+    .container.conteudo .row
+    {
+        overflow: hidden;
+    }
+
     .container-fluid.contato
     {
         padding: 0;
@@ -1742,6 +1784,11 @@ padding: 0;
     .container.quem-somos
     {
         padding: 0 30px;
+    }
+
+    .header-portfolio h1
+    {
+        margin-top: 35px;
     }
 
     .container-fluid.estrutura

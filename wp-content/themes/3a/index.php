@@ -87,9 +87,16 @@
 
 	<!-- Portfolio -->
 
-	<?php get_template_part('sections/portfolio'); ?>
-	<?php get_template_part('sections/portfolio-aberto'); ?>
-	<?php get_template_part('sections/portfolio-mobile'); ?>
+	<?php if($detect->isMobile()): ?>
+
+		<?php get_template_part('sections/portfolio-mobile'); ?>
+
+	<?php else: ?>
+
+		<?php get_template_part('sections/portfolio'); ?>
+		<?php get_template_part('sections/portfolio-aberto'); ?>
+
+	<?php endif; ?>
 
 	<!-- Parallax 3 -->
 
