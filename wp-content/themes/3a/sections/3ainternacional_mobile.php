@@ -37,7 +37,7 @@
 					<img class="img-responsive" src="<?php echo bloginfo('template_url') ?>/img/3aInternacional/mexico.png" alt="">
 				</div>
 
-					<a class="visitar_mobile" href="javascript:void(0)">
+					<a class="visitar_mobile" href="http://www.3aworldwide.com.mx/">
 						VISITAR SITE
 					</a>
 			</div>
@@ -48,7 +48,7 @@
 					<img class="img-responsive" src="<?php echo bloginfo('template_url') ?>/img/3aInternacional/espanha.png" alt="">
 				</div>
 
-					<a class="visitar_mobile" href="javascript:void(0)">
+					<a class="visitar_mobile" href="http://www.newcomcomunicacion.com/">
 						VISITAR SITE
 					</a>
 

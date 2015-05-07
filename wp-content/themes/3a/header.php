@@ -19,6 +19,7 @@ $detect = new Mobile_Detect;
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-control" content="public">
 	<title><?php wp_title("|", true, 'right'); bloginfo('name'); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -32,7 +33,7 @@ $detect = new Mobile_Detect;
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/animate.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/flexslider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.min.css" type="text/css" media="screen" />
 
 </head>
 

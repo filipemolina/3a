@@ -1,3 +1,13 @@
+// Indica se o portfólio está sendo animado
+
+	var App = {};
+
+	App.animando = false;
+
+	// Número de linhas para mostrar quando o portfólio estiver fechado
+
+	var linhas = 2;
+
 //Função que reinicia os parallaxes quando o conteúdo é movido ou redirecionado
 
 function parallaxRestart()
@@ -10,15 +20,16 @@ function scroll(classe_elemento, offset)
 {
 	// //Scrollar até o elemento clicado
 
-		animando = true;
+		App.animando = true;
 
-		$('html, body').animate({
+		$('html, body').stop().animate({
 	    
 	        scrollTop: $("."+classe_elemento).offset().top - offset
 	    
 	    }, 1000, "swing", function(){
 
-	    	animando = false;
+	    	App.animando = false;
+	    	console.log("Animando: "+App.animando);
 
 	    });
 }
@@ -134,16 +145,6 @@ jQuery(window).load(function(){
 		animando = true;
 
 		scroll(classe_elemento, 59);
-
-		// $('html, body').animate({
-	    
-	 //        scrollTop: $("."+classe_elemento).offset().top - 59
-	    
-	 //    }, 1000, "swing", function(){
-
-	 //    	animando = false;
-
-	 //    });
 
 	});
 
@@ -440,23 +441,15 @@ jQuery(window).load(function(){
 
 	});
 
-	// Indica se o portfólio está sendo animado
-
-	var animando = false;
-
-	// Número de linhas para mostrar quando o portfólio estiver fechado
-
-	var linhas = 2;
-
 	// Mostrar todas as peças e cases no portfolio
 
 	$("a.btn-vermais").click(function(){
 
-		console.log("Bla");
+		console.log("Animando: " + animando);
 
 		// Realizar as ações apenas se o portfolio não estiver sendo animado
 
-		if(!animando)
+		if(!App.animando)
 		{
 			console.log("Blabla");
 
@@ -478,7 +471,7 @@ jQuery(window).load(function(){
 			{
 				console.log("Blabla");
 
-				animando = true;
+				App.animando = true;
 
 				$("div."+conteudo+" div.row.fechada").not('.portfolio-mobile .row').removeClass('fechada').addClass('fadeIn animated');
 
@@ -490,7 +483,7 @@ jQuery(window).load(function(){
 
 					$("div."+secao+" div.row").not('.portfolio-mobile .row').removeClass('fadeIn animated');
 
-					animando = false;
+					App.animando = false;
 
 					// Reiniciar o parallax
 			
@@ -503,7 +496,7 @@ jQuery(window).load(function(){
 
 				console.log("Blabla");
 
-				animando = true;
+				App.animando = true;
 
 				$("div."+conteudo+":not('.portfolio-mobile') div.row").slice(linhas).addClass('fadeOut animated');
 
@@ -516,7 +509,7 @@ jQuery(window).load(function(){
 					$("div."+conteudo+":not('.portfolio-mobile') div.row").removeClass('fadeOut animated').slice(linhas).addClass('fechada');
 					$("."+secao+" a.btn-vermais").removeClass('fadeOut animated').html('VER MAIS');
 
-					animando = false;
+					App.animando = false;
 
 					// Reiniciar o parallax
 			

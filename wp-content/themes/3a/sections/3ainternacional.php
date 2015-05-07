@@ -51,7 +51,7 @@
 						MÉXICO
 					</div>
 
-					<a class="visitar" href="javascript:void(0)">
+					<a class="visitar" href="http://www.3aworldwide.com.mx/">
 						VISITAR SITE
 					</a>
 
@@ -71,7 +71,7 @@
 						ESPANHA
 					</div>
 
-					<a class="visitar" href="javascript:void(0)">
+					<a class="visitar" href="http://www.newcomcomunicacion.com/">
 						VISITAR SITE
 					</a>
 
