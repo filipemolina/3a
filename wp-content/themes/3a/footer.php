@@ -124,6 +124,43 @@
 	<?php endif; ?>
 
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/scripts.js"></script>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-62341224-1', 'auto');
+	  ga('send', 'pageview');
+
+	  // Enviar um evento de "30 segundos na página"
+
+	  setTimeout("ga('send', 'event', { eventCategory: '30 segundos na pagina', eventAction: 'Read' })", 30000);
+
+	  // Enviar um envento "Scroll de 250px"
+
+		var runned = false;
+		$( window ).scroll( function() {
+			if ( $( document ).scrollTop() >= 250 && runned == false ) {
+			_gaq.push(['_trackEvent', 'Scroll de 250px', 'Scroll']);
+			runned = true;
+			}
+		});
+
+		$(function(){
+
+			$("a").click(function(){
+
+				// Enviar um envento "Clicou em um link"
+
+				ga('send', 'event', { eventCategory: 'Clicou em um Link', eventAction: 'Click' });
+
+			});
+
+		});
+
+	</script>
 
 	<?php wp_footer(); ?>
 

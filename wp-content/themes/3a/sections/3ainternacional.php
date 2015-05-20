@@ -71,7 +71,7 @@
 						ESPANHA
 					</div>
 
-					<a class="visitar" href="http://www.newcomcomunicacion.com/">
+					<a class="visitar" href="http://3aww.com/es/">
 						VISITAR SITE
 					</a>
 
