@@ -140,6 +140,11 @@ jQuery(window).load(function(){
 
 		var classe_elemento = $(this).attr("href").replace("http://", "");
 
+		if(classe_elemento == 'blog')
+		{
+			window.location.href='http://3aworldwide.com.br/blog';
+		}
+
 		// //Scrollar até o elemento clicado
 
 		animando = true;

@@ -124,6 +124,20 @@
 	<?php endif; ?>
 
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/scripts.js"></script>
+
+	<?php if (!is_front_page()): ?>
+
+		<script type="text/javascript">
+
+			$("ul#menu-principal a").click(function(){
+
+				window.location.href = "http://www.3aworldwide.com.br";
+
+			});
+
+		</script>
+		
+	<?php endif; ?>
 	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
